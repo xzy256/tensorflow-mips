@@ -3,6 +3,19 @@
 </div>
 
 -----------------
+Instruction<br>
+build and test instructions:<br>
+  $build --copt=-march=native -c opt //tensorflow/tools/pip_package:build_pip_package --verbose_failures <br>
+  $bazel-bin/tensorflow/tools/pip_package/build_pip_package /tmp/tensorflow_pkg <br>
+  $pip install /tmp/tensorflow_pkg/tensorflow-1.2.0rc1-cp27-none-linux_mips64.whl <br>
+  $python <br>
+  >>>import tensorflow as tf <br>
+
+build tf for mips arch. [patch](build-tf-mips.diff)<br>
+[error and solved way] (build-tensorflow-for-mips64.error.log)<br>
+[terminal output](build-tensorflow-mips64.output)<br>
+
+
 
 | **`Linux CPU`** | **`Linux GPU`** | **`Mac OS CPU`** | **`Windows CPU`** | **`Android`** |
 |-----------------|---------------------|------------------|-------------------|---------------|
