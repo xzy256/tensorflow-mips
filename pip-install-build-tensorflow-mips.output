@@ -1,0 +1,2128 @@
+[root@localhost tensorflow]# pip install /tmp/tensorflow_pkg/tensorflow-1.2.0rc1-cp27-none-linux_mips64.whl 
+Unpacking /tmp/tensorflow_pkg/tensorflow-1.2.0rc1-cp27-none-linux_mips64.whl
+Downloading/unpacking mock>=2.0.0 (from tensorflow==1.2.0rc1)
+  Downloading mock-2.0.0-py2.py3-none-any.whl (56kB): 56kB downloaded
+Downloading/unpacking bleach==1.5.0 (from tensorflow==1.2.0rc1)
+  Downloading bleach-1.5.0-py2.py3-none-any.whl
+Downloading/unpacking markdown==2.2.0 (from tensorflow==1.2.0rc1)
+  Downloading Markdown-2.2.0.tar.gz (236kB): 236kB downloaded
+  Running setup.py (path:/tmp/pip_build_root/markdown/setup.py) egg_info for package markdown
+    
+Downloading/unpacking numpy>=1.11.0 (from tensorflow==1.2.0rc1)
+  Downloading numpy-1.12.1.zip (4.8MB): 4.8MB downloaded
+  Running setup.py (path:/tmp/pip_build_root/numpy/setup.py) egg_info for package numpy
+    Running from numpy source directory.
+    
+    warning: no previously-included files matching '*.pyc' found anywhere in distribution
+    warning: no previously-included files matching '*.pyo' found anywhere in distribution
+    warning: no previously-included files matching '*.pyd' found anywhere in distribution
+Downloading/unpacking html5lib==0.9999999 (from tensorflow==1.2.0rc1)
+  Downloading html5lib-0.9999999.tar.gz (889kB): 889kB downloaded
+  Running setup.py (path:/tmp/pip_build_root/html5lib/setup.py) egg_info for package html5lib
+    
+Downloading/unpacking protobuf>=3.2.0 (from tensorflow==1.2.0rc1)
+  Downloading protobuf-3.3.0.tar.gz (271kB): 271kB downloaded
+  Running setup.py (path:/tmp/pip_build_root/protobuf/setup.py) egg_info for package protobuf
+    
+    no previously-included directories found matching 'google/protobuf/internal/import_test_package'
+    warning: no previously-included files found matching 'google/protobuf/internal/*_pb2.py'
+    warning: no previously-included files found matching 'google/protobuf/internal/*_test.py'
+    warning: no previously-included files found matching 'google/protobuf/internal/*.proto'
+    warning: no previously-included files found matching 'google/protobuf/internal/test_util.py'
+    warning: no previously-included files matching '*_test.py' found under directory 'google'
+    warning: no previously-included files matching '*_test.proto' found under directory 'google'
+    warning: no previously-included files matching 'unittest*_pb2.py' found under directory 'google'
+    warning: no previously-included files matching '*.dll' found anywhere in distribution
+    warning: no previously-included files matching '*.pyc' found anywhere in distribution
+    warning: no previously-included files matching '*.pyo' found anywhere in distribution
+    warning: no previously-included files matching '*.so' found anywhere in distribution
+Downloading/unpacking six>=1.10.0 (from tensorflow==1.2.0rc1)
+  Downloading six-1.10.0-py2.py3-none-any.whl
+Requirement already satisfied (use --upgrade to upgrade): wheel in /usr/lib/python2.7/site-packages (from tensorflow==1.2.0rc1)
+Downloading/unpacking werkzeug>=0.11.10 (from tensorflow==1.2.0rc1)
+  Downloading Werkzeug-0.12.2-py2.py3-none-any.whl (312kB): 312kB downloaded
+Downloading/unpacking funcsigs>=1 (from mock>=2.0.0->tensorflow==1.2.0rc1)
+  Downloading funcsigs-1.0.2-py2.py3-none-any.whl
+Downloading/unpacking pbr>=0.11 (from mock>=2.0.0->tensorflow==1.2.0rc1)
+  Downloading pbr-3.0.1-py2.py3-none-any.whl (99kB): 99kB downloaded
+Requirement already satisfied (use --upgrade to upgrade): setuptools in /usr/lib/python2.7/site-packages (from protobuf>=3.2.0->tensorflow==1.2.0rc1)
+Installing collected packages: tensorflow, mock, bleach, markdown, numpy, html5lib, protobuf, six, werkzeug, funcsigs, pbr
+  Running setup.py install for markdown
+    changing mode of build/scripts-2.7/markdown_py from 644 to 755
+    Converting docs/test_suite.txt -> build/docs/test_suite.html
+    Converting docs/siteindex.txt -> build/docs/siteindex.html
+    Converting docs/release-2.2.0.txt -> build/docs/release-2.2.0.html
+    Converting docs/release-2.1.1.txt -> build/docs/release-2.1.1.html
+    Converting docs/release-2.1.0.txt -> build/docs/release-2.1.0.html
+    Converting docs/release-2.0.txt -> build/docs/release-2.0.html
+    Converting docs/release-2.0.2.txt -> build/docs/release-2.0.2.html
+    Converting docs/release-2.0.1.txt -> build/docs/release-2.0.1.html
+    Converting docs/reference.txt -> build/docs/reference.html
+    Converting docs/install.txt -> build/docs/install.html
+    Converting docs/index.txt -> build/docs/index.html
+    Converting docs/cli.txt -> build/docs/cli.html
+    Converting docs/change_log.txt -> build/docs/change_log.html
+    Converting docs/authors.txt -> build/docs/authors.html
+    Converting docs/extensions/wikilinks.txt -> build/docs/extensions/wikilinks.html
+    Converting docs/extensions/toc.txt -> build/docs/extensions/toc.html
+    Converting docs/extensions/tables.txt -> build/docs/extensions/tables.html
+    Converting docs/extensions/smart_strong.txt -> build/docs/extensions/smart_strong.html
+    Converting docs/extensions/sane_lists.txt -> build/docs/extensions/sane_lists.html
+    Converting docs/extensions/rss.txt -> build/docs/extensions/rss.html
+    Converting docs/extensions/nl2br.txt -> build/docs/extensions/nl2br.html
+    Converting docs/extensions/meta_data.txt -> build/docs/extensions/meta_data.html
+    Converting docs/extensions/index.txt -> build/docs/extensions/index.html
+    Converting docs/extensions/html_tidy.txt -> build/docs/extensions/html_tidy.html
+    Converting docs/extensions/header_id.txt -> build/docs/extensions/header_id.html
+    Converting docs/extensions/footnotes.txt -> build/docs/extensions/footnotes.html
+    Converting docs/extensions/fenced_code_blocks.txt -> build/docs/extensions/fenced_code_blocks.html
+    Converting docs/extensions/extra.txt -> build/docs/extensions/extra.html
+    Converting docs/extensions/definition_lists.txt -> build/docs/extensions/definition_lists.html
+    Converting docs/extensions/code_hilite.txt -> build/docs/extensions/code_hilite.html
+    Converting docs/extensions/attr_list.txt -> build/docs/extensions/attr_list.html
+    Converting docs/extensions/api.txt -> build/docs/extensions/api.html
+    Converting docs/extensions/abbreviations.txt -> build/docs/extensions/abbreviations.html
+    
+    changing mode of /usr/bin/markdown_py to 755
+  Found existing installation: numpy 1.8.2
+    Uninstalling numpy:
+      Successfully uninstalled numpy
+  Running setup.py install for numpy
+    Running from numpy source directory.
+    
+    Note: if you need reliable uninstall behavior, then install
+    with pip instead of using `setup.py install`:
+    
+      - `pip install .`       (from a git repo or downloaded source
+                               release)
+      - `pip install numpy`   (last NumPy release on PyPi)
+    
+    
+    blas_opt_info:
+    blas_mkl_info:
+      libraries mkl_rt not found in ['/usr/local/lib64', '/usr/local/lib', '/usr/lib64', '/usr/lib', '/usr/lib/']
+      NOT AVAILABLE
+    
+    blis_info:
+      libraries blis not found in ['/usr/local/lib64', '/usr/local/lib', '/usr/lib64', '/usr/lib', '/usr/lib/']
+      NOT AVAILABLE
+    
+    openblas_info:
+      libraries openblas not found in ['/usr/local/lib64', '/usr/local/lib', '/usr/lib64', '/usr/lib', '/usr/lib/']
+      NOT AVAILABLE
+    
+    atlas_3_10_blas_threads_info:
+    Setting PTATLAS=ATLAS
+      libraries tatlas not found in ['/usr/local/lib64', '/usr/local/lib', '/usr/lib64/atlas', '/usr/lib64/sse2', '/usr/lib64', '/usr/lib/sse2', '/usr/lib', '/usr/lib/sse2', '/usr/lib/']
+      NOT AVAILABLE
+    
+    atlas_3_10_blas_info:
+      libraries satlas not found in ['/usr/local/lib64', '/usr/local/lib', '/usr/lib64/atlas', '/usr/lib64/sse2', '/usr/lib64', '/usr/lib/sse2', '/usr/lib', '/usr/lib/sse2', '/usr/lib/']
+      NOT AVAILABLE
+    
+    atlas_blas_threads_info:
+    Setting PTATLAS=ATLAS
+      libraries ptf77blas,ptcblas,atlas not found in ['/usr/local/lib64', '/usr/local/lib', '/usr/lib64/atlas', '/usr/lib64/sse2', '/usr/lib64', '/usr/lib/sse2', '/usr/lib', '/usr/lib/sse2', '/usr/lib/']
+      NOT AVAILABLE
+    
+    atlas_blas_info:
+      libraries f77blas,cblas,atlas not found in ['/usr/local/lib64', '/usr/local/lib', '/usr/lib64/atlas', '/usr/lib64/sse2', '/usr/lib64', '/usr/lib/sse2', '/usr/lib', '/usr/lib/sse2', '/usr/lib/']
+      NOT AVAILABLE
+    
+    /tmp/pip_build_root/numpy/numpy/distutils/system_info.py:572: UserWarning:
+        Atlas (http://math-atlas.sourceforge.net/) libraries not found.
+        Directories to search for the libraries can be specified in the
+        numpy/distutils/site.cfg file (section [atlas]) or by setting
+        the ATLAS environment variable.
+      self.calc_info()
+    blas_info:
+      libraries blas not found in ['/usr/local/lib64', '/usr/local/lib', '/usr/lib64', '/usr/lib', '/usr/lib/']
+      NOT AVAILABLE
+    
+    /tmp/pip_build_root/numpy/numpy/distutils/system_info.py:572: UserWarning:
+        Blas (http://www.netlib.org/blas/) libraries not found.
+        Directories to search for the libraries can be specified in the
+        numpy/distutils/site.cfg file (section [blas]) or by setting
+        the BLAS environment variable.
+      self.calc_info()
+    blas_src_info:
+      NOT AVAILABLE
+    
+    /tmp/pip_build_root/numpy/numpy/distutils/system_info.py:572: UserWarning:
+        Blas (http://www.netlib.org/blas/) sources not found.
+        Directories to search for the sources can be specified in the
+        numpy/distutils/site.cfg file (section [blas_src]) or by setting
+        the BLAS_SRC environment variable.
+      self.calc_info()
+      NOT AVAILABLE
+    
+    /bin/sh: svnversion: 未找到命令
+    /bin/sh: svnversion: 未找到命令
+    non-existing path in 'numpy/distutils': 'site.cfg'
+    F2PY Version 2
+    lapack_opt_info:
+    lapack_mkl_info:
+      libraries mkl_rt not found in ['/usr/local/lib64', '/usr/local/lib', '/usr/lib64', '/usr/lib', '/usr/lib/']
+      NOT AVAILABLE
+    
+    openblas_lapack_info:
+      libraries openblas not found in ['/usr/local/lib64', '/usr/local/lib', '/usr/lib64', '/usr/lib', '/usr/lib/']
+      NOT AVAILABLE
+    
+    atlas_3_10_threads_info:
+    Setting PTATLAS=ATLAS
+      libraries tatlas,tatlas not found in /usr/local/lib64
+      libraries lapack_atlas not found in /usr/local/lib64
+      libraries tatlas,tatlas not found in /usr/local/lib
+      libraries lapack_atlas not found in /usr/local/lib
+      libraries tatlas,tatlas not found in /usr/lib64/atlas
+      libraries lapack_atlas not found in /usr/lib64/atlas
+      libraries tatlas,tatlas not found in /usr/lib64/sse2
+      libraries lapack_atlas not found in /usr/lib64/sse2
+      libraries tatlas,tatlas not found in /usr/lib64
+      libraries lapack_atlas not found in /usr/lib64
+      libraries tatlas,tatlas not found in /usr/lib/sse2
+      libraries lapack_atlas not found in /usr/lib/sse2
+      libraries tatlas,tatlas not found in /usr/lib
+      libraries lapack_atlas not found in /usr/lib
+      libraries tatlas,tatlas not found in /usr/lib/sse2
+      libraries lapack_atlas not found in /usr/lib/sse2
+      libraries tatlas,tatlas not found in /usr/lib/
+      libraries lapack_atlas not found in /usr/lib/
+    <class 'numpy.distutils.system_info.atlas_3_10_threads_info'>
+      NOT AVAILABLE
+    
+    atlas_3_10_info:
+      libraries satlas,satlas not found in /usr/local/lib64
+      libraries lapack_atlas not found in /usr/local/lib64
+      libraries satlas,satlas not found in /usr/local/lib
+      libraries lapack_atlas not found in /usr/local/lib
+      libraries satlas,satlas not found in /usr/lib64/atlas
+      libraries lapack_atlas not found in /usr/lib64/atlas
+      libraries satlas,satlas not found in /usr/lib64/sse2
+      libraries lapack_atlas not found in /usr/lib64/sse2
+      libraries satlas,satlas not found in /usr/lib64
+      libraries lapack_atlas not found in /usr/lib64
+      libraries satlas,satlas not found in /usr/lib/sse2
+      libraries lapack_atlas not found in /usr/lib/sse2
+      libraries satlas,satlas not found in /usr/lib
+      libraries lapack_atlas not found in /usr/lib
+      libraries satlas,satlas not found in /usr/lib/sse2
+      libraries lapack_atlas not found in /usr/lib/sse2
+      libraries satlas,satlas not found in /usr/lib/
+      libraries lapack_atlas not found in /usr/lib/
+    <class 'numpy.distutils.system_info.atlas_3_10_info'>
+      NOT AVAILABLE
+    
+    atlas_threads_info:
+    Setting PTATLAS=ATLAS
+      libraries ptf77blas,ptcblas,atlas not found in /usr/local/lib64
+      libraries lapack_atlas not found in /usr/local/lib64
+      libraries ptf77blas,ptcblas,atlas not found in /usr/local/lib
+      libraries lapack_atlas not found in /usr/local/lib
+      libraries ptf77blas,ptcblas,atlas not found in /usr/lib64/atlas
+      libraries lapack_atlas not found in /usr/lib64/atlas
+      libraries ptf77blas,ptcblas,atlas not found in /usr/lib64/sse2
+      libraries lapack_atlas not found in /usr/lib64/sse2
+      libraries ptf77blas,ptcblas,atlas not found in /usr/lib64
+      libraries lapack_atlas not found in /usr/lib64
+      libraries ptf77blas,ptcblas,atlas not found in /usr/lib/sse2
+      libraries lapack_atlas not found in /usr/lib/sse2
+      libraries ptf77blas,ptcblas,atlas not found in /usr/lib
+      libraries lapack_atlas not found in /usr/lib
+      libraries ptf77blas,ptcblas,atlas not found in /usr/lib/sse2
+      libraries lapack_atlas not found in /usr/lib/sse2
+      libraries ptf77blas,ptcblas,atlas not found in /usr/lib/
+      libraries lapack_atlas not found in /usr/lib/
+    <class 'numpy.distutils.system_info.atlas_threads_info'>
+      NOT AVAILABLE
+    
+    atlas_info:
+      libraries f77blas,cblas,atlas not found in /usr/local/lib64
+      libraries lapack_atlas not found in /usr/local/lib64
+      libraries f77blas,cblas,atlas not found in /usr/local/lib
+      libraries lapack_atlas not found in /usr/local/lib
+      libraries f77blas,cblas,atlas not found in /usr/lib64/atlas
+      libraries lapack_atlas not found in /usr/lib64/atlas
+      libraries f77blas,cblas,atlas not found in /usr/lib64/sse2
+      libraries lapack_atlas not found in /usr/lib64/sse2
+      libraries f77blas,cblas,atlas not found in /usr/lib64
+      libraries lapack_atlas not found in /usr/lib64
+      libraries f77blas,cblas,atlas not found in /usr/lib/sse2
+      libraries lapack_atlas not found in /usr/lib/sse2
+      libraries f77blas,cblas,atlas not found in /usr/lib
+      libraries lapack_atlas not found in /usr/lib
+      libraries f77blas,cblas,atlas not found in /usr/lib/sse2
+      libraries lapack_atlas not found in /usr/lib/sse2
+      libraries f77blas,cblas,atlas not found in /usr/lib/
+      libraries lapack_atlas not found in /usr/lib/
+    <class 'numpy.distutils.system_info.atlas_info'>
+      NOT AVAILABLE
+    
+    lapack_info:
+      libraries lapack not found in ['/usr/local/lib64', '/usr/local/lib', '/usr/lib64', '/usr/lib', '/usr/lib/']
+      NOT AVAILABLE
+    
+    /tmp/pip_build_root/numpy/numpy/distutils/system_info.py:572: UserWarning:
+        Lapack (http://www.netlib.org/lapack/) libraries not found.
+        Directories to search for the libraries can be specified in the
+        numpy/distutils/site.cfg file (section [lapack]) or by setting
+        the LAPACK environment variable.
+      self.calc_info()
+    lapack_src_info:
+      NOT AVAILABLE
+    
+    /tmp/pip_build_root/numpy/numpy/distutils/system_info.py:572: UserWarning:
+        Lapack (http://www.netlib.org/lapack/) sources not found.
+        Directories to search for the sources can be specified in the
+        numpy/distutils/site.cfg file (section [lapack_src]) or by setting
+        the LAPACK_SRC environment variable.
+      self.calc_info()
+      NOT AVAILABLE
+    
+    /usr/lib64/python2.7/distutils/dist.py:267: UserWarning: Unknown distribution option: 'define_macros'
+      warnings.warn(msg)
+    unifing config_cc, config, build_clib, build_ext, build commands --compiler options
+    unifing config_fc, config, build_clib, build_ext, build commands --fcompiler options
+    build_src
+    building py_modules sources
+    building library "npymath" sources
+    customize Gnu95FCompiler
+    Could not locate executable gfortran
+    Could not locate executable f95
+    customize IntelFCompiler
+    Could not locate executable ifort
+    Could not locate executable ifc
+    customize LaheyFCompiler
+    Could not locate executable lf95
+    customize PGroupFCompiler
+    Could not locate executable pgfortran
+    customize AbsoftFCompiler
+    Could not locate executable f90
+    Could not locate executable f77
+    customize NAGFCompiler
+    customize VastFCompiler
+    customize CompaqFCompiler
+    Could not locate executable fort
+    customize IntelItaniumFCompiler
+    Could not locate executable efort
+    Could not locate executable efc
+    customize IntelEM64TFCompiler
+    customize GnuFCompiler
+    Could not locate executable g77
+    customize G95FCompiler
+    Could not locate executable g95
+    customize PathScaleFCompiler
+    Could not locate executable pathf95
+    don't know how to compile Fortran code on platform 'posix'
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    gcc -O3 -g -march=loongson3a -mabi=64 -pthread _configtest.o -o _configtest
+    success!
+    removing: _configtest.c _configtest.o _configtest
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    _configtest.c:1:5: 警告：与内建函数‘exp’类型冲突
+     int exp (void);
+         ^
+    gcc -O3 -g -march=loongson3a -mabi=64 -pthread _configtest.o -o _configtest
+    _configtest.o：在函数‘main’中：
+    /tmp/pip_build_root/numpy/_configtest.c:6：对‘exp’未定义的引用
+    /tmp/pip_build_root/numpy/_configtest.c:6：对‘exp’未定义的引用
+    collect2: 错误：ld 返回 1
+    _configtest.o：在函数‘main’中：
+    /tmp/pip_build_root/numpy/_configtest.c:6：对‘exp’未定义的引用
+    /tmp/pip_build_root/numpy/_configtest.c:6：对‘exp’未定义的引用
+    collect2: 错误：ld 返回 1
+    failure.
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    _configtest.c:1:5: 警告：与内建函数‘exp’类型冲突
+     int exp (void);
+         ^
+    gcc -O3 -g -march=loongson3a -mabi=64 -pthread _configtest.o -lm -o _configtest
+    success!
+    removing: _configtest.c _configtest.o _configtest
+    conv_template:> build/src.linux-mips64-2.7/numpy/core/src/npymath/npy_math.c
+    conv_template:> build/src.linux-mips64-2.7/numpy/core/src/npymath/ieee754.c
+    conv_template:> build/src.linux-mips64-2.7/numpy/core/src/npymath/npy_math_complex.c
+    building library "npysort" sources
+    conv_template:> build/src.linux-mips64-2.7/numpy/core/src/npysort/quicksort.c
+    conv_template:> build/src.linux-mips64-2.7/numpy/core/src/npysort/mergesort.c
+    conv_template:> build/src.linux-mips64-2.7/numpy/core/src/npysort/heapsort.c
+    conv_template:> build/src.linux-mips64-2.7/numpy/core/src/private/npy_partition.h
+      adding 'build/src.linux-mips64-2.7/numpy/core/src/private' to include_dirs.
+    conv_template:> build/src.linux-mips64-2.7/numpy/core/src/npysort/selection.c
+    conv_template:> build/src.linux-mips64-2.7/numpy/core/src/private/npy_binsearch.h
+    conv_template:> build/src.linux-mips64-2.7/numpy/core/src/npysort/binsearch.c
+    None - nothing done with h_files = ['build/src.linux-mips64-2.7/numpy/core/src/private/npy_partition.h', 'build/src.linux-mips64-2.7/numpy/core/src/private/npy_binsearch.h']
+    building extension "numpy.core._dummy" sources
+    Generating build/src.linux-mips64-2.7/numpy/core/include/numpy/config.h
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    _configtest.c:1:24: 致命错误：sys/endian.h：没有那个文件或目录
+     #include <sys/endian.h>
+                            ^
+    编译中断。
+    _configtest.c:1:24: 致命错误：sys/endian.h：没有那个文件或目录
+     #include <sys/endian.h>
+                            ^
+    编译中断。
+    failure.
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    _configtest.c: 在函数‘main’中:
+    _configtest.c:7:12: 错误：‘SIZEOF_LONGDOUBLE’未声明(在此函数内第一次使用)
+         (void) SIZEOF_LONGDOUBLE;
+                ^
+    _configtest.c:7:12: 附注：每个未声明的标识符在其出现的函数内只报告一次
+    _configtest.c: 在函数‘main’中:
+    _configtest.c:7:12: 错误：‘SIZEOF_LONGDOUBLE’未声明(在此函数内第一次使用)
+         (void) SIZEOF_LONGDOUBLE;
+                ^
+    _configtest.c:7:12: 附注：每个未声明的标识符在其出现的函数内只报告一次
+    failure.
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    _configtest.c:1:5: 警告：与内建函数‘exp’类型冲突
+     int exp (void);
+         ^
+    gcc -O3 -g -march=loongson3a -mabi=64 -pthread _configtest.o -o _configtest
+    _configtest.o：在函数‘main’中：
+    /tmp/pip_build_root/numpy/_configtest.c:6：对‘exp’未定义的引用
+    /tmp/pip_build_root/numpy/_configtest.c:6：对‘exp’未定义的引用
+    collect2: 错误：ld 返回 1
+    _configtest.o：在函数‘main’中：
+    /tmp/pip_build_root/numpy/_configtest.c:6：对‘exp’未定义的引用
+    /tmp/pip_build_root/numpy/_configtest.c:6：对‘exp’未定义的引用
+    collect2: 错误：ld 返回 1
+    failure.
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    _configtest.c:1:5: 警告：与内建函数‘exp’类型冲突
+     int exp (void);
+         ^
+    gcc -O3 -g -march=loongson3a -mabi=64 -pthread _configtest.o -lm -o _configtest
+    success!
+    removing: _configtest.c _configtest.o _configtest
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    _configtest.c:1:5: 警告：与内建函数‘asin’类型冲突
+     int asin (void);
+         ^
+    _configtest.c:2:5: 警告：与内建函数‘cos’类型冲突
+     int cos (void);
+         ^
+    _configtest.c:3:5: 警告：与内建函数‘log’类型冲突
+     int log (void);
+         ^
+    _configtest.c:4:5: 警告：与内建函数‘fabs’类型冲突
+     int fabs (void);
+         ^
+    _configtest.c:5:5: 警告：与内建函数‘tanh’类型冲突
+     int tanh (void);
+         ^
+    _configtest.c:6:5: 警告：与内建函数‘atan’类型冲突
+     int atan (void);
+         ^
+    _configtest.c:7:5: 警告：与内建函数‘acos’类型冲突
+     int acos (void);
+         ^
+    _configtest.c:8:5: 警告：与内建函数‘floor’类型冲突
+     int floor (void);
+         ^
+    _configtest.c:9:5: 警告：与内建函数‘fmod’类型冲突
+     int fmod (void);
+         ^
+    _configtest.c:10:5: 警告：与内建函数‘sqrt’类型冲突
+     int sqrt (void);
+         ^
+    _configtest.c:11:5: 警告：与内建函数‘cosh’类型冲突
+     int cosh (void);
+         ^
+    _configtest.c:12:5: 警告：与内建函数‘modf’类型冲突
+     int modf (void);
+         ^
+    _configtest.c:13:5: 警告：与内建函数‘sinh’类型冲突
+     int sinh (void);
+         ^
+    _configtest.c:14:5: 警告：与内建函数‘frexp’类型冲突
+     int frexp (void);
+         ^
+    _configtest.c:15:5: 警告：与内建函数‘exp’类型冲突
+     int exp (void);
+         ^
+    _configtest.c:16:5: 警告：与内建函数‘tan’类型冲突
+     int tan (void);
+         ^
+    _configtest.c:17:5: 警告：与内建函数‘ceil’类型冲突
+     int ceil (void);
+         ^
+    _configtest.c:18:5: 警告：与内建函数‘log10’类型冲突
+     int log10 (void);
+         ^
+    _configtest.c:19:5: 警告：与内建函数‘sin’类型冲突
+     int sin (void);
+         ^
+    _configtest.c:20:5: 警告：与内建函数‘ldexp’类型冲突
+     int ldexp (void);
+         ^
+    gcc -O3 -g -march=loongson3a -mabi=64 -pthread _configtest.o -lm -o _configtest
+    success!
+    removing: _configtest.c _configtest.o _configtest
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    _configtest.c:1:5: 警告：与内建函数‘log2’类型冲突
+     int log2 (void);
+         ^
+    _configtest.c:2:5: 警告：与内建函数‘pow’类型冲突
+     int pow (void);
+         ^
+    _configtest.c:4:5: 警告：与内建函数‘exp2’类型冲突
+     int exp2 (void);
+         ^
+    _configtest.c:5:5: 警告：与内建函数‘atan2’类型冲突
+     int atan2 (void);
+         ^
+    _configtest.c:7:5: 警告：与内建函数‘rint’类型冲突
+     int rint (void);
+         ^
+    _configtest.c:10:5: 警告：与内建函数‘cbrt’类型冲突
+     int cbrt (void);
+         ^
+    _configtest.c:11:5: 警告：与内建函数‘nextafter’类型冲突
+     int nextafter (void);
+         ^
+    _configtest.c:12:5: 警告：与内建函数‘trunc’类型冲突
+     int trunc (void);
+         ^
+    gcc -O3 -g -march=loongson3a -mabi=64 -pthread _configtest.o -lm -o _configtest
+    success!
+    removing: _configtest.c _configtest.o _configtest
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    _configtest.c:1:23: 致命错误：xmmintrin.h：没有那个文件或目录
+     #include <xmmintrin.h>
+                           ^
+    编译中断。
+    _configtest.c:1:23: 致命错误：xmmintrin.h：没有那个文件或目录
+     #include <xmmintrin.h>
+                           ^
+    编译中断。
+    failure.
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    _configtest.c:1:23: 致命错误：emmintrin.h：没有那个文件或目录
+     #include <emmintrin.h>
+                           ^
+    编译中断。
+    _configtest.c:1:23: 致命错误：emmintrin.h：没有那个文件或目录
+     #include <emmintrin.h>
+                           ^
+    编译中断。
+    failure.
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    gcc -O3 -g -march=loongson3a -mabi=64 -pthread _configtest.o -o _configtest
+    success!
+    removing: _configtest.c _configtest.o _configtest
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    gcc -O3 -g -march=loongson3a -mabi=64 -pthread _configtest.o -o _configtest
+    success!
+    removing: _configtest.c _configtest.o _configtest
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    gcc -O3 -g -march=loongson3a -mabi=64 -pthread _configtest.o -o _configtest
+    success!
+    removing: _configtest.c _configtest.o _configtest
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    gcc -O3 -g -march=loongson3a -mabi=64 -pthread _configtest.o -o _configtest
+    success!
+    removing: _configtest.c _configtest.o _configtest
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    gcc -O3 -g -march=loongson3a -mabi=64 -pthread _configtest.o -o _configtest
+    success!
+    removing: _configtest.c _configtest.o _configtest
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    gcc -O3 -g -march=loongson3a -mabi=64 -pthread _configtest.o -o _configtest
+    success!
+    removing: _configtest.c _configtest.o _configtest
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    gcc -O3 -g -march=loongson3a -mabi=64 -pthread _configtest.o -o _configtest
+    success!
+    removing: _configtest.c _configtest.o _configtest
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    gcc -O3 -g -march=loongson3a -mabi=64 -pthread _configtest.o -o _configtest
+    _configtest.o：在函数‘main’中：
+    /tmp/pip_build_root/numpy/_configtest.c:5：对‘__builtin_mul_overflow’未定义的引用
+    /tmp/pip_build_root/numpy/_configtest.c:5：对‘__builtin_mul_overflow’未定义的引用
+    collect2: 错误：ld 返回 1
+    _configtest.o：在函数‘main’中：
+    /tmp/pip_build_root/numpy/_configtest.c:5：对‘__builtin_mul_overflow’未定义的引用
+    /tmp/pip_build_root/numpy/_configtest.c:5：对‘__builtin_mul_overflow’未定义的引用
+    collect2: 错误：ld 返回 1
+    failure.
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    gcc -O3 -g -march=loongson3a -mabi=64 -pthread _configtest.o -o _configtest
+    _configtest.o：在函数‘main’中：
+    /tmp/pip_build_root/numpy/_configtest.c:7：对‘__builtin_cpu_supports’未定义的引用
+    /tmp/pip_build_root/numpy/_configtest.c:7：对‘__builtin_cpu_supports’未定义的引用
+    collect2: 错误：ld 返回 1
+    _configtest.o：在函数‘main’中：
+    /tmp/pip_build_root/numpy/_configtest.c:7：对‘__builtin_cpu_supports’未定义的引用
+    /tmp/pip_build_root/numpy/_configtest.c:7：对‘__builtin_cpu_supports’未定义的引用
+    collect2: 错误：ld 返回 1
+    failure.
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    _configtest.c:1:23: 致命错误：xmmintrin.h：没有那个文件或目录
+     #include <xmmintrin.h>
+                           ^
+    编译中断。
+    _configtest.c:1:23: 致命错误：xmmintrin.h：没有那个文件或目录
+     #include <xmmintrin.h>
+                           ^
+    编译中断。
+    failure.
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    _configtest.c:1:23: 致命错误：xmmintrin.h：没有那个文件或目录
+     #include <xmmintrin.h>
+                           ^
+    编译中断。
+    _configtest.c:1:23: 致命错误：xmmintrin.h：没有那个文件或目录
+     #include <xmmintrin.h>
+                           ^
+    编译中断。
+    failure.
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    _configtest.c:1:23: 致命错误：emmintrin.h：没有那个文件或目录
+     #include <emmintrin.h>
+                           ^
+    编译中断。
+    _configtest.c:1:23: 致命错误：emmintrin.h：没有那个文件或目录
+     #include <emmintrin.h>
+                           ^
+    编译中断。
+    failure.
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    gcc -O3 -g -march=loongson3a -mabi=64 -pthread _configtest.o -o _configtest
+    success!
+    removing: _configtest.c _configtest.o _configtest
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    /tmp/ccKqSz0q.s: Assembler messages:
+    /tmp/ccKqSz0q.s:28: Error: unrecognized opcode `vpand %xmm1,%xmm2,%xmm3'
+    /tmp/ccKqSz0q.s: Assembler messages:
+    /tmp/ccKqSz0q.s:28: Error: unrecognized opcode `vpand %xmm1,%xmm2,%xmm3'
+    failure.
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    /tmp/ccaBgkkw.s: Assembler messages:
+    /tmp/ccaBgkkw.s:28: Error: unrecognized opcode `vpand %ymm1,%ymm2,%ymm3'
+    /tmp/ccaBgkkw.s: Assembler messages:
+    /tmp/ccaBgkkw.s:28: Error: unrecognized opcode `vpand %ymm1,%ymm2,%ymm3'
+    failure.
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    _configtest.c:5:1: 错误：target 属性在此目标机上不受支持 [-Werror=attributes]
+     int __attribute__((target ("avx"))) attribute_target_avx(void*);
+     ^
+    cc1: some warnings being treated as errors
+    _configtest.c:5:1: 错误：target 属性在此目标机上不受支持 [-Werror=attributes]
+     int __attribute__((target ("avx"))) attribute_target_avx(void*);
+     ^
+    cc1: some warnings being treated as errors
+    failure.
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    _configtest.c:5:1: 错误：target 属性在此目标机上不受支持 [-Werror=attributes]
+     int __attribute__((target ("avx2"))) attribute_target_avx2(void*);
+     ^
+    cc1: some warnings being treated as errors
+    _configtest.c:5:1: 错误：target 属性在此目标机上不受支持 [-Werror=attributes]
+     int __attribute__((target ("avx2"))) attribute_target_avx2(void*);
+     ^
+    cc1: some warnings being treated as errors
+    failure.
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    _configtest.c: 在函数‘__declspec’中:
+    _configtest.c:5:24: 错误：expected declaration specifiers before ‘foo’
+     int __declspec(thread) foo;
+                            ^
+    _configtest.c:9:1: 错误：expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+     {
+     ^
+    _configtest.c:11:1: 错误：expected ‘{’ at end of input
+     }
+     ^
+    _configtest.c: 在函数‘__declspec’中:
+    _configtest.c:5:24: 错误：expected declaration specifiers before ‘foo’
+     int __declspec(thread) foo;
+                            ^
+    _configtest.c:9:1: 错误：expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+     {
+     ^
+    _configtest.c:11:1: 错误：expected ‘{’ at end of input
+     }
+     ^
+    failure.
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    _configtest.c:1:5: 警告：与内建函数‘cosf’类型冲突
+     int cosf (void);
+         ^
+    _configtest.c:2:5: 警告：与内建函数‘coshf’类型冲突
+     int coshf (void);
+         ^
+    _configtest.c:3:5: 警告：与内建函数‘rintf’类型冲突
+     int rintf (void);
+         ^
+    _configtest.c:4:5: 警告：与内建函数‘fabsf’类型冲突
+     int fabsf (void);
+         ^
+    _configtest.c:5:5: 警告：与内建函数‘floorf’类型冲突
+     int floorf (void);
+         ^
+    _configtest.c:6:5: 警告：与内建函数‘nextafterf’类型冲突
+     int nextafterf (void);
+         ^
+    _configtest.c:7:5: 警告：与内建函数‘tanhf’类型冲突
+     int tanhf (void);
+         ^
+    _configtest.c:8:5: 警告：与内建函数‘log10f’类型冲突
+     int log10f (void);
+         ^
+    _configtest.c:9:5: 警告：与内建函数‘logf’类型冲突
+     int logf (void);
+         ^
+    _configtest.c:10:5: 警告：与内建函数‘sinhf’类型冲突
+     int sinhf (void);
+         ^
+    _configtest.c:11:5: 警告：与内建函数‘acosf’类型冲突
+     int acosf (void);
+         ^
+    _configtest.c:12:5: 警告：与内建函数‘sqrtf’类型冲突
+     int sqrtf (void);
+         ^
+    _configtest.c:13:5: 警告：与内建函数‘ldexpf’类型冲突
+     int ldexpf (void);
+         ^
+    _configtest.c:14:5: 警告：与内建函数‘hypotf’类型冲突
+     int hypotf (void);
+         ^
+    _configtest.c:15:5: 警告：与内建函数‘log2f’类型冲突
+     int log2f (void);
+         ^
+    _configtest.c:16:5: 警告：与内建函数‘exp2f’类型冲突
+     int exp2f (void);
+         ^
+    _configtest.c:17:5: 警告：与内建函数‘atanf’类型冲突
+     int atanf (void);
+         ^
+    _configtest.c:18:5: 警告：与内建函数‘fmodf’类型冲突
+     int fmodf (void);
+         ^
+    _configtest.c:19:5: 警告：与内建函数‘atan2f’类型冲突
+     int atan2f (void);
+         ^
+    _configtest.c:20:5: 警告：与内建函数‘cbrtf’类型冲突
+     int cbrtf (void);
+         ^
+    _configtest.c:21:5: 警告：与内建函数‘modff’类型冲突
+     int modff (void);
+         ^
+    _configtest.c:22:5: 警告：与内建函数‘ceilf’类型冲突
+     int ceilf (void);
+         ^
+    _configtest.c:23:5: 警告：与内建函数‘log1pf’类型冲突
+     int log1pf (void);
+         ^
+    _configtest.c:24:5: 警告：与内建函数‘asinf’类型冲突
+     int asinf (void);
+         ^
+    _configtest.c:25:5: 警告：与内建函数‘copysignf’类型冲突
+     int copysignf (void);
+         ^
+    _configtest.c:26:5: 警告：与内建函数‘acoshf’类型冲突
+     int acoshf (void);
+         ^
+    _configtest.c:27:5: 警告：与内建函数‘sinf’类型冲突
+     int sinf (void);
+         ^
+    _configtest.c:28:5: 警告：与内建函数‘tanf’类型冲突
+     int tanf (void);
+         ^
+    _configtest.c:29:5: 警告：与内建函数‘atanhf’类型冲突
+     int atanhf (void);
+         ^
+    _configtest.c:30:5: 警告：与内建函数‘truncf’类型冲突
+     int truncf (void);
+         ^
+    _configtest.c:31:5: 警告：与内建函数‘asinhf’类型冲突
+     int asinhf (void);
+         ^
+    _configtest.c:32:5: 警告：与内建函数‘frexpf’类型冲突
+     int frexpf (void);
+         ^
+    _configtest.c:33:5: 警告：与内建函数‘powf’类型冲突
+     int powf (void);
+         ^
+    _configtest.c:34:5: 警告：与内建函数‘expf’类型冲突
+     int expf (void);
+         ^
+    _configtest.c:35:5: 警告：与内建函数‘expm1f’类型冲突
+     int expm1f (void);
+         ^
+    gcc -O3 -g -march=loongson3a -mabi=64 -pthread _configtest.o -lm -o _configtest
+    success!
+    removing: _configtest.c _configtest.o _configtest
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    _configtest.c:1:5: 警告：与内建函数‘tanhl’类型冲突
+     int tanhl (void);
+         ^
+    _configtest.c:2:5: 警告：与内建函数‘log10l’类型冲突
+     int log10l (void);
+         ^
+    _configtest.c:3:5: 警告：与内建函数‘nextafterl’类型冲突
+     int nextafterl (void);
+         ^
+    _configtest.c:4:5: 警告：与内建函数‘coshl’类型冲突
+     int coshl (void);
+         ^
+    _configtest.c:5:5: 警告：与内建函数‘cosl’类型冲突
+     int cosl (void);
+         ^
+    _configtest.c:6:5: 警告：与内建函数‘floorl’类型冲突
+     int floorl (void);
+         ^
+    _configtest.c:7:5: 警告：与内建函数‘rintl’类型冲突
+     int rintl (void);
+         ^
+    _configtest.c:8:5: 警告：与内建函数‘fabsl’类型冲突
+     int fabsl (void);
+         ^
+    _configtest.c:9:5: 警告：与内建函数‘acosl’类型冲突
+     int acosl (void);
+         ^
+    _configtest.c:10:5: 警告：与内建函数‘ldexpl’类型冲突
+     int ldexpl (void);
+         ^
+    _configtest.c:11:5: 警告：与内建函数‘sqrtl’类型冲突
+     int sqrtl (void);
+         ^
+    _configtest.c:12:5: 警告：与内建函数‘logl’类型冲突
+     int logl (void);
+         ^
+    _configtest.c:13:5: 警告：与内建函数‘expm1l’类型冲突
+     int expm1l (void);
+         ^
+    _configtest.c:14:5: 警告：与内建函数‘hypotl’类型冲突
+     int hypotl (void);
+         ^
+    _configtest.c:15:5: 警告：与内建函数‘log2l’类型冲突
+     int log2l (void);
+         ^
+    _configtest.c:16:5: 警告：与内建函数‘copysignl’类型冲突
+     int copysignl (void);
+         ^
+    _configtest.c:17:5: 警告：与内建函数‘exp2l’类型冲突
+     int exp2l (void);
+         ^
+    _configtest.c:18:5: 警告：与内建函数‘atanl’类型冲突
+     int atanl (void);
+         ^
+    _configtest.c:19:5: 警告：与内建函数‘frexpl’类型冲突
+     int frexpl (void);
+         ^
+    _configtest.c:20:5: 警告：与内建函数‘atan2l’类型冲突
+     int atan2l (void);
+         ^
+    _configtest.c:21:5: 警告：与内建函数‘sinhl’类型冲突
+     int sinhl (void);
+         ^
+    _configtest.c:22:5: 警告：与内建函数‘fmodl’类型冲突
+     int fmodl (void);
+         ^
+    _configtest.c:23:5: 警告：与内建函数‘log1pl’类型冲突
+     int log1pl (void);
+         ^
+    _configtest.c:24:5: 警告：与内建函数‘asinl’类型冲突
+     int asinl (void);
+         ^
+    _configtest.c:25:5: 警告：与内建函数‘ceill’类型冲突
+     int ceill (void);
+         ^
+    _configtest.c:26:5: 警告：与内建函数‘sinl’类型冲突
+     int sinl (void);
+         ^
+    _configtest.c:27:5: 警告：与内建函数‘cbrtl’类型冲突
+     int cbrtl (void);
+         ^
+    _configtest.c:28:5: 警告：与内建函数‘acoshl’类型冲突
+     int acoshl (void);
+         ^
+    _configtest.c:29:5: 警告：与内建函数‘atanhl’类型冲突
+     int atanhl (void);
+         ^
+    _configtest.c:30:5: 警告：与内建函数‘tanl’类型冲突
+     int tanl (void);
+         ^
+    _configtest.c:31:5: 警告：与内建函数‘truncl’类型冲突
+     int truncl (void);
+         ^
+    _configtest.c:32:5: 警告：与内建函数‘powl’类型冲突
+     int powl (void);
+         ^
+    _configtest.c:33:5: 警告：与内建函数‘expl’类型冲突
+     int expl (void);
+         ^
+    _configtest.c:34:5: 警告：与内建函数‘modfl’类型冲突
+     int modfl (void);
+         ^
+    _configtest.c:35:5: 警告：与内建函数‘asinhl’类型冲突
+     int asinhl (void);
+         ^
+    gcc -O3 -g -march=loongson3a -mabi=64 -pthread _configtest.o -lm -o _configtest
+    success!
+    removing: _configtest.c _configtest.o _configtest
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    _configtest.c: 在函数‘main’中:
+    _configtest.c:8:12: 错误：‘HAVE_DECL_SIGNBIT’未声明(在此函数内第一次使用)
+         (void) HAVE_DECL_SIGNBIT;
+                ^
+    _configtest.c:8:12: 附注：每个未声明的标识符在其出现的函数内只报告一次
+    _configtest.c: 在函数‘main’中:
+    _configtest.c:8:12: 错误：‘HAVE_DECL_SIGNBIT’未声明(在此函数内第一次使用)
+         (void) HAVE_DECL_SIGNBIT;
+                ^
+    _configtest.c:8:12: 附注：每个未声明的标识符在其出现的函数内只报告一次
+    failure.
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    _configtest.c:1:5: 警告：与内建函数‘clog’类型冲突
+     int clog (void);
+         ^
+    _configtest.c:2:5: 警告：与内建函数‘ctan’类型冲突
+     int ctan (void);
+         ^
+    _configtest.c:3:5: 警告：与内建函数‘casinh’类型冲突
+     int casinh (void);
+         ^
+    _configtest.c:4:5: 警告：与内建函数‘cacosh’类型冲突
+     int cacosh (void);
+         ^
+    _configtest.c:5:5: 警告：与内建函数‘cabs’类型冲突
+     int cabs (void);
+         ^
+    _configtest.c:6:5: 警告：与内建函数‘conj’类型冲突
+     int conj (void);
+         ^
+    _configtest.c:7:5: 警告：与内建函数‘csqrt’类型冲突
+     int csqrt (void);
+         ^
+    _configtest.c:8:5: 警告：与内建函数‘creal’类型冲突
+     int creal (void);
+         ^
+    _configtest.c:9:5: 警告：与内建函数‘cproj’类型冲突
+     int cproj (void);
+         ^
+    _configtest.c:10:5: 警告：与内建函数‘cpow’类型冲突
+     int cpow (void);
+         ^
+    _configtest.c:11:5: 警告：与内建函数‘csinh’类型冲突
+     int csinh (void);
+         ^
+    _configtest.c:12:5: 警告：与内建函数‘catan’类型冲突
+     int catan (void);
+         ^
+    _configtest.c:13:5: 警告：与内建函数‘ctanh’类型冲突
+     int ctanh (void);
+         ^
+    _configtest.c:14:5: 警告：与内建函数‘ccosh’类型冲突
+     int ccosh (void);
+         ^
+    _configtest.c:15:5: 警告：与内建函数‘cimag’类型冲突
+     int cimag (void);
+         ^
+    _configtest.c:16:5: 警告：与内建函数‘casin’类型冲突
+     int casin (void);
+         ^
+    _configtest.c:17:5: 警告：与内建函数‘carg’类型冲突
+     int carg (void);
+         ^
+    _configtest.c:18:5: 警告：与内建函数‘csin’类型冲突
+     int csin (void);
+         ^
+    _configtest.c:19:5: 警告：与内建函数‘cexp’类型冲突
+     int cexp (void);
+         ^
+    _configtest.c:20:5: 警告：与内建函数‘ccos’类型冲突
+     int ccos (void);
+         ^
+    _configtest.c:21:5: 警告：与内建函数‘cacos’类型冲突
+     int cacos (void);
+         ^
+    _configtest.c:22:5: 警告：与内建函数‘catanh’类型冲突
+     int catanh (void);
+         ^
+    gcc -O3 -g -march=loongson3a -mabi=64 -pthread _configtest.o -lm -o _configtest
+    success!
+    removing: _configtest.c _configtest.o _configtest
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    _configtest.c:1:5: 警告：与内建函数‘ctanhf’类型冲突
+     int ctanhf (void);
+         ^
+    _configtest.c:2:5: 警告：与内建函数‘csinhf’类型冲突
+     int csinhf (void);
+         ^
+    _configtest.c:3:5: 警告：与内建函数‘cprojf’类型冲突
+     int cprojf (void);
+         ^
+    _configtest.c:4:5: 警告：与内建函数‘cacoshf’类型冲突
+     int cacoshf (void);
+         ^
+    _configtest.c:5:5: 警告：与内建函数‘cacosf’类型冲突
+     int cacosf (void);
+         ^
+    _configtest.c:6:5: 警告：与内建函数‘cargf’类型冲突
+     int cargf (void);
+         ^
+    _configtest.c:7:5: 警告：与内建函数‘cpowf’类型冲突
+     int cpowf (void);
+         ^
+    _configtest.c:8:5: 警告：与内建函数‘csinf’类型冲突
+     int csinf (void);
+         ^
+    _configtest.c:9:5: 警告：与内建函数‘clogf’类型冲突
+     int clogf (void);
+         ^
+    _configtest.c:10:5: 警告：与内建函数‘ccoshf’类型冲突
+     int ccoshf (void);
+         ^
+    _configtest.c:11:5: 警告：与内建函数‘conjf’类型冲突
+     int conjf (void);
+         ^
+    _configtest.c:12:5: 警告：与内建函数‘casinhf’类型冲突
+     int casinhf (void);
+         ^
+    _configtest.c:13:5: 警告：与内建函数‘ccosf’类型冲突
+     int ccosf (void);
+         ^
+    _configtest.c:14:5: 警告：与内建函数‘ctanf’类型冲突
+     int ctanf (void);
+         ^
+    _configtest.c:15:5: 警告：与内建函数‘cexpf’类型冲突
+     int cexpf (void);
+         ^
+    _configtest.c:16:5: 警告：与内建函数‘cimagf’类型冲突
+     int cimagf (void);
+         ^
+    _configtest.c:17:5: 警告：与内建函数‘catanhf’类型冲突
+     int catanhf (void);
+         ^
+    _configtest.c:18:5: 警告：与内建函数‘casinf’类型冲突
+     int casinf (void);
+         ^
+    _configtest.c:19:5: 警告：与内建函数‘catanf’类型冲突
+     int catanf (void);
+         ^
+    _configtest.c:20:5: 警告：与内建函数‘csqrtf’类型冲突
+     int csqrtf (void);
+         ^
+    _configtest.c:21:5: 警告：与内建函数‘crealf’类型冲突
+     int crealf (void);
+         ^
+    _configtest.c:22:5: 警告：与内建函数‘cabsf’类型冲突
+     int cabsf (void);
+         ^
+    gcc -O3 -g -march=loongson3a -mabi=64 -pthread _configtest.o -lm -o _configtest
+    success!
+    removing: _configtest.c _configtest.o _configtest
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    _configtest.c:1:5: 警告：与内建函数‘csinhl’类型冲突
+     int csinhl (void);
+         ^
+    _configtest.c:2:5: 警告：与内建函数‘ctanhl’类型冲突
+     int ctanhl (void);
+         ^
+    _configtest.c:3:5: 警告：与内建函数‘cacosl’类型冲突
+     int cacosl (void);
+         ^
+    _configtest.c:4:5: 警告：与内建函数‘cacoshl’类型冲突
+     int cacoshl (void);
+         ^
+    _configtest.c:5:5: 警告：与内建函数‘cprojl’类型冲突
+     int cprojl (void);
+         ^
+    _configtest.c:6:5: 警告：与内建函数‘cargl’类型冲突
+     int cargl (void);
+         ^
+    _configtest.c:7:5: 警告：与内建函数‘ccoshl’类型冲突
+     int ccoshl (void);
+         ^
+    _configtest.c:8:5: 警告：与内建函数‘conjl’类型冲突
+     int conjl (void);
+         ^
+    _configtest.c:9:5: 警告：与内建函数‘csinl’类型冲突
+     int csinl (void);
+         ^
+    _configtest.c:10:5: 警告：与内建函数‘clogl’类型冲突
+     int clogl (void);
+         ^
+    _configtest.c:11:5: 警告：与内建函数‘cexpl’类型冲突
+     int cexpl (void);
+         ^
+    _configtest.c:12:5: 警告：与内建函数‘ccosl’类型冲突
+     int ccosl (void);
+         ^
+    _configtest.c:13:5: 警告：与内建函数‘ctanl’类型冲突
+     int ctanl (void);
+         ^
+    _configtest.c:14:5: 警告：与内建函数‘cpowl’类型冲突
+     int cpowl (void);
+         ^
+    _configtest.c:15:5: 警告：与内建函数‘casinhl’类型冲突
+     int casinhl (void);
+         ^
+    _configtest.c:16:5: 警告：与内建函数‘csqrtl’类型冲突
+     int csqrtl (void);
+         ^
+    _configtest.c:17:5: 警告：与内建函数‘casinl’类型冲突
+     int casinl (void);
+         ^
+    _configtest.c:18:5: 警告：与内建函数‘catanl’类型冲突
+     int catanl (void);
+         ^
+    _configtest.c:19:5: 警告：与内建函数‘catanhl’类型冲突
+     int catanhl (void);
+         ^
+    _configtest.c:20:5: 警告：与内建函数‘creall’类型冲突
+     int creall (void);
+         ^
+    _configtest.c:21:5: 警告：与内建函数‘cabsl’类型冲突
+     int cabsl (void);
+         ^
+    _configtest.c:22:5: 警告：与内建函数‘cimagl’类型冲突
+     int cimagl (void);
+         ^
+    gcc -O3 -g -march=loongson3a -mabi=64 -pthread _configtest.o -lm -o _configtest
+    success!
+    removing: _configtest.c _configtest.o _configtest
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    _configtest.c:2:41: 错误：expected ‘;’, ‘,’ or ‘)’ before ‘a’
+     static int static_func (char * restrict a)
+                                             ^
+    _configtest.c:2:41: 错误：expected ‘;’, ‘,’ or ‘)’ before ‘a’
+     static int static_func (char * restrict a)
+                                             ^
+    failure.
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    removing: _configtest.c _configtest.o
+    File: build/src.linux-mips64-2.7/numpy/core/include/numpy/config.h
+    #define HAVE_ENDIAN_H 1
+    #define SIZEOF_PY_INTPTR_T 8
+    #define SIZEOF_OFF_T 8
+    #define SIZEOF_PY_LONG_LONG 8
+    #define MATHLIB m
+    #define HAVE_SIN 1
+    #define HAVE_COS 1
+    #define HAVE_TAN 1
+    #define HAVE_SINH 1
+    #define HAVE_COSH 1
+    #define HAVE_TANH 1
+    #define HAVE_FABS 1
+    #define HAVE_FLOOR 1
+    #define HAVE_CEIL 1
+    #define HAVE_SQRT 1
+    #define HAVE_LOG10 1
+    #define HAVE_LOG 1
+    #define HAVE_EXP 1
+    #define HAVE_ASIN 1
+    #define HAVE_ACOS 1
+    #define HAVE_ATAN 1
+    #define HAVE_FMOD 1
+    #define HAVE_MODF 1
+    #define HAVE_FREXP 1
+    #define HAVE_LDEXP 1
+    #define HAVE_RINT 1
+    #define HAVE_TRUNC 1
+    #define HAVE_EXP2 1
+    #define HAVE_LOG2 1
+    #define HAVE_ATAN2 1
+    #define HAVE_POW 1
+    #define HAVE_NEXTAFTER 1
+    #define HAVE_STRTOLL 1
+    #define HAVE_STRTOULL 1
+    #define HAVE_CBRT 1
+    #define HAVE_STRTOLD_L 1
+    #define HAVE_FALLOCATE 1
+    #define HAVE_FEATURES_H 1
+    #define HAVE___BUILTIN_ISNAN 1
+    #define HAVE___BUILTIN_ISINF 1
+    #define HAVE___BUILTIN_ISFINITE 1
+    #define HAVE___BUILTIN_BSWAP32 1
+    #define HAVE___BUILTIN_BSWAP64 1
+    #define HAVE___BUILTIN_EXPECT 1
+    #define HAVE___BUILTIN_PREFETCH 1
+    #define HAVE_ATTRIBUTE_OPTIMIZE_UNROLL_LOOPS 1
+    #define HAVE_ATTRIBUTE_OPTIMIZE_OPT_3 1
+    #define HAVE_ATTRIBUTE_NONNULL 1
+    #define HAVE___THREAD 1
+    #define HAVE_SINF 1
+    #define HAVE_COSF 1
+    #define HAVE_TANF 1
+    #define HAVE_SINHF 1
+    #define HAVE_COSHF 1
+    #define HAVE_TANHF 1
+    #define HAVE_FABSF 1
+    #define HAVE_FLOORF 1
+    #define HAVE_CEILF 1
+    #define HAVE_RINTF 1
+    #define HAVE_TRUNCF 1
+    #define HAVE_SQRTF 1
+    #define HAVE_LOG10F 1
+    #define HAVE_LOGF 1
+    #define HAVE_LOG1PF 1
+    #define HAVE_EXPF 1
+    #define HAVE_EXPM1F 1
+    #define HAVE_ASINF 1
+    #define HAVE_ACOSF 1
+    #define HAVE_ATANF 1
+    #define HAVE_ASINHF 1
+    #define HAVE_ACOSHF 1
+    #define HAVE_ATANHF 1
+    #define HAVE_HYPOTF 1
+    #define HAVE_ATAN2F 1
+    #define HAVE_POWF 1
+    #define HAVE_FMODF 1
+    #define HAVE_MODFF 1
+    #define HAVE_FREXPF 1
+    #define HAVE_LDEXPF 1
+    #define HAVE_EXP2F 1
+    #define HAVE_LOG2F 1
+    #define HAVE_COPYSIGNF 1
+    #define HAVE_NEXTAFTERF 1
+    #define HAVE_CBRTF 1
+    #define HAVE_SINL 1
+    #define HAVE_COSL 1
+    #define HAVE_TANL 1
+    #define HAVE_SINHL 1
+    #define HAVE_COSHL 1
+    #define HAVE_TANHL 1
+    #define HAVE_FABSL 1
+    #define HAVE_FLOORL 1
+    #define HAVE_CEILL 1
+    #define HAVE_RINTL 1
+    #define HAVE_TRUNCL 1
+    #define HAVE_SQRTL 1
+    #define HAVE_LOG10L 1
+    #define HAVE_LOGL 1
+    #define HAVE_LOG1PL 1
+    #define HAVE_EXPL 1
+    #define HAVE_EXPM1L 1
+    #define HAVE_ASINL 1
+    #define HAVE_ACOSL 1
+    #define HAVE_ATANL 1
+    #define HAVE_ASINHL 1
+    #define HAVE_ACOSHL 1
+    #define HAVE_ATANHL 1
+    #define HAVE_HYPOTL 1
+    #define HAVE_ATAN2L 1
+    #define HAVE_POWL 1
+    #define HAVE_FMODL 1
+    #define HAVE_MODFL 1
+    #define HAVE_FREXPL 1
+    #define HAVE_LDEXPL 1
+    #define HAVE_EXP2L 1
+    #define HAVE_LOG2L 1
+    #define HAVE_COPYSIGNL 1
+    #define HAVE_NEXTAFTERL 1
+    #define HAVE_CBRTL 1
+    #define HAVE_DECL_SIGNBIT
+    #define HAVE_COMPLEX_H 1
+    #define HAVE_CABS 1
+    #define HAVE_CACOS 1
+    #define HAVE_CACOSH 1
+    #define HAVE_CARG 1
+    #define HAVE_CASIN 1
+    #define HAVE_CASINH 1
+    #define HAVE_CATAN 1
+    #define HAVE_CATANH 1
+    #define HAVE_CCOS 1
+    #define HAVE_CCOSH 1
+    #define HAVE_CEXP 1
+    #define HAVE_CIMAG 1
+    #define HAVE_CLOG 1
+    #define HAVE_CONJ 1
+    #define HAVE_CPOW 1
+    #define HAVE_CPROJ 1
+    #define HAVE_CREAL 1
+    #define HAVE_CSIN 1
+    #define HAVE_CSINH 1
+    #define HAVE_CSQRT 1
+    #define HAVE_CTAN 1
+    #define HAVE_CTANH 1
+    #define HAVE_CABSF 1
+    #define HAVE_CACOSF 1
+    #define HAVE_CACOSHF 1
+    #define HAVE_CARGF 1
+    #define HAVE_CASINF 1
+    #define HAVE_CASINHF 1
+    #define HAVE_CATANF 1
+    #define HAVE_CATANHF 1
+    #define HAVE_CCOSF 1
+    #define HAVE_CCOSHF 1
+    #define HAVE_CEXPF 1
+    #define HAVE_CIMAGF 1
+    #define HAVE_CLOGF 1
+    #define HAVE_CONJF 1
+    #define HAVE_CPOWF 1
+    #define HAVE_CPROJF 1
+    #define HAVE_CREALF 1
+    #define HAVE_CSINF 1
+    #define HAVE_CSINHF 1
+    #define HAVE_CSQRTF 1
+    #define HAVE_CTANF 1
+    #define HAVE_CTANHF 1
+    #define HAVE_CABSL 1
+    #define HAVE_CACOSL 1
+    #define HAVE_CACOSHL 1
+    #define HAVE_CARGL 1
+    #define HAVE_CASINL 1
+    #define HAVE_CASINHL 1
+    #define HAVE_CATANL 1
+    #define HAVE_CATANHL 1
+    #define HAVE_CCOSL 1
+    #define HAVE_CCOSHL 1
+    #define HAVE_CEXPL 1
+    #define HAVE_CIMAGL 1
+    #define HAVE_CLOGL 1
+    #define HAVE_CONJL 1
+    #define HAVE_CPOWL 1
+    #define HAVE_CPROJL 1
+    #define HAVE_CREALL 1
+    #define HAVE_CSINL 1
+    #define HAVE_CSINHL 1
+    #define HAVE_CSQRTL 1
+    #define HAVE_CTANL 1
+    #define HAVE_CTANHL 1
+    #define NPY_RESTRICT __restrict__
+    #define NPY_RELAXED_STRIDES_CHECKING 1
+    #define HAVE_LDOUBLE_IEEE_QUAD_LE 1
+    #ifndef __cplusplus
+    /* #undef inline */
+    #endif
+    
+    #ifndef _NPY_NPY_CONFIG_H_
+    #error config.h should never be included directly, include npy_config.h instead
+    #endif
+    
+    EOF
+      adding 'build/src.linux-mips64-2.7/numpy/core/include/numpy/config.h' to sources.
+    Generating build/src.linux-mips64-2.7/numpy/core/include/numpy/_numpyconfig.h
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    _configtest.c:1:5: 警告：与内建函数‘exp’类型冲突
+     int exp (void);
+         ^
+    gcc -O3 -g -march=loongson3a -mabi=64 -pthread _configtest.o -o _configtest
+    _configtest.o：在函数‘main’中：
+    /tmp/pip_build_root/numpy/_configtest.c:6：对‘exp’未定义的引用
+    /tmp/pip_build_root/numpy/_configtest.c:6：对‘exp’未定义的引用
+    collect2: 错误：ld 返回 1
+    _configtest.o：在函数‘main’中：
+    /tmp/pip_build_root/numpy/_configtest.c:6：对‘exp’未定义的引用
+    /tmp/pip_build_root/numpy/_configtest.c:6：对‘exp’未定义的引用
+    collect2: 错误：ld 返回 1
+    failure.
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    _configtest.c:1:5: 警告：与内建函数‘exp’类型冲突
+     int exp (void);
+         ^
+    gcc -O3 -g -march=loongson3a -mabi=64 -pthread _configtest.o -lm -o _configtest
+    success!
+    removing: _configtest.c _configtest.o _configtest
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -c'
+    gcc: _configtest.c
+    success!
+    removing: _configtest.c _configtest.o
+    File: build/src.linux-mips64-2.7/numpy/core/include/numpy/_numpyconfig.h
+    #define NPY_HAVE_ENDIAN_H 1
+    #define NPY_SIZEOF_SHORT SIZEOF_SHORT
+    #define NPY_SIZEOF_INT SIZEOF_INT
+    #define NPY_SIZEOF_LONG SIZEOF_LONG
+    #define NPY_SIZEOF_FLOAT 4
+    #define NPY_SIZEOF_COMPLEX_FLOAT 8
+    #define NPY_SIZEOF_DOUBLE 8
+    #define NPY_SIZEOF_COMPLEX_DOUBLE 16
+    #define NPY_SIZEOF_LONGDOUBLE 16
+    #define NPY_SIZEOF_COMPLEX_LONGDOUBLE 32
+    #define NPY_SIZEOF_PY_INTPTR_T 8
+    #define NPY_SIZEOF_OFF_T 8
+    #define NPY_SIZEOF_PY_LONG_LONG 8
+    #define NPY_SIZEOF_LONGLONG 8
+    #define NPY_NO_SMP 0
+    #define NPY_HAVE_DECL_ISNAN
+    #define NPY_HAVE_DECL_ISINF
+    #define NPY_HAVE_DECL_ISFINITE
+    #define NPY_HAVE_DECL_SIGNBIT
+    #define NPY_USE_C99_COMPLEX 1
+    #define NPY_HAVE_COMPLEX_DOUBLE 1
+    #define NPY_HAVE_COMPLEX_FLOAT 1
+    #define NPY_HAVE_COMPLEX_LONG_DOUBLE 1
+    #define NPY_RELAXED_STRIDES_CHECKING 1
+    #define NPY_USE_C99_FORMATS 1
+    #define NPY_VISIBILITY_HIDDEN __attribute__((visibility("hidden")))
+    #define NPY_ABI_VERSION 0x01000009
+    #define NPY_API_VERSION 0x0000000A
+    
+    #ifndef __STDC_FORMAT_MACROS
+    #define __STDC_FORMAT_MACROS 1
+    #endif
+    
+    EOF
+      adding 'build/src.linux-mips64-2.7/numpy/core/include/numpy/_numpyconfig.h' to sources.
+    executing numpy/core/code_generators/generate_numpy_api.py
+      adding 'build/src.linux-mips64-2.7/numpy/core/include/numpy/__multiarray_api.h' to sources.
+    numpy.core - nothing done with h_files = ['build/src.linux-mips64-2.7/numpy/core/include/numpy/config.h', 'build/src.linux-mips64-2.7/numpy/core/include/numpy/_numpyconfig.h', 'build/src.linux-mips64-2.7/numpy/core/include/numpy/__multiarray_api.h']
+    building extension "numpy.core.multiarray" sources
+      adding 'build/src.linux-mips64-2.7/numpy/core/include/numpy/config.h' to sources.
+      adding 'build/src.linux-mips64-2.7/numpy/core/include/numpy/_numpyconfig.h' to sources.
+    executing numpy/core/code_generators/generate_numpy_api.py
+      adding 'build/src.linux-mips64-2.7/numpy/core/include/numpy/__multiarray_api.h' to sources.
+    conv_template:> build/src.linux-mips64-2.7/numpy/core/src/multiarray/arraytypes.c
+    conv_template:> build/src.linux-mips64-2.7/numpy/core/src/multiarray/einsum.c
+    conv_template:> build/src.linux-mips64-2.7/numpy/core/src/multiarray/lowlevel_strided_loops.c
+    conv_template:> build/src.linux-mips64-2.7/numpy/core/src/multiarray/nditer_templ.c
+    conv_template:> build/src.linux-mips64-2.7/numpy/core/src/multiarray/scalartypes.c
+    conv_template:> build/src.linux-mips64-2.7/numpy/core/src/private/templ_common.h
+      adding 'build/src.linux-mips64-2.7/numpy/core/src/private' to include_dirs.
+    numpy.core - nothing done with h_files = ['build/src.linux-mips64-2.7/numpy/core/src/private/templ_common.h', 'build/src.linux-mips64-2.7/numpy/core/include/numpy/config.h', 'build/src.linux-mips64-2.7/numpy/core/include/numpy/_numpyconfig.h', 'build/src.linux-mips64-2.7/numpy/core/include/numpy/__multiarray_api.h']
+    building extension "numpy.core.umath" sources
+      adding 'build/src.linux-mips64-2.7/numpy/core/include/numpy/config.h' to sources.
+      adding 'build/src.linux-mips64-2.7/numpy/core/include/numpy/_numpyconfig.h' to sources.
+    executing numpy/core/code_generators/generate_ufunc_api.py
+      adding 'build/src.linux-mips64-2.7/numpy/core/include/numpy/__ufunc_api.h' to sources.
+    conv_template:> build/src.linux-mips64-2.7/numpy/core/src/umath/funcs.inc
+      adding 'build/src.linux-mips64-2.7/numpy/core/src/umath' to include_dirs.
+    conv_template:> build/src.linux-mips64-2.7/numpy/core/src/umath/simd.inc
+    conv_template:> build/src.linux-mips64-2.7/numpy/core/src/umath/loops.h
+    conv_template:> build/src.linux-mips64-2.7/numpy/core/src/umath/loops.c
+    conv_template:> build/src.linux-mips64-2.7/numpy/core/src/umath/scalarmath.c
+    numpy.core - nothing done with h_files = ['build/src.linux-mips64-2.7/numpy/core/src/umath/funcs.inc', 'build/src.linux-mips64-2.7/numpy/core/src/umath/simd.inc', 'build/src.linux-mips64-2.7/numpy/core/src/umath/loops.h', 'build/src.linux-mips64-2.7/numpy/core/include/numpy/config.h', 'build/src.linux-mips64-2.7/numpy/core/include/numpy/_numpyconfig.h', 'build/src.linux-mips64-2.7/numpy/core/include/numpy/__ufunc_api.h']
+    building extension "numpy.core.umath_tests" sources
+    conv_template:> build/src.linux-mips64-2.7/numpy/core/src/umath/umath_tests.c
+    building extension "numpy.core.test_rational" sources
+    conv_template:> build/src.linux-mips64-2.7/numpy/core/src/umath/test_rational.c
+    building extension "numpy.core.struct_ufunc_test" sources
+    conv_template:> build/src.linux-mips64-2.7/numpy/core/src/umath/struct_ufunc_test.c
+    building extension "numpy.core.multiarray_tests" sources
+    conv_template:> build/src.linux-mips64-2.7/numpy/core/src/multiarray/multiarray_tests.c
+    building extension "numpy.core.operand_flag_tests" sources
+    conv_template:> build/src.linux-mips64-2.7/numpy/core/src/umath/operand_flag_tests.c
+    building extension "numpy.fft.fftpack_lite" sources
+    building extension "numpy.linalg.lapack_lite" sources
+    ### Warning:  Using unoptimized lapack ###
+      adding 'numpy/linalg/lapack_lite/python_xerbla.c' to sources.
+      adding 'numpy/linalg/lapack_lite/zlapack_lite.c' to sources.
+      adding 'numpy/linalg/lapack_lite/dlapack_lite.c' to sources.
+      adding 'numpy/linalg/lapack_lite/blas_lite.c' to sources.
+      adding 'numpy/linalg/lapack_lite/dlamch.c' to sources.
+      adding 'numpy/linalg/lapack_lite/f2c_lite.c' to sources.
+    building extension "numpy.linalg._umath_linalg" sources
+    ### Warning:  Using unoptimized lapack ###
+      adding 'numpy/linalg/lapack_lite/python_xerbla.c' to sources.
+      adding 'numpy/linalg/lapack_lite/zlapack_lite.c' to sources.
+      adding 'numpy/linalg/lapack_lite/dlapack_lite.c' to sources.
+      adding 'numpy/linalg/lapack_lite/blas_lite.c' to sources.
+      adding 'numpy/linalg/lapack_lite/dlamch.c' to sources.
+      adding 'numpy/linalg/lapack_lite/f2c_lite.c' to sources.
+    conv_template:> build/src.linux-mips64-2.7/numpy/linalg/umath_linalg.c
+    building extension "numpy.random.mtrand" sources
+    building data_files sources
+    build_src: building npy-pkg config files
+    customize UnixCCompiler
+    customize UnixCCompiler using build_clib
+    building 'npymath' library
+    compiling C sources
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/include -Ibuild/src.linux-mips64-2.7/numpy/core/include/numpy -Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -Ibuild/src.linux-mips64-2.7/numpy/core/src/private -Ibuild/src.linux-mips64-2.7/numpy/core/src/private -Ibuild/src.linux-mips64-2.7/numpy/core/src/private -c'
+    gcc: numpy/core/src/npymath/halffloat.c
+    gcc: build/src.linux-mips64-2.7/numpy/core/src/npymath/npy_math.c
+    gcc: build/src.linux-mips64-2.7/numpy/core/src/npymath/npy_math_complex.c
+    gcc: build/src.linux-mips64-2.7/numpy/core/src/npymath/ieee754.c
+    ar: adding 4 object files to build/temp.linux-mips64-2.7/libnpymath.a
+    building 'npysort' library
+    compiling C sources
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Ibuild/src.linux-mips64-2.7/numpy/core/src/private -Inumpy/core/include -Ibuild/src.linux-mips64-2.7/numpy/core/include/numpy -Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -Ibuild/src.linux-mips64-2.7/numpy/core/src/private -Ibuild/src.linux-mips64-2.7/numpy/core/src/private -Ibuild/src.linux-mips64-2.7/numpy/core/src/private -c'
+    gcc: build/src.linux-mips64-2.7/numpy/core/src/npysort/binsearch.c
+    gcc: build/src.linux-mips64-2.7/numpy/core/src/npysort/heapsort.c
+    gcc: build/src.linux-mips64-2.7/numpy/core/src/npysort/selection.c
+    gcc: build/src.linux-mips64-2.7/numpy/core/src/npysort/quicksort.c
+    gcc: build/src.linux-mips64-2.7/numpy/core/src/npysort/mergesort.c
+    ar: adding 5 object files to build/temp.linux-mips64-2.7/libnpysort.a
+    customize UnixCCompiler
+    customize UnixCCompiler using build_ext
+    building 'numpy.core._dummy' extension
+    compiling C sources
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-DHAVE_NPY_CONFIG_H=1 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE=1 -D_LARGEFILE64_SOURCE=1 -Inumpy/core/include -Ibuild/src.linux-mips64-2.7/numpy/core/include/numpy -Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -Ibuild/src.linux-mips64-2.7/numpy/core/src/private -Ibuild/src.linux-mips64-2.7/numpy/core/src/private -Ibuild/src.linux-mips64-2.7/numpy/core/src/private -c'
+    gcc: numpy/core/src/dummymodule.c
+    gcc -O3 -g -march=loongson3a -mabi=64 -pthread -shared -Wl,-z,relro build/temp.linux-mips64-2.7/numpy/core/src/dummymodule.o -L. -Lbuild/temp.linux-mips64-2.7 -lm -lpython2.7 -o build/lib.linux-mips64-2.7/numpy/core/_dummy.so
+    building 'numpy.core.multiarray' extension
+    compiling C sources
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-DHAVE_NPY_CONFIG_H=1 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE=1 -D_LARGEFILE64_SOURCE=1 -Ibuild/src.linux-mips64-2.7/numpy/core/src/private -Inumpy/core/include -Ibuild/src.linux-mips64-2.7/numpy/core/include/numpy -Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -Ibuild/src.linux-mips64-2.7/numpy/core/src/private -Ibuild/src.linux-mips64-2.7/numpy/core/src/private -Ibuild/src.linux-mips64-2.7/numpy/core/src/private -c'
+    gcc: numpy/core/src/multiarray/array_assign_scalar.c
+    gcc: numpy/core/src/multiarray/hashdescr.c
+    gcc: numpy/core/src/multiarray/common.c
+    gcc: numpy/core/src/multiarray/mapping.c
+    gcc: numpy/core/src/multiarray/nditer_pywrap.c
+    gcc: numpy/core/src/multiarray/alloc.c
+    gcc: numpy/core/src/multiarray/numpyos.c
+    gcc: numpy/core/src/multiarray/arrayobject.c
+    gcc: numpy/core/src/multiarray/sequence.c
+    gcc: numpy/core/src/multiarray/ctors.c
+    gcc: numpy/core/src/multiarray/getset.c
+    gcc: numpy/core/src/multiarray/iterators.c
+    gcc: numpy/core/src/multiarray/convert_datatype.c
+    gcc: numpy/core/src/multiarray/datetime_busday.c
+    gcc: numpy/core/src/multiarray/array_assign_array.c
+    gcc: numpy/core/src/multiarray/calculation.c
+    gcc: numpy/core/src/multiarray/compiled_base.c
+    gcc: numpy/core/src/multiarray/numpymemoryview.c
+    gcc: build/src.linux-mips64-2.7/numpy/core/src/multiarray/lowlevel_strided_loops.c
+    gcc: numpy/core/src/multiarray/multiarraymodule.c
+    gcc: numpy/core/src/multiarray/refcount.c
+    gcc: build/src.linux-mips64-2.7/numpy/core/src/multiarray/scalartypes.c
+    gcc: numpy/core/src/multiarray/conversion_utils.c
+    gcc: numpy/core/src/multiarray/ucsnarrow.c
+    gcc: numpy/core/src/multiarray/vdot.c
+    gcc: build/src.linux-mips64-2.7/numpy/core/src/multiarray/arraytypes.c
+    gcc: numpy/core/src/multiarray/scalarapi.c
+    gcc: numpy/core/src/multiarray/buffer.c
+    gcc: numpy/core/src/multiarray/array_assign.c
+    gcc: build/src.linux-mips64-2.7/numpy/core/src/multiarray/nditer_templ.c
+    gcc: numpy/core/src/multiarray/dtype_transfer.c
+    gcc: build/src.linux-mips64-2.7/numpy/core/src/multiarray/einsum.c
+    gcc: numpy/core/src/multiarray/usertypes.c
+    gcc: numpy/core/src/multiarray/datetime_busdaycal.c
+    gcc: numpy/core/src/multiarray/descriptor.c
+    gcc: numpy/core/src/multiarray/convert.c
+    gcc: numpy/core/src/multiarray/flagsobject.c
+    gcc: numpy/core/src/multiarray/methods.c
+    gcc: numpy/core/src/multiarray/number.c
+    gcc: numpy/core/src/private/mem_overlap.c
+    In file included from /usr/include/python2.7/pyconfig.h:10:0,
+                     from /usr/include/python2.7/Python.h:8,
+                     from numpy/core/src/private/mem_overlap.c:187:
+    /usr/include/python2.7/pyconfig-64.h:1191:0: 警告：“_POSIX_C_SOURCE”重定义
+     #define _POSIX_C_SOURCE 200112L
+     ^
+    In file included from /usr/include/stdlib.h:24:0,
+                     from numpy/core/src/private/mem_overlap.c:184:
+    /usr/include/features.h:225:0: 附注：这是先前定义的位置
+     # define _POSIX_C_SOURCE 200809L
+     ^
+    In file included from /usr/include/python2.7/pyconfig.h:10:0,
+                     from /usr/include/python2.7/Python.h:8,
+                     from numpy/core/src/private/mem_overlap.c:187:
+    /usr/include/python2.7/pyconfig-64.h:1213:0: 警告：“_XOPEN_SOURCE”重定义
+     #define _XOPEN_SOURCE 600
+     ^
+    In file included from /usr/include/stdlib.h:24:0,
+                     from numpy/core/src/private/mem_overlap.c:184:
+    /usr/include/features.h:166:0: 附注：这是先前定义的位置
+     # define _XOPEN_SOURCE 700
+     ^
+    gcc: numpy/core/src/multiarray/datetime.c
+    gcc: numpy/core/src/multiarray/nditer_api.c
+    gcc: numpy/core/src/multiarray/shape.c
+    gcc: numpy/core/src/multiarray/item_selection.c
+    gcc: numpy/core/src/multiarray/nditer_constr.c
+    gcc: numpy/core/src/multiarray/datetime_strings.c
+    gcc -O3 -g -march=loongson3a -mabi=64 -pthread -shared -Wl,-z,relro build/temp.linux-mips64-2.7/numpy/core/src/multiarray/alloc.o build/temp.linux-mips64-2.7/numpy/core/src/multiarray/arrayobject.o build/temp.linux-mips64-2.7/build/src.linux-mips64-2.7/numpy/core/src/multiarray/arraytypes.o build/temp.linux-mips64-2.7/numpy/core/src/multiarray/array_assign.o build/temp.linux-mips64-2.7/numpy/core/src/multiarray/array_assign_scalar.o build/temp.linux-mips64-2.7/numpy/core/src/multiarray/array_assign_array.o build/temp.linux-mips64-2.7/numpy/core/src/multiarray/buffer.o build/temp.linux-mips64-2.7/numpy/core/src/multiarray/calculation.o build/temp.linux-mips64-2.7/numpy/core/src/multiarray/compiled_base.o build/temp.linux-mips64-2.7/numpy/core/src/multiarray/common.o build/temp.linux-mips64-2.7/numpy/core/src/multiarray/convert.o build/temp.linux-mips64-2.7/numpy/core/src/multiarray/convert_datatype.o build/temp.linux-mips64-2.7/numpy/core/src/multiarray/conversion_utils.o build/temp.linux-mips64-2.7/numpy/core/src/multiarray/ctors.o build/temp.linux-mips64-2.7/numpy/core/src/multiarray/datetime.o build/temp.linux-mips64-2.7/numpy/core/src/multiarray/datetime_strings.o build/temp.linux-mips64-2.7/numpy/core/src/multiarray/datetime_busday.o build/temp.linux-mips64-2.7/numpy/core/src/multiarray/datetime_busdaycal.o build/temp.linux-mips64-2.7/numpy/core/src/multiarray/descriptor.o build/temp.linux-mips64-2.7/numpy/core/src/multiarray/dtype_transfer.o build/temp.linux-mips64-2.7/build/src.linux-mips64-2.7/numpy/core/src/multiarray/einsum.o build/temp.linux-mips64-2.7/numpy/core/src/multiarray/flagsobject.o build/temp.linux-mips64-2.7/numpy/core/src/multiarray/getset.o build/temp.linux-mips64-2.7/numpy/core/src/multiarray/hashdescr.o build/temp.linux-mips64-2.7/numpy/core/src/multiarray/item_selection.o build/temp.linux-mips64-2.7/numpy/core/src/multiarray/iterators.o build/temp.linux-mips64-2.7/build/src.linux-mips64-2.7/numpy/core/src/multiarray/lowlevel_strided_loops.o build/temp.linux-mips64-2.7/numpy/core/src/multiarray/mapping.o build/temp.linux-mips64-2.7/numpy/core/src/multiarray/methods.o build/temp.linux-mips64-2.7/numpy/core/src/multiarray/multiarraymodule.o build/temp.linux-mips64-2.7/build/src.linux-mips64-2.7/numpy/core/src/multiarray/nditer_templ.o build/temp.linux-mips64-2.7/numpy/core/src/multiarray/nditer_api.o build/temp.linux-mips64-2.7/numpy/core/src/multiarray/nditer_constr.o build/temp.linux-mips64-2.7/numpy/core/src/multiarray/nditer_pywrap.o build/temp.linux-mips64-2.7/numpy/core/src/multiarray/number.o build/temp.linux-mips64-2.7/numpy/core/src/multiarray/numpymemoryview.o build/temp.linux-mips64-2.7/numpy/core/src/multiarray/numpyos.o build/temp.linux-mips64-2.7/numpy/core/src/multiarray/refcount.o build/temp.linux-mips64-2.7/numpy/core/src/multiarray/sequence.o build/temp.linux-mips64-2.7/numpy/core/src/multiarray/shape.o build/temp.linux-mips64-2.7/numpy/core/src/multiarray/scalarapi.o build/temp.linux-mips64-2.7/build/src.linux-mips64-2.7/numpy/core/src/multiarray/scalartypes.o build/temp.linux-mips64-2.7/numpy/core/src/multiarray/usertypes.o build/temp.linux-mips64-2.7/numpy/core/src/multiarray/ucsnarrow.o build/temp.linux-mips64-2.7/numpy/core/src/multiarray/vdot.o build/temp.linux-mips64-2.7/numpy/core/src/private/mem_overlap.o -L. -Lbuild/temp.linux-mips64-2.7 -lnpymath -lnpysort -lm -lpython2.7 -o build/lib.linux-mips64-2.7/numpy/core/multiarray.so
+    building 'numpy.core.umath' extension
+    compiling C sources
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-DHAVE_NPY_CONFIG_H=1 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE=1 -D_LARGEFILE64_SOURCE=1 -Ibuild/src.linux-mips64-2.7/numpy/core/src/umath -Inumpy/core/include -Ibuild/src.linux-mips64-2.7/numpy/core/include/numpy -Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -Ibuild/src.linux-mips64-2.7/numpy/core/src/private -Ibuild/src.linux-mips64-2.7/numpy/core/src/private -Ibuild/src.linux-mips64-2.7/numpy/core/src/private -c'
+    gcc: numpy/core/src/umath/ufunc_object.c
+    gcc: build/src.linux-mips64-2.7/numpy/core/src/umath/loops.c
+	gcc -O3 -g -march=loongson3a -mabi=64 -pthread -shared -Wl,-z,relro build/temp.linux-mips64-2.7/build/src.linux-mips64-2.7/numpy/core/src/umath/operand_flag_tests.o -L. -Lbuild/temp.linux-mips64-2.7 -lpython2.7 -o build/lib.linux-mips64-2.7/numpy/core/operand_flag_tests.so
+    building 'numpy.fft.fftpack_lite' extension
+    compiling C sources
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/include -Ibuild/src.linux-mips64-2.7/numpy/core/include/numpy -Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -Ibuild/src.linux-mips64-2.7/numpy/core/src/private -Ibuild/src.linux-mips64-2.7/numpy/core/src/private -Ibuild/src.linux-mips64-2.7/numpy/core/src/private -c'
+    gcc: numpy/fft/fftpack.c
+    gcc: numpy/fft/fftpack_litemodule.c
+    gcc -O3 -g -march=loongson3a -mabi=64 -pthread -shared -Wl,-z,relro build/temp.linux-mips64-2.7/numpy/fft/fftpack_litemodule.o build/temp.linux-mips64-2.7/numpy/fft/fftpack.o -L. -Lbuild/temp.linux-mips64-2.7 -lpython2.7 -o build/lib.linux-mips64-2.7/numpy/fft/fftpack_lite.so
+    building 'numpy.linalg.lapack_lite' extension
+    compiling C sources
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/include -Ibuild/src.linux-mips64-2.7/numpy/core/include/numpy -Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -Ibuild/src.linux-mips64-2.7/numpy/core/src/private -Ibuild/src.linux-mips64-2.7/numpy/core/src/private -Ibuild/src.linux-mips64-2.7/numpy/core/src/private -c'
+    gcc: numpy/linalg/lapack_lite/blas_lite.c
+    gcc: numpy/linalg/lapack_lite/zlapack_lite.c
+	gcc: numpy/linalg/lapack_lite/dlapack_lite.c
+	gcc: numpy/linalg/lapack_lite/f2c_lite.c
+    gcc: numpy/linalg/lapack_lite/dlamch.c
+    gcc: numpy/linalg/lapack_litemodule.c
+    gcc: numpy/linalg/lapack_lite/python_xerbla.c
+    gcc -O3 -g -march=loongson3a -mabi=64 -pthread -shared -Wl,-z,relro build/temp.linux-mips64-2.7/numpy/linalg/lapack_litemodule.o build/temp.linux-mips64-2.7/numpy/linalg/lapack_lite/python_xerbla.o build/temp.linux-mips64-2.7/numpy/linalg/lapack_lite/zlapack_lite.o build/temp.linux-mips64-2.7/numpy/linalg/lapack_lite/dlapack_lite.o build/temp.linux-mips64-2.7/numpy/linalg/lapack_lite/blas_lite.o build/temp.linux-mips64-2.7/numpy/linalg/lapack_lite/dlamch.o build/temp.linux-mips64-2.7/numpy/linalg/lapack_lite/f2c_lite.o -L. -Lbuild/temp.linux-mips64-2.7 -lpython2.7 -o build/lib.linux-mips64-2.7/numpy/linalg/lapack_lite.so
+    building 'numpy.linalg._umath_linalg' extension
+    compiling C sources
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-Inumpy/core/include -Ibuild/src.linux-mips64-2.7/numpy/core/include/numpy -Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -Ibuild/src.linux-mips64-2.7/numpy/core/src/private -Ibuild/src.linux-mips64-2.7/numpy/core/src/private -Ibuild/src.linux-mips64-2.7/numpy/core/src/private -c'
+    gcc: numpy/linalg/lapack_lite/blas_lite.c
+	gcc: numpy/linalg/lapack_lite/zlapack_lite.c
+    gcc: build/src.linux-mips64-2.7/numpy/linalg/umath_linalg.c
+    gcc: numpy/linalg/lapack_lite/dlamch.c
+    gcc: numpy/linalg/lapack_lite/f2c_lite.c
+    gcc: numpy/linalg/lapack_lite/dlapack_lite.c
+	gcc: numpy/linalg/lapack_lite/python_xerbla.c
+    gcc -O3 -g -march=loongson3a -mabi=64 -pthread -shared -Wl,-z,relro build/temp.linux-mips64-2.7/build/src.linux-mips64-2.7/numpy/linalg/umath_linalg.o build/temp.linux-mips64-2.7/numpy/linalg/lapack_lite/python_xerbla.o build/temp.linux-mips64-2.7/numpy/linalg/lapack_lite/zlapack_lite.o build/temp.linux-mips64-2.7/numpy/linalg/lapack_lite/dlapack_lite.o build/temp.linux-mips64-2.7/numpy/linalg/lapack_lite/blas_lite.o build/temp.linux-mips64-2.7/numpy/linalg/lapack_lite/dlamch.o build/temp.linux-mips64-2.7/numpy/linalg/lapack_lite/f2c_lite.o -L. -Lbuild/temp.linux-mips64-2.7 -lnpymath -lpython2.7 -o build/lib.linux-mips64-2.7/numpy/linalg/_umath_linalg.so
+    building 'numpy.random.mtrand' extension
+    compiling C sources
+    C compiler: gcc -O3 -g -march=loongson3a -mabi=64 -pthread -fno-strict-aliasing -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O3 -g -march=loongson3a -mabi=64 -D_GNU_SOURCE -fPIC -fwrapv -fPIC
+    
+    compile options: '-D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE=1 -D_LARGEFILE64_SOURCE=1 -Inumpy/core/include -Ibuild/src.linux-mips64-2.7/numpy/core/include/numpy -Inumpy/core/src/private -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/usr/include/python2.7 -Ibuild/src.linux-mips64-2.7/numpy/core/src/private -Ibuild/src.linux-mips64-2.7/numpy/core/src/private -Ibuild/src.linux-mips64-2.7/numpy/core/src/private -c'
+    gcc: numpy/random/mtrand/initarray.c
+    gcc: numpy/random/mtrand/distributions.c
+    In file included from /usr/include/python2.7/pyconfig.h:10:0,
+                     from /usr/include/python2.7/Python.h:8,
+                     from numpy/core/include/numpy/npy_common.h:11,
+                     from numpy/random/mtrand/randomkit.h:63,
+                     from numpy/random/mtrand/distributions.h:26,
+                     from numpy/random/mtrand/distributions.c:46:
+    /usr/include/python2.7/pyconfig-64.h:1191:0: 警告：“_POSIX_C_SOURCE”重定义
+     #define _POSIX_C_SOURCE 200112L
+     ^
+    In file included from /usr/include/math.h:26:0,
+                     from numpy/random/mtrand/distributions.c:44:
+    /usr/include/features.h:225:0: 附注：这是先前定义的位置
+     # define _POSIX_C_SOURCE 200809L
+     ^
+    In file included from /usr/include/python2.7/pyconfig.h:10:0,
+                     from /usr/include/python2.7/Python.h:8,
+                     from numpy/core/include/numpy/npy_common.h:11,
+                     from numpy/random/mtrand/randomkit.h:63,
+                     from numpy/random/mtrand/distributions.h:26,
+                     from numpy/random/mtrand/distributions.c:46:
+    /usr/include/python2.7/pyconfig-64.h:1213:0: 警告：“_XOPEN_SOURCE”重定义
+     #define _XOPEN_SOURCE 600
+     ^
+    In file included from /usr/include/math.h:26:0,
+                     from numpy/random/mtrand/distributions.c:44:
+    /usr/include/features.h:166:0: 附注：这是先前定义的位置
+     # define _XOPEN_SOURCE 700
+     ^
+    gcc: numpy/random/mtrand/randomkit.c
+    In file included from /usr/include/python2.7/pyconfig.h:10:0,
+                     from /usr/include/python2.7/Python.h:8,
+                     from numpy/core/include/numpy/npy_common.h:11,
+                     from numpy/random/mtrand/randomkit.h:63,
+                     from numpy/random/mtrand/randomkit.c:123:
+    /usr/include/python2.7/pyconfig-64.h:1191:0: 警告：“_POSIX_C_SOURCE”重定义
+     #define _POSIX_C_SOURCE 200112L
+     ^
+    In file included from /usr/include/stdio.h:27:0,
+                     from numpy/random/mtrand/randomkit.c:68:
+    /usr/include/features.h:225:0: 附注：这是先前定义的位置
+     # define _POSIX_C_SOURCE 200809L
+     ^
+    In file included from /usr/include/python2.7/pyconfig.h:10:0,
+                     from /usr/include/python2.7/Python.h:8,
+                     from numpy/core/include/numpy/npy_common.h:11,
+                     from numpy/random/mtrand/randomkit.h:63,
+                     from numpy/random/mtrand/randomkit.c:123:
+    /usr/include/python2.7/pyconfig-64.h:1213:0: 警告：“_XOPEN_SOURCE”重定义
+     #define _XOPEN_SOURCE 600
+     ^
+    In file included from /usr/include/stdio.h:27:0,
+                     from numpy/random/mtrand/randomkit.c:68:
+    /usr/include/features.h:166:0: 附注：这是先前定义的位置
+     # define _XOPEN_SOURCE 700
+     ^
+    gcc: numpy/random/mtrand/mtrand.c
+	gcc -O3 -g -march=loongson3a -mabi=64 -pthread -shared -Wl,-z,relro build/temp.linux-mips64-2.7/numpy/random/mtrand/mtrand.o build/temp.linux-mips64-2.7/numpy/random/mtrand/randomkit.o build/temp.linux-mips64-2.7/numpy/random/mtrand/initarray.o build/temp.linux-mips64-2.7/numpy/random/mtrand/distributions.o -L. -Lbuild/temp.linux-mips64-2.7 -lpython2.7 -o build/lib.linux-mips64-2.7/numpy/random/mtrand.so
+    Creating build/scripts.linux-mips64-2.7/f2py
+      adding 'build/scripts.linux-mips64-2.7/f2py' to scripts
+    changing mode of build/scripts.linux-mips64-2.7/f2py from 644 to 755
+    
+    warning: no previously-included files matching '*.pyo' found anywhere in distribution
+    warning: no previously-included files matching '*.pyd' found anywhere in distribution
+    changing mode of /usr/bin/f2py to 755
+  Running setup.py install for html5lib
+    
+  Running setup.py install for protobuf
+    Skipping installation of /usr/lib/python2.7/site-packages/google/__init__.py (namespace package)
+    
+    no previously-included directories found matching 'google/protobuf/internal/import_test_package'
+    warning: no previously-included files found matching 'google/protobuf/internal/*_pb2.py'
+    warning: no previously-included files found matching 'google/protobuf/internal/*_test.py'
+    warning: no previously-included files found matching 'google/protobuf/internal/*.proto'
+    warning: no previously-included files found matching 'google/protobuf/internal/test_util.py'
+    warning: no previously-included files matching '*_test.py' found under directory 'google'
+    warning: no previously-included files matching '*_test.proto' found under directory 'google'
+    warning: no previously-included files matching 'unittest*_pb2.py' found under directory 'google'
+    warning: no previously-included files matching '*.dll' found anywhere in distribution
+    warning: no previously-included files matching '*.pyc' found anywhere in distribution
+    warning: no previously-included files matching '*.pyo' found anywhere in distribution
+    warning: no previously-included files matching '*.so' found anywhere in distribution
+    Installing /usr/lib/python2.7/site-packages/protobuf-3.3.0-py2.7-nspkg.pth
+  Found existing installation: six 1.7.3
+    Uninstalling six:
+      Successfully uninstalled six
+  Found existing installation: Werkzeug 0.9.6
+    Uninstalling Werkzeug:
+      Successfully uninstalled Werkzeug
+Successfully installed tensorflow mock bleach markdown numpy html5lib protobuf six werkzeug funcsigs pbr
+Cleaning up...
+
+
+
+

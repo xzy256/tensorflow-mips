@@ -1,0 +1,1269 @@
+[root@localhost tensorflow]# bazel build --copt=-march=native -c opt //tensorflow/tools/pip_package:build_pip_package --verbose_failures
+............................................................................
+WARNING: /home/xzy/tensorflow/tensorflow/contrib/learn/BUILD:15:1: in py_library rule //tensorflow/contrib/learn:learn: target '//tensorflow/contrib/learn:learn' depends on deprecated target '//tensorflow/contrib/session_bundle:exporter': Use SavedModel Builder instead.
+WARNING: /home/xzy/tensorflow/tensorflow/contrib/learn/BUILD:15:1: in py_library rule //tensorflow/contrib/learn:learn: target '//tensorflow/contrib/learn:learn' depends on deprecated target '//tensorflow/contrib/session_bundle:gc': Use SavedModel instead.
+INFO: Found 1 target...
+[120 / 598] Compiling external/swig/Source/Swig/typeobj.c [for host]
+[421 / 1,103] Extracting interface @aopalliance//:aopalliance [for host]
+INFO: From GenProtoSrcJar external/io_bazel_rules_closure/java/io/bazel/rules/closure/webfiles/server/libbuild_info_java_proto_srcjar.srcjar [for host]:
+****************************************
+/usr/local/bin/protoc
+----------------
+/home/xzy/grpc-java/compiler/build/exe/java_plugin/protoc-gen-grpc-java
+****************************************
+INFO: From GenProtoSrcJar external/io_bazel_rules_closure/java/io/bazel/rules/closure/libbuild_info_java_proto_srcjar.srcjar [for host]:
+****************************************
+/usr/local/bin/protoc
+----------------
+/home/xzy/grpc-java/compiler/build/exe/java_plugin/protoc-gen-grpc-java
+****************************************
+INFO: From GenProtoSrcJar external/io_bazel_rules_closure/java/io/bazel/rules/closure/worker/libworker_protocol_java_proto_srcjar.srcjar [for host]:
+****************************************
+/usr/local/bin/protoc
+----------------
+/home/xzy/grpc-java/compiler/build/exe/java_plugin/protoc-gen-grpc-java
+****************************************
+INFO: From GenProtoSrcJar external/io_bazel_rules_closure/java/io/bazel/rules/closure/webfiles/libbuild_info_java_proto_srcjar.srcjar [for host]:
+****************************************
+/usr/local/bin/protoc
+----------------
+/home/xzy/grpc-java/compiler/build/exe/java_plugin/protoc-gen-grpc-java
+****************************************
+INFO: From Compiling external/snappy/snappy-sinksource.cc [for host]:
+cc1plus: warning: command line option '-Wno-implicit-function-declaration' is valid for C/ObjC but not for C++
+cc1plus: warning: unrecognized command line option "-Wno-shift-negative-value"
+INFO: From Compiling external/snappy/snappy-c.cc [for host]:
+cc1plus: warning: command line option '-Wno-implicit-function-declaration' is valid for C/ObjC but not for C++
+cc1plus: warning: unrecognized command line option "-Wno-shift-negative-value"
+INFO: From Compiling external/snappy/snappy-stubs-internal.cc [for host]:
+cc1plus: warning: command line option '-Wno-implicit-function-declaration' is valid for C/ObjC but not for C++
+cc1plus: warning: unrecognized command line option "-Wno-shift-negative-value"
+[906 / 1,774] Executing genrule //tensorflow/tensorboard/components/vz_line_chart:ts
+INFO: From Compiling external/snappy/snappy.cc [for host]:
+cc1plus: warning: command line option '-Wno-implicit-function-declaration' is valid for C/ObjC but not for C++
+external/snappy/snappy.cc: In member function 'void snappy::SnappySinkAllocator::Flush(size_t)':
+external/snappy/snappy.cc:1403:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < blocks_.size(); ++i) {
+                       ^
+In file included from external/snappy/snappy-internal.h:34:0,
+                 from external/snappy/snappy.cc:30:
+external/snappy/snappy.cc: In instantiation of 'bool snappy::SnappyScatteredWriter<Allocator>::AppendFromSelf(size_t, size_t) [with Allocator = snappy::SnappySinkAllocator; size_t = long unsigned int]':
+external/snappy/snappy.cc:715:13:   required from 'void snappy::SnappyDecompressor::DecompressAllTags(Writer*) [with Writer = snappy::SnappyScatteredWriter<snappy::SnappySinkAllocator>]'
+external/snappy/snappy.cc:799:3:   required from 'bool snappy::InternalUncompressAllTags(snappy::SnappyDecompressor*, Writer*, snappy::uint32) [with Writer = snappy::SnappyScatteredWriter<snappy::SnappySinkAllocator>; snappy::uint32 = unsigned int]'
+external/snappy/snappy.cc:1460:78:   required from here
+external/snappy/snappy.cc:1316:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if (PREDICT_TRUE(offset - 1u < op_ptr_ - op_base_ && op_end <= op_limit_)) {
+                                  ^
+external/snappy/snappy-stubs-internal.h:80:25: note: in definition of macro 'PREDICT_TRUE'
+ #define PREDICT_TRUE(x) x
+                         ^
+At global scope:
+cc1plus: warning: unrecognized command line option "-Wno-shift-negative-value"
+[926 / 1,774] Executing genrule //tensorflow/tensorboard/components/tf_dashboard_common:tf_regex_group_ts
+[1,076 / 2,082] Compiling external/zlib_archive/inftrees.c [for host]
+[1,370 / 2,932] Writing file tensorflow/core/kernels/libscan_ops.pic.lo-2.params
+[1,419 / 3,084] Writing file tensorflow/core/kernels/libconstant_op.pic.lo-2.params
+INFO: From Compiling external/snappy/snappy-stubs-internal.cc:
+cc1plus: warning: command line option '-Wno-implicit-function-declaration' is valid for C/ObjC but not for C++
+cc1plus: warning: unrecognized command line option "-Wno-shift-negative-value"
+INFO: From Compiling external/snappy/snappy-sinksource.cc:
+cc1plus: warning: command line option '-Wno-implicit-function-declaration' is valid for C/ObjC but not for C++
+cc1plus: warning: unrecognized command line option "-Wno-shift-negative-value"
+INFO: From Compiling external/snappy/snappy-c.cc:
+cc1plus: warning: command line option '-Wno-implicit-function-declaration' is valid for C/ObjC but not for C++
+cc1plus: warning: unrecognized command line option "-Wno-shift-negative-value"
+INFO: From Compiling external/snappy/snappy.cc:
+cc1plus: warning: command line option '-Wno-implicit-function-declaration' is valid for C/ObjC but not for C++
+external/snappy/snappy.cc: In member function 'void snappy::SnappySinkAllocator::Flush(size_t)':
+external/snappy/snappy.cc:1403:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < blocks_.size(); ++i) {
+                       ^
+In file included from external/snappy/snappy-internal.h:34:0,
+                 from external/snappy/snappy.cc:30:
+external/snappy/snappy.cc: In instantiation of 'bool snappy::SnappyScatteredWriter<Allocator>::AppendFromSelf(size_t, size_t) [with Allocator = snappy::SnappySinkAllocator; size_t = long unsigned int]':
+external/snappy/snappy.cc:715:13:   required from 'void snappy::SnappyDecompressor::DecompressAllTags(Writer*) [with Writer = snappy::SnappyScatteredWriter<snappy::SnappySinkAllocator>]'
+external/snappy/snappy.cc:799:3:   required from 'bool snappy::InternalUncompressAllTags(snappy::SnappyDecompressor*, Writer*, snappy::uint32) [with Writer = snappy::SnappyScatteredWriter<snappy::SnappySinkAllocator>; snappy::uint32 = unsigned int]'
+external/snappy/snappy.cc:1460:78:   required from here
+external/snappy/snappy.cc:1316:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if (PREDICT_TRUE(offset - 1u < op_ptr_ - op_base_ && op_end <= op_limit_)) {
+                                  ^
+external/snappy/snappy-stubs-internal.h:80:25: note: in definition of macro 'PREDICT_TRUE'
+ #define PREDICT_TRUE(x) x
+                         ^
+At global scope:
+cc1plus: warning: unrecognized command line option "-Wno-shift-negative-value"
+[1,535 / 3,230] Checking webfiles in //tensorflow/tensorboard/components/tf_graph_loader:tf_graph_loader
+[1,812 / 4,085] Writing file tensorflow/core/kernels/libdiag_op.pic.lo-2.params
+INFO: From Compiling external/protobuf/python/google/protobuf/pyext/descriptor_database.cc:
+external/protobuf/python/google/protobuf/pyext/descriptor_database.cc: In function 'bool google::protobuf::python::GetFileDescriptorProto(PyObject*, google::protobuf::FileDescriptorProto*)':
+external/protobuf/python/google/protobuf/pyext/descriptor_database.cc:84:69: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         PyObject_CallMethod(py_descriptor, "SerializeToString", NULL));
+                                                                     ^
+external/protobuf/python/google/protobuf/pyext/descriptor_database.cc: In member function 'virtual bool google::protobuf::python::PyDescriptorDatabase::FindFileByName(const string&, google::protobuf::FileDescriptorProto*)':
+external/protobuf/python/google/protobuf/pyext/descriptor_database.cc:114:78: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+       py_database_, "FindFileByName", "s#", filename.c_str(), filename.size()));
+                                                                              ^
+external/protobuf/python/google/protobuf/pyext/descriptor_database.cc:114:78: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor_database.cc: In member function 'virtual bool google::protobuf::python::PyDescriptorDatabase::FindFileContainingSymbol(const string&, google::protobuf::FileDescriptorProto*)':
+external/protobuf/python/google/protobuf/pyext/descriptor_database.cc:123:66: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+                           symbol_name.c_str(), symbol_name.size()));
+                                                                  ^
+external/protobuf/python/google/protobuf/pyext/descriptor_database.cc:123:66: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor_database.cc: In member function 'virtual bool google::protobuf::python::PyDescriptorDatabase::FindFileContainingExtension(const string&, int, google::protobuf::FileDescriptorProto*)':
+external/protobuf/python/google/protobuf/pyext/descriptor_database.cc:142:65: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+                             containing_type.size(), field_number));
+                                                                 ^
+INFO: From Compiling external/protobuf/python/google/protobuf/pyext/descriptor_pool.cc:
+external/protobuf/python/google/protobuf/pyext/descriptor_pool.cc: In function 'PyObject* google::protobuf::python::cdescriptor_pool::New(PyTypeObject*, PyObject*, PyObject*)':
+external/protobuf/python/google/protobuf/pyext/descriptor_pool.cc:138:46: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+   static char* kwlist[] = {"descriptor_db", 0};
+                                              ^
+external/protobuf/python/google/protobuf/pyext/descriptor_pool.cc: In function 'PyObject* google::protobuf::python::cdescriptor_pool::Add(google::protobuf::python::PyDescriptorPool*, PyObject*)':
+external/protobuf/python/google/protobuf/pyext/descriptor_pool.cc:518:75: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+       PyObject_CallMethod(file_descriptor_proto, "SerializeToString", NULL));
+                                                                           ^
+INFO: From Compiling external/protobuf/python/google/protobuf/pyext/descriptor.cc:
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:627:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+ };
+ ^
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:627:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:627:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:627:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:627:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:627:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:627:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:627:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:627:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:627:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:627:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:627:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:627:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:627:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:627:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:627:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:627:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:627:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:627:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:627:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:627:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:627:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:627:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:627:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:627:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:627:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:627:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:627:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:627:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:627:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:627:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:627:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:627:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:627:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:627:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:627:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:627:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:627:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:627:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:627:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:627:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:627:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:627:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:627:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:627:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:924:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+ };
+ ^
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:924:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:924:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:924:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:924:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:924:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:924:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:924:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:924:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:924:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:924:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:924:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:924:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:924:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:924:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:924:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:924:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:924:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:924:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:924:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:924:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:924:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:924:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:924:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:924:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:924:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:924:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:924:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:924:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:924:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:924:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:924:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:924:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:924:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:924:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:924:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:924:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:924:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:924:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:924:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:924:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1077:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+ };
+ ^
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1077:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1077:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1077:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1077:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1077:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1077:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1077:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1077:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1077:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1077:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1077:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1077:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1077:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1077:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1077:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1077:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1077:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1186:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+ };
+ ^
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1186:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1186:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1186:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1186:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1186:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1186:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1186:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1186:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1186:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1186:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1186:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1354:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+ };
+ ^
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1354:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1354:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1354:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1354:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1354:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1354:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1354:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1354:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1354:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1354:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1354:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1354:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1354:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1354:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1354:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1354:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1354:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1354:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1354:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1354:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1354:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1354:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1354:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1354:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1507:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+ };
+ ^
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1507:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1507:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1507:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1507:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1507:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1507:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1507:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1507:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1507:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1507:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1507:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1507:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1507:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1618:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+ };
+ ^
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1618:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1618:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1618:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1618:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1618:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1618:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1618:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1618:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1618:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1722:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+ };
+ ^
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1722:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1722:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1722:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1722:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1722:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1722:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1722:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1722:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1722:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1722:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/descriptor.cc:1722:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+INFO: From Compiling external/protobuf/python/google/protobuf/pyext/message_factory.cc:
+external/protobuf/python/google/protobuf/pyext/message_factory.cc: In function 'PyObject* google::protobuf::python::message_factory::New(PyTypeObject*, PyObject*, PyObject*)':
+external/protobuf/python/google/protobuf/pyext/message_factory.cc:78:37: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+   static char* kwlist[] = {"pool", 0};
+                                     ^
+external/protobuf/python/google/protobuf/pyext/message_factory.cc: At global scope:
+external/protobuf/python/google/protobuf/pyext/message_factory.cc:224:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+ };
+ ^
+external/protobuf/python/google/protobuf/pyext/message_factory.cc:224:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+INFO: From Compiling external/protobuf/python/google/protobuf/pyext/message.cc:
+external/protobuf/python/google/protobuf/pyext/message.cc: In function 'PyObject* google::protobuf::python::message_meta::New(PyTypeObject*, PyObject*, PyObject*)':
+external/protobuf/python/google/protobuf/pyext/message.cc:200:54: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+   static char *kwlist[] = {"name", "bases", "dict", 0};
+                                                      ^
+external/protobuf/python/google/protobuf/pyext/message.cc:200:54: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/message.cc:200:54: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/message.cc: At global scope:
+external/protobuf/python/google/protobuf/pyext/message.cc:398:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+ };
+ ^
+external/protobuf/python/google/protobuf/pyext/message.cc:398:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/message.cc: In function 'bool google::protobuf::python::CheckAndGetDouble(PyObject*, double*)':
+external/protobuf/python/google/protobuf/pyext/message.cc:702:44: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     FormatTypeError(arg, "int, long, float");
+                                            ^
+external/protobuf/python/google/protobuf/pyext/message.cc: In function 'bool google::protobuf::python::CheckAndGetBool(PyObject*, bool*)':
+external/protobuf/python/google/protobuf/pyext/message.cc:720:43: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     FormatTypeError(arg, "int, long, bool");
+                                           ^
+external/protobuf/python/google/protobuf/pyext/message.cc: In function 'PyObject* google::protobuf::python::CheckString(PyObject*, const google::protobuf::FieldDescriptor*)':
+external/protobuf/python/google/protobuf/pyext/message.cc:756:44: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+       FormatTypeError(arg, "bytes, unicode");
+                                            ^
+external/protobuf/python/google/protobuf/pyext/message.cc:771:33: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     FormatTypeError(arg, "bytes");
+                                 ^
+external/protobuf/python/google/protobuf/pyext/message.cc: In function 'int google::protobuf::python::cmessage::InitAttributes(google::protobuf::python::CMessage*, PyObject*, PyObject*)':
+external/protobuf/python/google/protobuf/pyext/message.cc:1182:65: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+               function_return.get(), "MergeFrom", "O", map_value));
+                                                                 ^
+external/protobuf/python/google/protobuf/pyext/message.cc:1182:65: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/message.cc:1190:64: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+             PyObject_CallMethod(map.get(), "update", "O", value));
+                                                                ^
+external/protobuf/python/google/protobuf/pyext/message.cc:1190:64: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/message.cc: In function 'PyObject* google::protobuf::python::cmessage::SerializeToString(google::protobuf::python::CMessage*, PyObject*)':
+external/protobuf/python/google/protobuf/pyext/message.cc:1822:67: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         PyObject_CallMethod(comma.get(), "join", "O", errors.get()));
+                                                                   ^
+external/protobuf/python/google/protobuf/pyext/message.cc:1822:67: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/message.cc: At global scope:
+external/protobuf/python/google/protobuf/pyext/message.cc:2613:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+ };
+ ^
+external/protobuf/python/google/protobuf/pyext/message.cc:2613:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/message.cc:2613:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/message.cc:2613:1: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/message.cc: In function 'bool google::protobuf::python::InitProto2MessageModule(PyObject*)':
+external/protobuf/python/google/protobuf/pyext/message.cc:2950:62: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+                                 &RepeatedScalarContainer_Type)) == NULL) {
+                                                              ^
+external/protobuf/python/google/protobuf/pyext/message.cc:2950:62: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/message.cc:2955:65: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+                                 &RepeatedCompositeContainer_Type)) == NULL) {
+                                                                 ^
+external/protobuf/python/google/protobuf/pyext/message.cc:2955:65: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/message.cc: In instantiation of 'bool google::protobuf::python::CheckAndGetInteger(PyObject*, T*) [with T = int; PyObject = _object]':
+external/protobuf/python/google/protobuf/pyext/message.cc:694:58:   required from here
+external/protobuf/python/google/protobuf/pyext/message.cc:634:37: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     FormatTypeError(arg, "int, long");
+                                     ^
+external/protobuf/python/google/protobuf/pyext/message.cc: In instantiation of 'bool google::protobuf::python::CheckAndGetInteger(PyObject*, T*) [with T = long int; PyObject = _object]':
+external/protobuf/python/google/protobuf/pyext/message.cc:695:58:   required from here
+external/protobuf/python/google/protobuf/pyext/message.cc:634:37: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/message.cc: In instantiation of 'bool google::protobuf::python::CheckAndGetInteger(PyObject*, T*) [with T = unsigned int; PyObject = _object]':
+external/protobuf/python/google/protobuf/pyext/message.cc:696:60:   required from here
+external/protobuf/python/google/protobuf/pyext/message.cc:634:37: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+external/protobuf/python/google/protobuf/pyext/message.cc: In instantiation of 'bool google::protobuf::python::CheckAndGetInteger(PyObject*, T*) [with T = long unsigned int; PyObject = _object]':
+external/protobuf/python/google/protobuf/pyext/message.cc:697:60:   required from here
+external/protobuf/python/google/protobuf/pyext/message.cc:634:37: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+[2,286 / 4,356] Compiling external/protobuf/src/google/protobuf/compiler/objectivec/objectivec_generator.cc [for host]
+INFO: From Compiling tensorflow/contrib/layers/kernels/sparse_feature_cross_kernel.cc:
+tensorflow/contrib/layers/kernels/sparse_feature_cross_kernel.cc: In instantiation of 'tensorflow::{anonymous}::ProductIterator<InternalType>::ProductIterator(const std::vector<std::unique_ptr<tensorflow::{anonymous}::ColumnInterface<InternalType> > >&, tensorflow::int64) [with InternalType = long long int; tensorflow::int64 = long long int]':
+tensorflow/contrib/layers/kernels/sparse_feature_cross_kernel.cc:368:66:   required from 'tensorflow::SparseFeatureCrossOp<HASHED_OUTPUT, InternalType, VERSION_2>::Compute(tensorflow::OpKernelContext*)::<lambda(tensorflow::int64, tensorflow::int64)> [with bool HASHED_OUTPUT = true; InternalType = long long int; bool VERSION_2 = true; tensorflow::int64 = long long int]'
+tensorflow/contrib/layers/kernels/sparse_feature_cross_kernel.cc:366:46:   required from 'struct tensorflow::SparseFeatureCrossOp<HASHED_OUTPUT, InternalType, VERSION_2>::Compute(tensorflow::OpKernelContext*) [with bool HASHED_OUTPUT = true; InternalType = long long int; bool VERSION_2 = true]::<lambda(tensorflow::int64, tensorflow::int64)>'
+tensorflow/contrib/layers/kernels/sparse_feature_cross_kernel.cc:376:5:   required from 'void tensorflow::SparseFeatureCrossOp<HASHED_OUTPUT, InternalType, VERSION_2>::Compute(tensorflow::OpKernelContext*) [with bool HASHED_OUTPUT = true; InternalType = long long int; bool VERSION_2 = true]'
+tensorflow/contrib/layers/kernels/sparse_feature_cross_kernel.cc:640:1:   required from here
+tensorflow/contrib/layers/kernels/sparse_feature_cross_kernel.cc:263:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < columns_.size(); i++) {
+                       ^
+tensorflow/contrib/layers/kernels/sparse_feature_cross_kernel.cc: In instantiation of 'tensorflow::{anonymous}::ProductIterator<InternalType>::ProductIterator(const std::vector<std::unique_ptr<tensorflow::{anonymous}::ColumnInterface<InternalType> > >&, tensorflow::int64) [with InternalType = std::basic_string<char>; tensorflow::int64 = long long int]':
+tensorflow/contrib/layers/kernels/sparse_feature_cross_kernel.cc:368:66:   required from 'tensorflow::SparseFeatureCrossOp<HASHED_OUTPUT, InternalType, VERSION_2>::Compute(tensorflow::OpKernelContext*)::<lambda(tensorflow::int64, tensorflow::int64)> [with bool HASHED_OUTPUT = false; InternalType = std::basic_string<char>; bool VERSION_2 = true; tensorflow::int64 = long long int]'
+tensorflow/contrib/layers/kernels/sparse_feature_cross_kernel.cc:366:46:   required from 'struct tensorflow::SparseFeatureCrossOp<HASHED_OUTPUT, InternalType, VERSION_2>::Compute(tensorflow::OpKernelContext*) [with bool HASHED_OUTPUT = false; InternalType = std::basic_string<char>; bool VERSION_2 = true]::<lambda(tensorflow::int64, tensorflow::int64)>'
+tensorflow/contrib/layers/kernels/sparse_feature_cross_kernel.cc:376:5:   required from 'void tensorflow::SparseFeatureCrossOp<HASHED_OUTPUT, InternalType, VERSION_2>::Compute(tensorflow::OpKernelContext*) [with bool HASHED_OUTPUT = false; InternalType = std::basic_string<char>; bool VERSION_2 = true]'
+tensorflow/contrib/layers/kernels/sparse_feature_cross_kernel.cc:640:1:   required from here
+tensorflow/contrib/layers/kernels/sparse_feature_cross_kernel.cc:263:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+tensorflow/contrib/layers/kernels/sparse_feature_cross_kernel.cc: In instantiation of 'std::string tensorflow::{anonymous}::StringCrosser<InternalType>::Generate(tensorflow::int64, const std::vector<int>&) const [with InternalType = std::basic_string<char>; std::string = std::basic_string<char>; tensorflow::int64 = long long int]':
+tensorflow/contrib/layers/kernels/sparse_feature_cross_kernel.cc:372:11:   required from 'tensorflow::SparseFeatureCrossOp<HASHED_OUTPUT, InternalType, VERSION_2>::Compute(tensorflow::OpKernelContext*)::<lambda(tensorflow::int64, tensorflow::int64)> [with bool HASHED_OUTPUT = false; InternalType = std::basic_string<char>; bool VERSION_2 = true; tensorflow::int64 = long long int]'
+tensorflow/contrib/layers/kernels/sparse_feature_cross_kernel.cc:366:46:   required from 'struct tensorflow::SparseFeatureCrossOp<HASHED_OUTPUT, InternalType, VERSION_2>::Compute(tensorflow::OpKernelContext*) [with bool HASHED_OUTPUT = false; InternalType = std::basic_string<char>; bool VERSION_2 = true]::<lambda(tensorflow::int64, tensorflow::int64)>'
+tensorflow/contrib/layers/kernels/sparse_feature_cross_kernel.cc:376:5:   required from 'void tensorflow::SparseFeatureCrossOp<HASHED_OUTPUT, InternalType, VERSION_2>::Compute(tensorflow::OpKernelContext*) [with bool HASHED_OUTPUT = false; InternalType = std::basic_string<char>; bool VERSION_2 = true]'
+tensorflow/contrib/layers/kernels/sparse_feature_cross_kernel.cc:640:1:   required from here
+tensorflow/contrib/layers/kernels/sparse_feature_cross_kernel.cc:173:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < permutation.size(); i++) {
+                       ^
+tensorflow/contrib/layers/kernels/sparse_feature_cross_kernel.cc: In instantiation of 'tensorflow::{anonymous}::ProductIterator<InternalType>::ProductIterator(const std::vector<std::unique_ptr<tensorflow::{anonymous}::ColumnInterface<InternalType> > >&, tensorflow::int64) [with InternalType = tensorflow::StringPiece; tensorflow::int64 = long long int]':
+tensorflow/contrib/layers/kernels/sparse_feature_cross_kernel.cc:368:66:   required from 'tensorflow::SparseFeatureCrossOp<HASHED_OUTPUT, InternalType, VERSION_2>::Compute(tensorflow::OpKernelContext*)::<lambda(tensorflow::int64, tensorflow::int64)> [with bool HASHED_OUTPUT = false; InternalType = tensorflow::StringPiece; bool VERSION_2 = true; tensorflow::int64 = long long int]'
+tensorflow/contrib/layers/kernels/sparse_feature_cross_kernel.cc:366:46:   required from 'struct tensorflow::SparseFeatureCrossOp<HASHED_OUTPUT, InternalType, VERSION_2>::Compute(tensorflow::OpKernelContext*) [with bool HASHED_OUTPUT = false; InternalType = tensorflow::StringPiece; bool VERSION_2 = true]::<lambda(tensorflow::int64, tensorflow::int64)>'
+tensorflow/contrib/layers/kernels/sparse_feature_cross_kernel.cc:376:5:   required from 'void tensorflow::SparseFeatureCrossOp<HASHED_OUTPUT, InternalType, VERSION_2>::Compute(tensorflow::OpKernelContext*) [with bool HASHED_OUTPUT = false; InternalType = tensorflow::StringPiece; bool VERSION_2 = true]'
+tensorflow/contrib/layers/kernels/sparse_feature_cross_kernel.cc:640:1:   required from here
+tensorflow/contrib/layers/kernels/sparse_feature_cross_kernel.cc:263:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < columns_.size(); i++) {
+                       ^
+tensorflow/contrib/layers/kernels/sparse_feature_cross_kernel.cc: In instantiation of 'std::string tensorflow::{anonymous}::StringCrosser<InternalType>::Generate(tensorflow::int64, const std::vector<int>&) const [with InternalType = tensorflow::StringPiece; std::string = std::basic_string<char>; tensorflow::int64 = long long int]':
+tensorflow/contrib/layers/kernels/sparse_feature_cross_kernel.cc:372:11:   required from 'tensorflow::SparseFeatureCrossOp<HASHED_OUTPUT, InternalType, VERSION_2>::Compute(tensorflow::OpKernelContext*)::<lambda(tensorflow::int64, tensorflow::int64)> [with bool HASHED_OUTPUT = false; InternalType = tensorflow::StringPiece; bool VERSION_2 = true; tensorflow::int64 = long long int]'
+tensorflow/contrib/layers/kernels/sparse_feature_cross_kernel.cc:366:46:   required from 'struct tensorflow::SparseFeatureCrossOp<HASHED_OUTPUT, InternalType, VERSION_2>::Compute(tensorflow::OpKernelContext*) [with bool HASHED_OUTPUT = false; InternalType = tensorflow::StringPiece; bool VERSION_2 = true]::<lambda(tensorflow::int64, tensorflow::int64)>'
+tensorflow/contrib/layers/kernels/sparse_feature_cross_kernel.cc:376:5:   required from 'void tensorflow::SparseFeatureCrossOp<HASHED_OUTPUT, InternalType, VERSION_2>::Compute(tensorflow::OpKernelContext*) [with bool HASHED_OUTPUT = false; InternalType = tensorflow::StringPiece; bool VERSION_2 = true]'
+tensorflow/contrib/layers/kernels/sparse_feature_cross_kernel.cc:640:1:   required from here
+tensorflow/contrib/layers/kernels/sparse_feature_cross_kernel.cc:173:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < permutation.size(); i++) {
+                       ^
+tensorflow/contrib/layers/kernels/sparse_feature_cross_kernel.cc: In instantiation of 'tensorflow::int64 tensorflow::SparseFeatureCrossOp<HASHED_OUTPUT, InternalType, VERSION_2>::CrossCountByBatchIndex(const std::vector<std::unique_ptr<tensorflow::{anonymous}::ColumnInterface<InternalType> > >&, int) [with bool HASHED_OUTPUT = true; InternalType = long long int; bool VERSION_2 = true; tensorflow::int64 = long long int]':
+tensorflow/contrib/layers/kernels/sparse_feature_cross_kernel.cc:549:65:   required from 'void tensorflow::SparseFeatureCrossOp<HASHED_OUTPUT, InternalType, VERSION_2>::CreateOutputTensors(const std::vector<std::unique_ptr<tensorflow::{anonymous}::ColumnInterface<InternalType> > >&, tensorflow::int64, tensorflow::OpKernelContext*, tensorflow::Tensor**, tensorflow::Tensor**, tensorflow::Tensor**, std::vector<long long int, std::allocator<long long int> >*) [with bool HASHED_OUTPUT = true; InternalType = long long int; bool VERSION_2 = true; tensorflow::int64 = long long int]'
+tensorflow/contrib/layers/kernels/sparse_feature_cross_kernel.cc:362:58:   required from 'void tensorflow::SparseFeatureCrossOp<HASHED_OUTPUT, InternalType, VERSION_2>::Compute(tensorflow::OpKernelContext*) [with bool HASHED_OUTPUT = true; InternalType = long long int; bool VERSION_2 = true]'
+tensorflow/contrib/layers/kernels/sparse_feature_cross_kernel.cc:640:1:   required from here
+tensorflow/contrib/layers/kernels/sparse_feature_cross_kernel.cc:576:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < columns.size(); i++) {
+                       ^
+tensorflow/contrib/layers/kernels/sparse_feature_cross_kernel.cc: In instantiation of 'tensorflow::int64 tensorflow::SparseFeatureCrossOp<HASHED_OUTPUT, InternalType, VERSION_2>::CrossCountByBatchIndex(const std::vector<std::unique_ptr<tensorflow::{anonymous}::ColumnInterface<InternalType> > >&, int) [with bool HASHED_OUTPUT = false; InternalType = std::basic_string<char>; bool VERSION_2 = true; tensorflow::int64 = long long int]':
+tensorflow/contrib/layers/kernels/sparse_feature_cross_kernel.cc:549:65:   required from 'void tensorflow::SparseFeatureCrossOp<HASHED_OUTPUT, InternalType, VERSION_2>::CreateOutputTensors(const std::vector<std::unique_ptr<tensorflow::{anonymous}::ColumnInterface<InternalType> > >&, tensorflow::int64, tensorflow::OpKernelContext*, tensorflow::Tensor**, tensorflow::Tensor**, tensorflow::Tensor**, std::vector<long long int, std::allocator<long long int> >*) [with bool HASHED_OUTPUT = false; InternalType = std::basic_string<char>; bool VERSION_2 = true; tensorflow::int64 = long long int]'
+tensorflow/contrib/layers/kernels/sparse_feature_cross_kernel.cc:362:58:   required from 'void tensorflow::SparseFeatureCrossOp<HASHED_OUTPUT, InternalType, VERSION_2>::Compute(tensorflow::OpKernelContext*) [with bool HASHED_OUTPUT = false; InternalType = std::basic_string<char>; bool VERSION_2 = true]'
+tensorflow/contrib/layers/kernels/sparse_feature_cross_kernel.cc:640:1:   required from here
+tensorflow/contrib/layers/kernels/sparse_feature_cross_kernel.cc:576:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+tensorflow/contrib/layers/kernels/sparse_feature_cross_kernel.cc: In instantiation of 'tensorflow::int64 tensorflow::SparseFeatureCrossOp<HASHED_OUTPUT, InternalType, VERSION_2>::CrossCountByBatchIndex(const std::vector<std::unique_ptr<tensorflow::{anonymous}::ColumnInterface<InternalType> > >&, int) [with bool HASHED_OUTPUT = false; InternalType = tensorflow::StringPiece; bool VERSION_2 = true; tensorflow::int64 = long long int]':
+tensorflow/contrib/layers/kernels/sparse_feature_cross_kernel.cc:549:65:   required from 'void tensorflow::SparseFeatureCrossOp<HASHED_OUTPUT, InternalType, VERSION_2>::CreateOutputTensors(const std::vector<std::unique_ptr<tensorflow::{anonymous}::ColumnInterface<InternalType> > >&, tensorflow::int64, tensorflow::OpKernelContext*, tensorflow::Tensor**, tensorflow::Tensor**, tensorflow::Tensor**, std::vector<long long int, std::allocator<long long int> >*) [with bool HASHED_OUTPUT = false; InternalType = tensorflow::StringPiece; bool VERSION_2 = true; tensorflow::int64 = long long int]'
+tensorflow/contrib/layers/kernels/sparse_feature_cross_kernel.cc:362:58:   required from 'void tensorflow::SparseFeatureCrossOp<HASHED_OUTPUT, InternalType, VERSION_2>::Compute(tensorflow::OpKernelContext*) [with bool HASHED_OUTPUT = false; InternalType = tensorflow::StringPiece; bool VERSION_2 = true]'
+tensorflow/contrib/layers/kernels/sparse_feature_cross_kernel.cc:640:1:   required from here
+tensorflow/contrib/layers/kernels/sparse_feature_cross_kernel.cc:576:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+tensorflow/contrib/layers/kernels/sparse_feature_cross_kernel.cc: In instantiation of 'tensorflow::int64 tensorflow::SparseFeatureCrossOp<HASHED_OUTPUT, InternalType, VERSION_2>::CrossCountByBatchIndex(const std::vector<std::unique_ptr<tensorflow::{anonymous}::ColumnInterface<InternalType> > >&, int) [with bool HASHED_OUTPUT = true; InternalType = long long int; bool VERSION_2 = false; tensorflow::int64 = long long int]':
+tensorflow/contrib/layers/kernels/sparse_feature_cross_kernel.cc:549:65:   required from 'void tensorflow::SparseFeatureCrossOp<HASHED_OUTPUT, InternalType, VERSION_2>::CreateOutputTensors(const std::vector<std::unique_ptr<tensorflow::{anonymous}::ColumnInterface<InternalType> > >&, tensorflow::int64, tensorflow::OpKernelContext*, tensorflow::Tensor**, tensorflow::Tensor**, tensorflow::Tensor**, std::vector<long long int, std::allocator<long long int> >*) [with bool HASHED_OUTPUT = true; InternalType = long long int; bool VERSION_2 = false; tensorflow::int64 = long long int]'
+tensorflow/contrib/layers/kernels/sparse_feature_cross_kernel.cc:362:58:   required from 'void tensorflow::SparseFeatureCrossOp<HASHED_OUTPUT, InternalType, VERSION_2>::Compute(tensorflow::OpKernelContext*) [with bool HASHED_OUTPUT = true; InternalType = long long int; bool VERSION_2 = false]'
+tensorflow/contrib/layers/kernels/sparse_feature_cross_kernel.cc:640:1:   required from here
+tensorflow/contrib/layers/kernels/sparse_feature_cross_kernel.cc:576:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+tensorflow/contrib/layers/kernels/sparse_feature_cross_kernel.cc: In instantiation of 'tensorflow::int64 tensorflow::SparseFeatureCrossOp<HASHED_OUTPUT, InternalType, VERSION_2>::CrossCountByBatchIndex(const std::vector<std::unique_ptr<tensorflow::{anonymous}::ColumnInterface<InternalType> > >&, int) [with bool HASHED_OUTPUT = false; InternalType = std::basic_string<char>; bool VERSION_2 = false; tensorflow::int64 = long long int]':
+tensorflow/contrib/layers/kernels/sparse_feature_cross_kernel.cc:549:65:   required from 'void tensorflow::SparseFeatureCrossOp<HASHED_OUTPUT, InternalType, VERSION_2>::CreateOutputTensors(const std::vector<std::unique_ptr<tensorflow::{anonymous}::ColumnInterface<InternalType> > >&, tensorflow::int64, tensorflow::OpKernelContext*, tensorflow::Tensor**, tensorflow::Tensor**, tensorflow::Tensor**, std::vector<long long int, std::allocator<long long int> >*) [with bool HASHED_OUTPUT = false; InternalType = std::basic_string<char>; bool VERSION_2 = false; tensorflow::int64 = long long int]'
+tensorflow/contrib/layers/kernels/sparse_feature_cross_kernel.cc:362:58:   required from 'void tensorflow::SparseFeatureCrossOp<HASHED_OUTPUT, InternalType, VERSION_2>::Compute(tensorflow::OpKernelContext*) [with bool HASHED_OUTPUT = false; InternalType = std::basic_string<char>; bool VERSION_2 = false]'
+tensorflow/contrib/layers/kernels/sparse_feature_cross_kernel.cc:640:1:   required from here
+tensorflow/contrib/layers/kernels/sparse_feature_cross_kernel.cc:576:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+tensorflow/contrib/layers/kernels/sparse_feature_cross_kernel.cc: In instantiation of 'tensorflow::int64 tensorflow::SparseFeatureCrossOp<HASHED_OUTPUT, InternalType, VERSION_2>::CrossCountByBatchIndex(const std::vector<std::unique_ptr<tensorflow::{anonymous}::ColumnInterface<InternalType> > >&, int) [with bool HASHED_OUTPUT = false; InternalType = tensorflow::StringPiece; bool VERSION_2 = false; tensorflow::int64 = long long int]':
+tensorflow/contrib/layers/kernels/sparse_feature_cross_kernel.cc:549:65:   required from 'void tensorflow::SparseFeatureCrossOp<HASHED_OUTPUT, InternalType, VERSION_2>::CreateOutputTensors(const std::vector<std::unique_ptr<tensorflow::{anonymous}::ColumnInterface<InternalType> > >&, tensorflow::int64, tensorflow::OpKernelContext*, tensorflow::Tensor**, tensorflow::Tensor**, tensorflow::Tensor**, std::vector<long long int, std::allocator<long long int> >*) [with bool HASHED_OUTPUT = false; InternalType = tensorflow::StringPiece; bool VERSION_2 = false; tensorflow::int64 = long long int]'
+tensorflow/contrib/layers/kernels/sparse_feature_cross_kernel.cc:362:58:   required from 'void tensorflow::SparseFeatureCrossOp<HASHED_OUTPUT, InternalType, VERSION_2>::Compute(tensorflow::OpKernelContext*) [with bool HASHED_OUTPUT = false; InternalType = tensorflow::StringPiece; bool VERSION_2 = false]'
+tensorflow/contrib/layers/kernels/sparse_feature_cross_kernel.cc:640:1:   required from here
+tensorflow/contrib/layers/kernels/sparse_feature_cross_kernel.cc:576:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+[2,502 / 4,356] Linking tensorflow/contrib/layers/kernels/libsparse_feature_cross_kernel.pic.lo
+INFO: From Compiling tensorflow/contrib/batching/kernels/batch_kernels.cc:
+tensorflow/contrib/batching/kernels/batch_kernels.cc: In member function 'tensorflow::Status tensorflow::BatchKernel::ValidateAllowedBatchSizes() const':
+tensorflow/contrib/batching/kernels/batch_kernels.cc:550:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < allowed_batch_sizes_.size(); ++i) {
+                       ^
+tensorflow/contrib/batching/kernels/batch_kernels.cc:556:13: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       if (i == allowed_batch_sizes_.size() - 1 && size != max_batch_size_) {
+             ^
+tensorflow/contrib/batching/kernels/batch_kernels.cc: In lambda function:
+tensorflow/contrib/batching/kernels/batch_kernels.cc:677:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int i = 0; i < batch_keys.size(); ++i) {
+                           ^
+tensorflow/contrib/batching/kernels/batch_kernels.cc: In instantiation of 'tensorflow::Status tensorflow::Concat(tensorflow::OpKernelContext*, const tensorflow::gtl::ArraySlice<tensorflow::Tensor>&, int) [with T = long long int]':
+tensorflow/contrib/batching/kernels/batch_kernels.cc:395:9:   required from here
+tensorflow/contrib/batching/kernels/batch_kernels.cc:54:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < inputs.size(); ++i) {
+                     ^
+tensorflow/contrib/batching/kernels/batch_kernels.cc: In instantiation of 'tensorflow::Status tensorflow::Concat(tensorflow::OpKernelContext*, const tensorflow::gtl::ArraySlice<tensorflow::Tensor>&, int) [with T = int]':
+tensorflow/contrib/batching/kernels/batch_kernels.cc:395:9:   required from here
+tensorflow/contrib/batching/kernels/batch_kernels.cc:54:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+tensorflow/contrib/batching/kernels/batch_kernels.cc: In instantiation of 'tensorflow::Status tensorflow::Concat(tensorflow::OpKernelContext*, const tensorflow::gtl::ArraySlice<tensorflow::Tensor>&, int) [with T = short unsigned int]':
+tensorflow/contrib/batching/kernels/batch_kernels.cc:395:9:   required from here
+tensorflow/contrib/batching/kernels/batch_kernels.cc:54:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+tensorflow/contrib/batching/kernels/batch_kernels.cc: In instantiation of 'tensorflow::Status tensorflow::Concat(tensorflow::OpKernelContext*, const tensorflow::gtl::ArraySlice<tensorflow::Tensor>&, int) [with T = short int]':
+tensorflow/contrib/batching/kernels/batch_kernels.cc:395:9:   required from here
+tensorflow/contrib/batching/kernels/batch_kernels.cc:54:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+tensorflow/contrib/batching/kernels/batch_kernels.cc: In instantiation of 'tensorflow::Status tensorflow::Concat(tensorflow::OpKernelContext*, const tensorflow::gtl::ArraySlice<tensorflow::Tensor>&, int) [with T = unsigned char]':
+tensorflow/contrib/batching/kernels/batch_kernels.cc:395:9:   required from here
+tensorflow/contrib/batching/kernels/batch_kernels.cc:54:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+tensorflow/contrib/batching/kernels/batch_kernels.cc: In instantiation of 'tensorflow::Status tensorflow::Concat(tensorflow::OpKernelContext*, const tensorflow::gtl::ArraySlice<tensorflow::Tensor>&, int) [with T = signed char]':
+tensorflow/contrib/batching/kernels/batch_kernels.cc:395:9:   required from here
+tensorflow/contrib/batching/kernels/batch_kernels.cc:54:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+tensorflow/contrib/batching/kernels/batch_kernels.cc: In instantiation of 'tensorflow::Status tensorflow::Concat(tensorflow::OpKernelContext*, const tensorflow::gtl::ArraySlice<tensorflow::Tensor>&, int) [with T = Eigen::half]':
+tensorflow/contrib/batching/kernels/batch_kernels.cc:395:9:   required from here
+tensorflow/contrib/batching/kernels/batch_kernels.cc:54:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+tensorflow/contrib/batching/kernels/batch_kernels.cc: In instantiation of 'tensorflow::Status tensorflow::Concat(tensorflow::OpKernelContext*, const tensorflow::gtl::ArraySlice<tensorflow::Tensor>&, int) [with T = float]':
+tensorflow/contrib/batching/kernels/batch_kernels.cc:395:9:   required from here
+tensorflow/contrib/batching/kernels/batch_kernels.cc:54:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+tensorflow/contrib/batching/kernels/batch_kernels.cc: In instantiation of 'tensorflow::Status tensorflow::Concat(tensorflow::OpKernelContext*, const tensorflow::gtl::ArraySlice<tensorflow::Tensor>&, int) [with T = double]':
+tensorflow/contrib/batching/kernels/batch_kernels.cc:395:9:   required from here
+tensorflow/contrib/batching/kernels/batch_kernels.cc:54:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+tensorflow/contrib/batching/kernels/batch_kernels.cc: In instantiation of 'tensorflow::Status tensorflow::Concat(tensorflow::OpKernelContext*, const tensorflow::gtl::ArraySlice<tensorflow::Tensor>&, int) [with T = std::complex<float>]':
+tensorflow/contrib/batching/kernels/batch_kernels.cc:395:9:   required from here
+tensorflow/contrib/batching/kernels/batch_kernels.cc:54:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+tensorflow/contrib/batching/kernels/batch_kernels.cc: In instantiation of 'tensorflow::Status tensorflow::Concat(tensorflow::OpKernelContext*, const tensorflow::gtl::ArraySlice<tensorflow::Tensor>&, int) [with T = std::complex<double>]':
+tensorflow/contrib/batching/kernels/batch_kernels.cc:395:9:   required from here
+tensorflow/contrib/batching/kernels/batch_kernels.cc:54:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+tensorflow/contrib/batching/kernels/batch_kernels.cc: In instantiation of 'tensorflow::Status tensorflow::Concat(tensorflow::OpKernelContext*, const tensorflow::gtl::ArraySlice<tensorflow::Tensor>&, int) [with T = bool]':
+tensorflow/contrib/batching/kernels/batch_kernels.cc:395:9:   required from here
+tensorflow/contrib/batching/kernels/batch_kernels.cc:54:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+tensorflow/contrib/batching/kernels/batch_kernels.cc: In instantiation of 'tensorflow::Status tensorflow::Concat(tensorflow::OpKernelContext*, const tensorflow::gtl::ArraySlice<tensorflow::Tensor>&, int) [with T = std::basic_string<char>]':
+tensorflow/contrib/batching/kernels/batch_kernels.cc:395:9:   required from here
+tensorflow/contrib/batching/kernels/batch_kernels.cc:54:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+tensorflow/contrib/batching/kernels/batch_kernels.cc: In instantiation of 'tensorflow::Status tensorflow::Concat(tensorflow::OpKernelContext*, const tensorflow::gtl::ArraySlice<tensorflow::Tensor>&, int) [with T = tensorflow::ResourceHandle]':
+tensorflow/contrib/batching/kernels/batch_kernels.cc:395:9:   required from here
+tensorflow/contrib/batching/kernels/batch_kernels.cc:54:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+In file included from tensorflow/contrib/batching/kernels/batch_kernels.cc:16:0:
+./tensorflow/contrib/batching/shared_batch_scheduler.h: In instantiation of 'bool tensorflow::serving::internal::Queue<TaskType>::IsOpenBatchSchedulable() const [with TaskType = tensorflow::BatchResource::BatchTask]':
+./tensorflow/contrib/batching/shared_batch_scheduler.h:594:56:   required from 'std::unique_ptr<tensorflow::serving::Batch<TaskType> > tensorflow::serving::internal::Queue<TaskType>::ScheduleBatch() [with TaskType = tensorflow::BatchResource::BatchTask]'
+./tensorflow/contrib/batching/shared_batch_scheduler.h:465:24:   required from 'void tensorflow::serving::SharedBatchScheduler<TaskType>::ThreadLogic() [with TaskType = tensorflow::BatchResource::BatchTask]'
+./tensorflow/contrib/batching/shared_batch_scheduler.h:437:18:   required from 'tensorflow::serving::SharedBatchScheduler<TaskType>::SharedBatchScheduler(const tensorflow::serving::SharedBatchScheduler<TaskType>::Options&)::<lambda()> [with TaskType = tensorflow::BatchResource::BatchTask]'
+./tensorflow/contrib/batching/shared_batch_scheduler.h:437:10:   required from 'struct tensorflow::serving::SharedBatchScheduler<TaskType>::SharedBatchScheduler(const tensorflow::serving::SharedBatchScheduler<TaskType>::Options&) [with TaskType = tensorflow::BatchResource::BatchTask]::<lambda()>'
+./tensorflow/contrib/batching/shared_batch_scheduler.h:438:72:   required from 'tensorflow::serving::SharedBatchScheduler<TaskType>::SharedBatchScheduler(const tensorflow::serving::SharedBatchScheduler<TaskType>::Options&) [with TaskType = tensorflow::BatchResource::BatchTask]'
+./tensorflow/contrib/batching/shared_batch_scheduler.h:362:3:   required from 'static tensorflow::Status tensorflow::serving::SharedBatchScheduler<TaskType>::Create(const tensorflow::serving::SharedBatchScheduler<TaskType>::Options&, std::shared_ptr<tensorflow::serving::SharedBatchScheduler<TaskType> >*) [with TaskType = tensorflow::BatchResource::BatchTask]'
+tensorflow/contrib/batching/kernels/batch_kernels.cc:217:5:   required from here
+./tensorflow/contrib/batching/shared_batch_scheduler.h:664:40: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   return closed_ || open_batch->size() >= options_.max_batch_size ||
+                                        ^
+./tensorflow/contrib/batching/shared_batch_scheduler.h: In instantiation of 'tensorflow::Status tensorflow::serving::internal::Queue<TaskType>::Schedule(std::unique_ptr<TaskType>*) [with TaskType = tensorflow::BatchResource::BatchTask]':
+./tensorflow/contrib/batching/shared_batch_scheduler.h:682:31:   required from 'tensorflow::Status tensorflow::serving::internal::QueueHandle<TaskType>::Schedule(std::unique_ptr<TaskType>*) [with TaskType = tensorflow::BatchResource::BatchTask]'
+tensorflow/contrib/batching/kernels/batch_kernels.cc:996:1:   required from here
+./tensorflow/contrib/batching/shared_batch_scheduler.h:523:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if ((*task)->size() > options_.max_batch_size) {
+                       ^
+./tensorflow/contrib/batching/shared_batch_scheduler.h:535:51: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if (batches_.back()->size() + (*task)->size() > options_.max_batch_size) {
+                                                   ^
+./tensorflow/contrib/batching/shared_batch_scheduler.h:536:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       if (batches_.size() >= options_.max_enqueued_batches) {
+                           ^
+INFO: From Compiling tensorflow/contrib/factorization/kernels/wals_solver_ops.cc:
+In file included from ./tensorflow/core/platform/default/logging.h:24:0,
+                 from ./tensorflow/core/platform/logging.h:25,
+                 from ./tensorflow/core/lib/core/status.h:24,
+                 from ./tensorflow/core/framework/op_def_builder.h:25,
+                 from ./tensorflow/core/framework/op.h:24,
+                 from tensorflow/contrib/factorization/kernels/wals_solver_ops.cc:26:
+./tensorflow/core/platform/default/logging.h: In instantiation of 'std::string* tensorflow::internal::Check_LEImpl(const T1&, const T2&, const char*) [with T1 = long unsigned int; T2 = long long int; std::string = std::basic_string<char>]':
+tensorflow/contrib/factorization/kernels/wals_solver_ops.cc:170:5:   required from here
+./tensorflow/core/platform/default/logging.h:230:35: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+ TF_DEFINE_CHECK_OP_IMPL(Check_LE, <= )
+                                   ^
+./tensorflow/core/platform/macros.h:76:29: note: in definition of macro 'TF_PREDICT_TRUE'
+ #define TF_PREDICT_TRUE(x) (x)
+                             ^
+./tensorflow/core/platform/default/logging.h:230:1: note: in expansion of macro 'TF_DEFINE_CHECK_OP_IMPL'
+ TF_DEFINE_CHECK_OP_IMPL(Check_LE, <= )
+ ^
+./tensorflow/core/platform/default/logging.h: In instantiation of 'std::string* tensorflow::internal::Check_LEImpl(const T1&, const T2&, const char*) [with T1 = long long int; T2 = long unsigned int; std::string = std::basic_string<char>]':
+tensorflow/contrib/factorization/kernels/wals_solver_ops.cc:213:7:   required from here
+./tensorflow/core/platform/default/logging.h:230:35: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+ TF_DEFINE_CHECK_OP_IMPL(Check_LE, <= )
+                                   ^
+./tensorflow/core/platform/macros.h:76:29: note: in definition of macro 'TF_PREDICT_TRUE'
+ #define TF_PREDICT_TRUE(x) (x)
+                             ^
+./tensorflow/core/platform/default/logging.h:230:1: note: in expansion of macro 'TF_DEFINE_CHECK_OP_IMPL'
+ TF_DEFINE_CHECK_OP_IMPL(Check_LE, <= )
+ ^
+INFO: From Compiling tensorflow/core/platform/cpu_feature_guard.cc [for host]:
+tensorflow/core/platform/cpu_feature_guard.cc:28:6: warning: 'void tensorflow::port::{anonymous}::CheckFeatureOrDie(tensorflow::port::CPUFeature, const string&)' defined but not used [-Wunused-function]
+ void CheckFeatureOrDie(CPUFeature feature, const string& feature_name) {
+      ^
+[2,608 / 4,356] Compiling tensorflow/core/lib/io/random_inputstream.cc [for host]
+INFO: From Compiling tensorflow/core/framework/allocator.cc [for host]:
+tensorflow/core/framework/allocator.cc:113:12: warning: 'tensorflow::Allocator* tensorflow::{anonymous}::MakeCpuAllocator()' defined but not used [-Wunused-function]
+ Allocator* MakeCpuAllocator() {
+            ^
+INFO: From Compiling tensorflow/core/framework/op_kernel.cc [for host]:
+tensorflow/core/framework/op_kernel.cc:929:8: warning: 'tensorflow::Status tensorflow::{anonymous}::FindKernelRegistration(const tensorflow::DeviceType&, const tensorflow::Node&, const tensorflow::KernelRegistration**, bool*)' defined but not used [-Wunused-function]
+ Status FindKernelRegistration(const DeviceType& device_type, const Node& node,
+        ^
+[2,715 / 4,356] Compiling tensorflow/core/util/tensor_slice_reader.cc [for host]
+INFO: From Executing genrule //tensorflow/cc:array_ops_genrule:
+2017-06-07 09:41:41.512136: W tensorflow/core/framework/op_gen_lib.cc:194] Squeeze can't find input squeeze_dims to rename
+INFO: From Compiling tensorflow/core/ops/data_flow_ops.cc [for host]:
+tensorflow/core/ops/data_flow_ops.cc:233:8: warning: 'tensorflow::Status tensorflow::{anonymous}::ScalarAndTwoElementVectorInputsAndScalarOutputs(tensorflow::shape_inference::InferenceContext*)' defined but not used [-Wunused-function]
+ Status ScalarAndTwoElementVectorInputsAndScalarOutputs(InferenceContext* c) {
+        ^
+tensorflow/core/ops/data_flow_ops.cc:252:8: warning: 'tensorflow::Status tensorflow::{anonymous}::ScalarOutput(tensorflow::shape_inference::InferenceContext*)' defined but not used [-Wunused-function]
+ Status ScalarOutput(InferenceContext* c) {
+        ^
+[3,010 / 4,356] Compiling tensorflow/core/platform/default/logging.cc
+INFO: From Compiling tensorflow/core/platform/cpu_feature_guard.cc:
+tensorflow/core/platform/cpu_feature_guard.cc:28:6: warning: 'void tensorflow::port::{anonymous}::CheckFeatureOrDie(tensorflow::port::CPUFeature, const string&)' defined but not used [-Wunused-function]
+ void CheckFeatureOrDie(CPUFeature feature, const string& feature_name) {
+      ^
+INFO: From Compiling tensorflow/core/kernels/range_sampler.cc:
+In file included from ./tensorflow/core/platform/default/logging.h:24:0,
+                 from ./tensorflow/core/platform/logging.h:25,
+                 from ./tensorflow/core/lib/core/status.h:24,
+                 from ./tensorflow/core/kernels/range_sampler.h:21,
+                 from tensorflow/core/kernels/range_sampler.cc:16:
+./tensorflow/core/platform/default/logging.h: In instantiation of 'std::string* tensorflow::internal::Check_LEImpl(const T1&, const T2&, const char*) [with T1 = long unsigned int; T2 = long long int; std::string = std::basic_string<char>]':
+tensorflow/core/kernels/range_sampler.cc:86:5:   required from here
+./tensorflow/core/platform/default/logging.h:230:35: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+ TF_DEFINE_CHECK_OP_IMPL(Check_LE, <= )
+                                   ^
+./tensorflow/core/platform/macros.h:76:29: note: in definition of macro 'TF_PREDICT_TRUE'
+ #define TF_PREDICT_TRUE(x) (x)
+                             ^
+./tensorflow/core/platform/default/logging.h:230:1: note: in expansion of macro 'TF_DEFINE_CHECK_OP_IMPL'
+ TF_DEFINE_CHECK_OP_IMPL(Check_LE, <= )
+ ^
+./tensorflow/core/platform/default/logging.h: In instantiation of 'std::string* tensorflow::internal::Check_EQImpl(const T1&, const T2&, const char*) [with T1 = long long int; T2 = long unsigned int; std::string = std::basic_string<char>]':
+tensorflow/core/kernels/range_sampler.cc:244:3:   required from here
+./tensorflow/core/platform/default/logging.h:228:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                         == )  // Compilation error with CHECK_EQ(NULL, x)?
+                         ^
+./tensorflow/core/platform/macros.h:76:29: note: in definition of macro 'TF_PREDICT_TRUE'
+ #define TF_PREDICT_TRUE(x) (x)
+                             ^
+./tensorflow/core/platform/default/logging.h:227:1: note: in expansion of macro 'TF_DEFINE_CHECK_OP_IMPL'
+ TF_DEFINE_CHECK_OP_IMPL(Check_EQ,
+ ^
+INFO: From Compiling tensorflow/tools/tfprof/internal/tfprof_timeline.cc:
+tensorflow/tools/tfprof/internal/tfprof_timeline.cc: In member function 'std::vector<tensorflow::tfprof::TimeNode*> tensorflow::tfprof::Timeline::AddGraphNode(const tensorflow::tfprof::GraphNode*)':
+tensorflow/tools/tfprof/internal/tfprof_timeline.cc:307:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int i = 0; i < shown_cinputs.size(); i++) {
+                         ^
+tensorflow/tools/tfprof/internal/tfprof_timeline.cc: In member function 'void tensorflow::tfprof::Timeline::AllocateLanes()':
+tensorflow/tools/tfprof/internal/tfprof_timeline.cc:323:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int i = 0; i < p->lanes.size(); ++i) {
+                         ^
+INFO: From Compiling tensorflow/stream_executor/stream_executor_pimpl.cc:
+In file included from ./tensorflow/core/platform/default/logging.h:24:0,
+                 from ./tensorflow/core/platform/logging.h:25,
+                 from ./tensorflow/core/lib/core/status.h:24,
+                 from ./tensorflow/stream_executor/lib/status.h:21,
+                 from ./tensorflow/stream_executor/stream_executor_pimpl.h:25,
+                 from tensorflow/stream_executor/stream_executor_pimpl.cc:20:
+./tensorflow/core/platform/default/logging.h: In instantiation of 'std::string* tensorflow::internal::Check_EQImpl(const T1&, const T2&, const char*) [with T1 = int; T2 = long long unsigned int; std::string = std::basic_string<char>]':
+tensorflow/stream_executor/stream_executor_pimpl.cc:622:3:   required from here
+./tensorflow/core/platform/default/logging.h:228:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                         == )  // Compilation error with CHECK_EQ(NULL, x)?
+                         ^
+./tensorflow/core/platform/macros.h:76:29: note: in definition of macro 'TF_PREDICT_TRUE'
+ #define TF_PREDICT_TRUE(x) (x)
+                             ^
+./tensorflow/core/platform/default/logging.h:227:1: note: in expansion of macro 'TF_DEFINE_CHECK_OP_IMPL'
+ TF_DEFINE_CHECK_OP_IMPL(Check_EQ,
+ ^
+INFO: From Compiling tensorflow/core/framework/allocator.cc:
+tensorflow/core/framework/allocator.cc:113:12: warning: 'tensorflow::Allocator* tensorflow::{anonymous}::MakeCpuAllocator()' defined but not used [-Wunused-function]
+ Allocator* MakeCpuAllocator() {
+            ^
+[3,235 / 4,356] Compiling tensorflow/core/framework/op.cc
+INFO: From Compiling tensorflow/core/framework/op_kernel.cc:
+tensorflow/core/framework/op_kernel.cc:929:8: warning: 'tensorflow::Status tensorflow::{anonymous}::FindKernelRegistration(const tensorflow::DeviceType&, const tensorflow::Node&, const tensorflow::KernelRegistration**, bool*)' defined but not used [-Wunused-function]
+ Status FindKernelRegistration(const DeviceType& device_type, const Node& node,
+        ^
+INFO: From Compiling tensorflow/core/kernels/shuffle_dataset_op.cc:
+In file included from ./tensorflow/core/framework/tensor.h:28:0,
+                 from ./tensorflow/core/framework/attr_value_util.h:23,
+                 from ./tensorflow/core/framework/node_def_util.h:23,
+                 from ./tensorflow/core/framework/shape_inference.h:21,
+                 from ./tensorflow/core/framework/common_shape_fns.h:20,
+                 from ./tensorflow/core/framework/resource_mgr.h:24,
+                 from ./tensorflow/core/kernels/dataset.h:20,
+                 from tensorflow/core/kernels/shuffle_dataset_op.cc:15:
+./tensorflow/core/lib/core/refcount.h: In member function 'virtual void tensorflow::{anonymous}::ShuffleDatasetOp::Compute(tensorflow::OpKernelContext*)':
+./tensorflow/core/lib/core/refcount.h:93:12: warning: 'input' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     delete this;
+            ^
+tensorflow/core/kernels/shuffle_dataset_op.cc:37:18: note: 'input' was declared here
+     DatasetBase* input;
+                  ^
+INFO: From Compiling tensorflow/core/kernels/take_dataset_op.cc:
+In file included from ./tensorflow/core/framework/tensor.h:28:0,
+                 from ./tensorflow/core/framework/attr_value_util.h:23,
+                 from ./tensorflow/core/framework/node_def_util.h:23,
+                 from ./tensorflow/core/framework/shape_inference.h:21,
+                 from ./tensorflow/core/framework/common_shape_fns.h:20,
+                 from ./tensorflow/core/framework/resource_mgr.h:24,
+                 from ./tensorflow/core/kernels/dataset.h:20,
+                 from tensorflow/core/kernels/take_dataset_op.cc:15:
+./tensorflow/core/lib/core/refcount.h: In member function 'virtual void tensorflow::{anonymous}::TakeDatasetOp::Compute(tensorflow::OpKernelContext*)':
+./tensorflow/core/lib/core/refcount.h:93:12: warning: 'input' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     delete this;
+            ^
+tensorflow/core/kernels/take_dataset_op.cc:34:18: note: 'input' was declared here
+     DatasetBase* input;
+                  ^
+INFO: From Compiling tensorflow/core/kernels/skip_dataset_op.cc:
+In file included from ./tensorflow/core/framework/tensor.h:28:0,
+                 from ./tensorflow/core/framework/attr_value_util.h:23,
+                 from ./tensorflow/core/framework/node_def_util.h:23,
+                 from ./tensorflow/core/framework/shape_inference.h:21,
+                 from ./tensorflow/core/framework/common_shape_fns.h:20,
+                 from ./tensorflow/core/framework/resource_mgr.h:24,
+                 from ./tensorflow/core/kernels/dataset.h:20,
+                 from tensorflow/core/kernels/skip_dataset_op.cc:15:
+./tensorflow/core/lib/core/refcount.h: In member function 'virtual void tensorflow::{anonymous}::SkipDatasetOp::Compute(tensorflow::OpKernelContext*)':
+./tensorflow/core/lib/core/refcount.h:93:12: warning: 'input' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     delete this;
+            ^
+tensorflow/core/kernels/skip_dataset_op.cc:34:18: note: 'input' was declared here
+     DatasetBase* input;
+                  ^
+INFO: From Compiling tensorflow/core/kernels/repeat_dataset_op.cc:
+In file included from ./tensorflow/core/framework/tensor.h:28:0,
+                 from ./tensorflow/core/framework/attr_value_util.h:23,
+                 from ./tensorflow/core/framework/node_def_util.h:23,
+                 from ./tensorflow/core/framework/shape_inference.h:21,
+                 from ./tensorflow/core/framework/common_shape_fns.h:20,
+                 from ./tensorflow/core/framework/resource_mgr.h:24,
+                 from ./tensorflow/core/kernels/dataset.h:20,
+                 from tensorflow/core/kernels/repeat_dataset_op.cc:15:
+./tensorflow/core/lib/core/refcount.h: In member function 'virtual void tensorflow::{anonymous}::RepeatDatasetOp::Compute(tensorflow::OpKernelContext*)':
+./tensorflow/core/lib/core/refcount.h:93:12: warning: 'input' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     delete this;
+            ^
+tensorflow/core/kernels/repeat_dataset_op.cc:34:18: note: 'input' was declared here
+     DatasetBase* input;
+                  ^
+INFO: From Compiling tensorflow/core/kernels/padded_batch_dataset_op.cc:
+In file included from ./tensorflow/core/framework/tensor.h:28:0,
+                 from ./tensorflow/core/framework/attr_value_util.h:23,
+                 from ./tensorflow/core/framework/node_def_util.h:23,
+                 from ./tensorflow/core/framework/shape_inference.h:21,
+                 from ./tensorflow/core/framework/common_shape_fns.h:20,
+                 from ./tensorflow/core/framework/resource_mgr.h:24,
+                 from ./tensorflow/core/kernels/dataset.h:20,
+                 from tensorflow/core/kernels/padded_batch_dataset_op.cc:15:
+./tensorflow/core/lib/core/refcount.h: In member function 'virtual void tensorflow::{anonymous}::PaddedBatchDatasetOp::Compute(tensorflow::OpKernelContext*)':
+./tensorflow/core/lib/core/refcount.h:93:12: warning: 'input' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     delete this;
+            ^
+tensorflow/core/kernels/padded_batch_dataset_op.cc:132:18: note: 'input' was declared here
+     DatasetBase* input;
+                  ^
+INFO: From Compiling tensorflow/core/kernels/dense_to_sparse_batch_dataset_op.cc:
+tensorflow/core/kernels/dense_to_sparse_batch_dataset_op.cc: In member function 'virtual void tensorflow::{anonymous}::DenseToSparseBatchDatasetOp::Compute(tensorflow::OpKernelContext*)':
+tensorflow/core/kernels/dense_to_sparse_batch_dataset_op.cc:40:35: warning: 'input' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         ctx, input->output_dtypes().size() == 1,
+                                   ^
+INFO: From Compiling tensorflow/core/kernels/batch_dataset_op.cc:
+In file included from ./tensorflow/core/framework/tensor.h:28:0,
+                 from ./tensorflow/core/framework/attr_value_util.h:23,
+                 from ./tensorflow/core/framework/node_def_util.h:23,
+                 from ./tensorflow/core/framework/shape_inference.h:21,
+                 from ./tensorflow/core/framework/common_shape_fns.h:20,
+                 from ./tensorflow/core/framework/resource_mgr.h:24,
+                 from ./tensorflow/core/kernels/dataset.h:20,
+                 from tensorflow/core/kernels/batch_dataset_op.cc:15:
+./tensorflow/core/lib/core/refcount.h: In member function 'virtual void tensorflow::{anonymous}::BatchDatasetOp::Compute(tensorflow::OpKernelContext*)':
+./tensorflow/core/lib/core/refcount.h:93:12: warning: 'input' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     delete this;
+            ^
+tensorflow/core/kernels/batch_dataset_op.cc:34:18: note: 'input' was declared here
+     DatasetBase* input;
+                  ^
+[3,396 / 4,356] Still waiting for 4 jobs to complete:
+INFO: From Compiling tensorflow/core/ops/data_flow_ops.cc:
+tensorflow/core/ops/data_flow_ops.cc:233:8: warning: 'tensorflow::Status tensorflow::{anonymous}::ScalarAndTwoElementVectorInputsAndScalarOutputs(tensorflow::shape_inference::InferenceContext*)' defined but not used [-Wunused-function]
+ Status ScalarAndTwoElementVectorInputsAndScalarOutputs(InferenceContext* c) {
+        ^
+tensorflow/core/ops/data_flow_ops.cc:252:8: warning: 'tensorflow::Status tensorflow::{anonymous}::ScalarOutput(tensorflow::shape_inference::InferenceContext*)' defined but not used [-Wunused-function]
+ Status ScalarOutput(InferenceContext* c) {
+        ^
+INFO: From Compiling tensorflow/core/grappler/costs/graph_properties.cc:
+tensorflow/core/grappler/costs/graph_properties.cc: In function 'tensorflow::Status tensorflow::grappler::{anonymous}::MergeEnqueueShapesAndTypes(const std::vector<tensorflow::shape_inference::ShapeAndType>&, tensorflow::shape_inference::InferenceContext*, std::vector<tensorflow::shape_inference::ShapeAndType>*)':
+tensorflow/core/grappler/costs/graph_properties.cc:45:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < shapes_and_types.size(); ++i) {
+                     ^
+INFO: From Compiling tensorflow/core/grappler/costs/virtual_scheduler.cc:
+tensorflow/core/grappler/costs/virtual_scheduler.cc: In member function 'bool tensorflow::grappler::VirtualScheduler::PopCurrNode()':
+tensorflow/core/grappler/costs/virtual_scheduler.cc:358:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if (output_state.num_inputs_ready == output_state.inputs.size()) {
+                                       ^
+tensorflow/core/grappler/costs/virtual_scheduler.cc:369:42: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if (input_state.num_outputs_executed == input_state.outputs.size()) {
+                                          ^
+INFO: From Compiling tensorflow/core/grappler/optimizers/constant_folding.cc:
+tensorflow/core/grappler/optimizers/constant_folding.cc: In member function 'tensorflow::Status tensorflow::grappler::ConstantFolding::EvaluateOneFoldable(const tensorflow::NodeDef&, std::vector<tensorflow::NodeDef>*)':
+tensorflow/core/grappler/optimizers/constant_folding.cc:319:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < output_tensors.size(); i++) {
+                     ^
+tensorflow/core/grappler/optimizers/constant_folding.cc: In member function 'tensorflow::Status tensorflow::grappler::ConstantFolding::EvaluateNode(const tensorflow::NodeDef&, const TensorVector&, tensorflow::grappler::TensorVector*)':
+tensorflow/core/grappler/optimizers/constant_folding.cc:281:7: warning: 'num_outputs' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   int num_outputs;
+       ^
+INFO: From Compiling tensorflow/core/common_runtime/function.cc:
+tensorflow/core/common_runtime/function.cc: In function 'void tensorflow::InlineFunctionBody(const tensorflow::FunctionLibraryDefinition&, tensorflow::Graph*, tensorflow::Node*, const tensorflow::FunctionBody*)':
+tensorflow/core/common_runtime/function.cc:942:34: warning: 'data.tensorflow::Endpoint::index' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     Node* n = AddIdentity(g, data);
+                                  ^
+tensorflow/core/common_runtime/function.cc:942:34: warning: 'data.tensorflow::Endpoint::node' may be used uninitialized in this function [-Wmaybe-uninitialized]
+INFO: From Compiling tensorflow/core/debug/debug_io_utils.cc:
+tensorflow/core/debug/debug_io_utils.cc:417:15: warning: 'tensorflow::Status tensorflow::CloseDebugURL(const string&)' defined but not used [-Wunused-function]
+ static Status CloseDebugURL(const string& debug_url) { return Status::OK(); }
+               ^
+INFO: From Compiling tensorflow/core/kernels/captured_function.cc:
+In file included from ./tensorflow/core/common_runtime/device.h:43:0,
+                 from ./tensorflow/core/common_runtime/function.h:22,
+                 from ./tensorflow/core/kernels/captured_function.h:21,
+                 from tensorflow/core/kernels/captured_function.cc:15:
+./tensorflow/core/framework/resource_mgr.h: In static member function 'static tensorflow::Status tensorflow::CapturedFunction::Create(tensorflow::OpKernelContext*, const tensorflow::NameAttrList*, int, std::vector<tensorflow::Tensor>, std::unique_ptr<tensorflow::CapturedFunction>*)':
+./tensorflow/core/framework/resource_mgr.h:363:64: warning: 'resource' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   return DoCreate(container, MakeTypeIndex<T>(), name, resource);
+                                                                ^
+tensorflow/core/kernels/captured_function.cc:52:19: note: 'resource' was declared here
+     ResourceType* resource;                                                    \
+                   ^
+tensorflow/core/kernels/captured_function.cc:76:7: note: in expansion of macro 'HANDLE_RESOURCE_TYPE'
+       HANDLE_RESOURCE_TYPE(Var);
+       ^
+In file included from ./tensorflow/core/common_runtime/device.h:43:0,
+                 from ./tensorflow/core/common_runtime/function.h:22,
+                 from ./tensorflow/core/kernels/captured_function.h:21,
+                 from tensorflow/core/kernels/captured_function.cc:15:
+./tensorflow/core/framework/resource_mgr.h:363:64: warning: 'resource' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   return DoCreate(container, MakeTypeIndex<T>(), name, resource);
+                                                                ^
+tensorflow/core/kernels/captured_function.cc:52:19: note: 'resource' was declared here
+     ResourceType* resource;                                                    \
+                   ^
+tensorflow/core/kernels/captured_function.cc:75:7: note: in expansion of macro 'HANDLE_RESOURCE_TYPE'
+       HANDLE_RESOURCE_TYPE(QueueInterface);
+       ^
+In file included from ./tensorflow/core/common_runtime/device.h:43:0,
+                 from ./tensorflow/core/common_runtime/function.h:22,
+                 from ./tensorflow/core/kernels/captured_function.h:21,
+                 from tensorflow/core/kernels/captured_function.cc:15:
+./tensorflow/core/framework/resource_mgr.h:363:64: warning: 'resource' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   return DoCreate(container, MakeTypeIndex<T>(), name, resource);
+                                                                ^
+tensorflow/core/kernels/captured_function.cc:52:19: note: 'resource' was declared here
+     ResourceType* resource;                                                    \
+                   ^
+tensorflow/core/kernels/captured_function.cc:74:7: note: in expansion of macro 'HANDLE_RESOURCE_TYPE'
+       HANDLE_RESOURCE_TYPE(lookup::LookupInterface);
+       ^
+INFO: From Compiling tensorflow/core/kernels/map_dataset_op.cc:
+In file included from ./tensorflow/core/framework/tensor.h:28:0,
+                 from ./tensorflow/core/framework/attr_value_util.h:23,
+                 from ./tensorflow/core/framework/node_def_util.h:23,
+                 from ./tensorflow/core/framework/shape_inference.h:21,
+                 from ./tensorflow/core/framework/common_shape_fns.h:20,
+                 from ./tensorflow/core/framework/resource_mgr.h:24,
+                 from ./tensorflow/core/kernels/dataset.h:20,
+                 from tensorflow/core/kernels/map_dataset_op.cc:15:
+./tensorflow/core/lib/core/refcount.h: In member function 'virtual void tensorflow::{anonymous}::MapDatasetOp::Compute(tensorflow::OpKernelContext*)':
+./tensorflow/core/lib/core/refcount.h:93:12: warning: 'input' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     delete this;
+            ^
+tensorflow/core/kernels/map_dataset_op.cc:41:18: note: 'input' was declared here
+     DatasetBase* input;
+                  ^
+INFO: From Compiling tensorflow/core/kernels/filter_dataset_op.cc:
+In file included from ./tensorflow/core/framework/tensor.h:28:0,
+                 from ./tensorflow/core/framework/attr_value_util.h:23,
+                 from ./tensorflow/core/framework/node_def_util.h:23,
+                 from ./tensorflow/core/framework/shape_inference.h:21,
+                 from ./tensorflow/core/framework/common_shape_fns.h:20,
+                 from ./tensorflow/core/framework/resource_mgr.h:24,
+                 from ./tensorflow/core/kernels/dataset.h:20,
+                 from tensorflow/core/kernels/filter_dataset_op.cc:15:
+./tensorflow/core/lib/core/refcount.h: In member function 'virtual void tensorflow::{anonymous}::FilterDatasetOp::Compute(tensorflow::OpKernelContext*)':
+./tensorflow/core/lib/core/refcount.h:93:12: warning: 'input' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     delete this;
+            ^
+tensorflow/core/kernels/filter_dataset_op.cc:39:18: note: 'input' was declared here
+     DatasetBase* input;
+                  ^
+INFO: From Compiling tensorflow/core/kernels/parallel_map_dataset_op.cc:
+In file included from ./tensorflow/core/framework/tensor.h:28:0,
+                 from ./tensorflow/core/framework/attr_value_util.h:23,
+                 from ./tensorflow/core/framework/node_def_util.h:23,
+                 from ./tensorflow/core/framework/shape_inference.h:21,
+                 from ./tensorflow/core/framework/common_shape_fns.h:20,
+                 from ./tensorflow/core/framework/resource_mgr.h:24,
+                 from ./tensorflow/core/kernels/dataset.h:20,
+                 from tensorflow/core/kernels/parallel_map_dataset_op.cc:17:
+./tensorflow/core/lib/core/refcount.h: In member function 'virtual void tensorflow::{anonymous}::ParallelMapDatasetOp::Compute(tensorflow::OpKernelContext*)':
+./tensorflow/core/lib/core/refcount.h:93:12: warning: 'input' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     delete this;
+            ^
+tensorflow/core/kernels/parallel_map_dataset_op.cc:42:18: note: 'input' was declared here
+     DatasetBase* input;
+                  ^
+[3,704 / 4,356] Compiling tensorflow/cc/framework/grad_op_registry.cc
+INFO: From Compiling tensorflow/cc/framework/gradients.cc:
+tensorflow/cc/framework/gradients.cc: In member function 'tensorflow::Status tensorflow::{anonymous}::SymbolicGradientBuilder::Initialize()':
+tensorflow/cc/framework/gradients.cc:155:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < outputs_.size(); ++i) {
+                     ^
+tensorflow/cc/framework/gradients.cc:160:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < inputs_.size(); ++i) {
+                     ^
+tensorflow/cc/framework/gradients.cc: In member function 'tensorflow::Status tensorflow::{anonymous}::SymbolicGradientBuilder::AddGradients()':
+tensorflow/cc/framework/gradients.cc:312:66: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if (IsPrimitiveOpWithNoGrad(n->type_string()) || num_no_grad == num_y) {
+                                                                  ^
+tensorflow/cc/framework/gradients.cc:323:40: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if (num_no_grad > 0 && num_no_grad < num_y) {
+                                        ^
+tensorflow/cc/framework/gradients.cc:347:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       if (dx_index == dx.size()) {
+                    ^
+In file included from ./tensorflow/cc/framework/gradients.h:19:0,
+                 from tensorflow/cc/framework/gradients.cc:19:
+./tensorflow/cc/framework/ops.h: In instantiation of 'tensorflow::Input::Initializer::Initializer(const std::initializer_list<_Tp>&, const tensorflow::TensorShape&) [with T = int; <template-parameter-1-2> = void]':
+bazel-out/local-opt/genfiles/tensorflow/cc/ops/logging_ops.h:217:70:   required from here
+./tensorflow/cc/framework/ops.h:153:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       if (t.NumElements() != v.size()) {
+                           ^
+INFO: From Compiling tensorflow/cc/gradients/array_grad.cc:
+In file included from bazel-out/local-opt/genfiles/tensorflow/cc/ops/array_ops_internal.h:8:0,
+                 from tensorflow/cc/gradients/array_grad.cc:18:
+./tensorflow/cc/framework/ops.h: In instantiation of 'tensorflow::Input::Initializer::Initializer(const std::initializer_list<_Tp>&, const tensorflow::TensorShape&) [with T = int; <template-parameter-1-2> = void]':
+bazel-out/local-opt/genfiles/tensorflow/cc/ops/logging_ops.h:217:70:   required from here
+./tensorflow/cc/framework/ops.h:153:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       if (t.NumElements() != v.size()) {
+                           ^
+INFO: From Compiling tensorflow/cc/gradients/nn_grad.cc:
+In file included from bazel-out/local-opt/genfiles/tensorflow/cc/ops/nn_ops.h:8:0,
+                 from tensorflow/cc/gradients/nn_grad.cc:16:
+./tensorflow/cc/framework/ops.h: In instantiation of 'tensorflow::Input::Initializer::Initializer(const std::initializer_list<_Tp>&, const tensorflow::TensorShape&) [with T = int; <template-parameter-1-2> = void]':
+bazel-out/local-opt/genfiles/tensorflow/cc/ops/logging_ops.h:217:70:   required from here
+./tensorflow/cc/framework/ops.h:153:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       if (t.NumElements() != v.size()) {
+                           ^
+INFO: From Compiling tensorflow/cc/gradients/math_grad.cc:
+In file included from bazel-out/local-opt/genfiles/tensorflow/cc/ops/array_ops.h:8:0,
+                 from ./tensorflow/cc/ops/standard_ops.h:19,
+                 from tensorflow/cc/gradients/math_grad.cc:16:
+./tensorflow/cc/framework/ops.h: In instantiation of 'tensorflow::Input::Initializer::Initializer(const std::initializer_list<_Tp>&, const tensorflow::TensorShape&) [with T = int; <template-parameter-1-2> = void]':
+bazel-out/local-opt/genfiles/tensorflow/cc/ops/logging_ops.h:217:70:   required from here
+./tensorflow/cc/framework/ops.h:153:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       if (t.NumElements() != v.size()) {
+                           ^
+INFO: From Compiling tensorflow/core/kernels/remote_fused_graph_execute_op.cc:
+In file included from ./tensorflow/core/platform/default/logging.h:24:0,
+                 from ./tensorflow/core/platform/logging.h:25,
+                 from ./tensorflow/core/framework/allocator.h:26,
+                 from ./tensorflow/core/framework/op_kernel.h:23,
+                 from tensorflow/core/kernels/remote_fused_graph_execute_op.cc:18:
+tensorflow/core/kernels/remote_fused_graph_execute_op.cc: In member function 'virtual void tensorflow::RemoteFusedGraphExecuteOp::Compute(tensorflow::OpKernelContext*)':
+tensorflow/core/kernels/remote_fused_graph_execute_op.cc:78:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+           input_count == input_types_.size())
+                       ^
+./tensorflow/core/platform/macros.h:75:30: note: in definition of macro 'TF_PREDICT_FALSE'
+ #define TF_PREDICT_FALSE(x) (x)
+                              ^
+tensorflow/core/kernels/remote_fused_graph_execute_op.cc:77:5: note: in expansion of macro 'CHECK'
+     CHECK(input_count == graph_input_count &&
+     ^
+tensorflow/core/kernels/remote_fused_graph_execute_op.cc:101:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+           output_count == output_types_.size());
+                        ^
+./tensorflow/core/platform/macros.h:75:30: note: in definition of macro 'TF_PREDICT_FALSE'
+ #define TF_PREDICT_FALSE(x) (x)
+                              ^
+tensorflow/core/kernels/remote_fused_graph_execute_op.cc:100:5: note: in expansion of macro 'CHECK'
+     CHECK(output_count == execute_info_.graph_output_node_name_size() &&
+     ^
+INFO: From Compiling tensorflow/core/kernels/remote_fused_graph_execute_utils.cc:
+tensorflow/core/kernels/remote_fused_graph_execute_utils.cc: In function 'void tensorflow::{anonymous}::ConvertMapToVector(const std::unordered_map<int, std::basic_string<char> >&, std::vector<std::basic_string<char> >*)':
+tensorflow/core/kernels/remote_fused_graph_execute_utils.cc:105:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < in.size(); ++i) {
+                     ^
+In file included from ./tensorflow/core/platform/default/logging.h:24:0,
+                 from ./tensorflow/core/platform/logging.h:25,
+                 from ./tensorflow/core/lib/core/status.h:24,
+                 from ./tensorflow/core/lib/core/errors.h:19,
+                 from ./tensorflow/core/framework/tensor_shape.h:24,
+                 from ./tensorflow/core/framework/partial_tensor_shape.h:20,
+                 from ./tensorflow/core/framework/attr_value_util.h:22,
+                 from ./tensorflow/core/framework/function.h:20,
+                 from ./tensorflow/core/graph/graph.h:43,
+                 from ./tensorflow/core/kernels/remote_fused_graph_execute_utils.h:24,
+                 from tensorflow/core/kernels/remote_fused_graph_execute_utils.cc:16:
+tensorflow/core/kernels/remote_fused_graph_execute_utils.cc: In static member function 'static bool tensorflow::RemoteFusedGraphExecuteUtils::GetOutputTensorShapeType(const tensorflow::GraphDef&, const string&, tensorflow::DataType*, tensorflow::TensorShape*)':
+tensorflow/core/kernels/remote_fused_graph_execute_utils.cc:426:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   CHECK(data_types.size() > port);
+                           ^
+./tensorflow/core/platform/macros.h:75:30: note: in definition of macro 'TF_PREDICT_FALSE'
+ #define TF_PREDICT_FALSE(x) (x)
+                              ^
+tensorflow/core/kernels/remote_fused_graph_execute_utils.cc:426:3: note: in expansion of macro 'CHECK'
+   CHECK(data_types.size() > port);
+   ^
+tensorflow/core/kernels/remote_fused_graph_execute_utils.cc: In static member function 'static tensorflow::Status tensorflow::RemoteFusedGraphExecuteUtils::ClusterizeNodes(const std::unordered_set<std::basic_string<char> >&, const tensorflow::GraphDef&, std::vector<std::tuple<std::unordered_set<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::hash<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::vector<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::vector<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > >*)':
+tensorflow/core/kernels/remote_fused_graph_execute_utils.cc:785:45: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       CHECK(input_count == 0 || input_count == node->in_edges().size());
+                                             ^
+./tensorflow/core/platform/macros.h:75:30: note: in definition of macro 'TF_PREDICT_FALSE'
+ #define TF_PREDICT_FALSE(x) (x)
+                              ^
+tensorflow/core/kernels/remote_fused_graph_execute_utils.cc:785:7: note: in expansion of macro 'CHECK'
+       CHECK(input_count == 0 || input_count == node->in_edges().size());
+       ^
+tensorflow/core/kernels/remote_fused_graph_execute_utils.cc: In static member function 'static tensorflow::Status tensorflow::RemoteFusedGraphExecuteUtils::FuseCluster(const tensorflow::GraphDef&, const std::vector<std::basic_string<char> >&, const std::vector<std::basic_string<char> >&, const string&, const ClusterInfo&, const string&, bool, tensorflow::GraphDef*)':
+tensorflow/core/kernels/remote_fused_graph_execute_utils.cc:967:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int j = 0; j < border_outputs.size(); ++j) {
+                         ^
+tensorflow/core/kernels/remote_fused_graph_execute_utils.cc:991:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < border_outputs.size(); ++i) {
+                       ^
+tensorflow/core/kernels/remote_fused_graph_execute_utils.cc: In static member function 'static tensorflow::Status tensorflow::RemoteFusedGraphExecuteUtils::FuseRemoteGraphByNodeNames(const tensorflow::GraphDef&, const std::vector<std::basic_string<char> >&, const std::vector<std::basic_string<char> >&, const string&, const std::unordered_set<std::basic_string<char> >&, const string&, bool, tensorflow::GraphDef*)':
+tensorflow/core/kernels/remote_fused_graph_execute_utils.cc:1038:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < ci_vec.size(); ++i) {
+                     ^
+tensorflow/core/kernels/remote_fused_graph_execute_utils.cc: In static member function 'static tensorflow::Status tensorflow::RemoteFusedGraphExecuteUtils::PlaceRemoteGraphArguments(const std::vector<std::basic_string<char> >&, const std::vector<std::basic_string<char> >&, const std::unordered_set<std::basic_string<char> >&, const std::vector<std::basic_string<char> >&, const std::vector<std::basic_string<char> >&, const string&, const string&, tensorflow::GraphDef*)':
+tensorflow/core/kernels/remote_fused_graph_execute_utils.cc:1077:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < inputs.size(); ++i) {
+                       ^
+tensorflow/core/kernels/remote_fused_graph_execute_utils.cc:1085:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < outputs.size(); ++i) {
+                       ^
+tensorflow/core/kernels/remote_fused_graph_execute_utils.cc:1098:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < border_inputs.size(); ++i) {
+                       ^
+tensorflow/core/kernels/remote_fused_graph_execute_utils.cc:1105:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < border_outputs.size(); ++i) {
+                       ^
+[3,807 / 4,356] Compiling tensorflow/core/kernels/dynamic_partition_op.cc
+[3,815 / 4,356] Compiling tensorflow/core/kernels/parameterized_truncated_normal_op.cc
+INFO: From Compiling tensorflow/core/kernels/neon/neon_depthwise_conv_op.cc:
+In file included from tensorflow/core/kernels/neon/neon_depthwise_conv_op.cc:29:0:
+./tensorflow/core/kernels/neon/depthwiseconv_float.h: In instantiation of 'void tensorflow::neon::DepthwiseConv(const float*, const tensorflow::neon::Dims<4>&, const float*, const tensorflow::neon::Dims<4>&, const float*, const tensorflow::neon::Dims<4>&, int, int, int, int, float*, const tensorflow::neon::Dims<4>&) [with tensorflow::neon::FusedActivationFunctionType Ac = (tensorflow::neon::FusedActivationFunctionType)0]':
+tensorflow/core/kernels/neon/neon_depthwise_conv_op.cc:137:42:   required from here
+./tensorflow/core/kernels/neon/depthwiseconv_float.h:602:7: warning: variable 'fixed_input_depth' set but not used [-Wunused-but-set-variable]
+   int fixed_input_depth = 0;
+       ^
+[3,876 / 4,356] Compiling tensorflow/core/kernels/conv_ops.cc
+[3,876 / 4,356] Still waiting for 4 jobs to complete:
+      Running (standalone):
+        Compiling tensorflow/core/kernels/conv_grad_filter_ops.cc, 39 s
+        Compiling tensorflow/core/kernels/conv_grad_input_ops.cc, 31 s
+        Compiling tensorflow/core/kernels/conv_grad_ops_3d.cc, 30 s
+        Compiling tensorflow/core/kernels/conv_ops.cc, 10 s
+INFO: From Compiling tensorflow/core/kernels/conv_ops_fused.cc:
+tensorflow/core/kernels/conv_ops_fused.cc: In member function 'void tensorflow::FusedResizeConv2DUsingGemmOp<T, TConvFunctor, DoResize>::Compute(tensorflow::OpKernelContext*) [with T = float; TConvFunctor = tensorflow::{anonymous}::FusedResizeAndPadConvFunctor<float, float, float, FastGemmFunctor<float, float, float>, (tensorflow::<unnamed>::SamplingMode)0u>; bool DoResize = true]':
+tensorflow/core/kernels/conv_ops_fused.cc:537:16: warning: 'st.tensorflow::ImageResizerState::width_scale' may be used uninitialized in this function [-Wmaybe-uninitialized]
+               });
+                ^
+tensorflow/core/kernels/conv_ops_fused.cc:651:23: note: 'st.tensorflow::ImageResizerState::width_scale' was declared here
+     ImageResizerState st(false);
+                       ^
+tensorflow/core/kernels/conv_ops_fused.cc:537:16: warning: 'st.tensorflow::ImageResizerState::height_scale' may be used uninitialized in this function [-Wmaybe-uninitialized]
+               });
+                ^
+tensorflow/core/kernels/conv_ops_fused.cc:651:23: note: 'st.tensorflow::ImageResizerState::height_scale' was declared here
+     ImageResizerState st(false);
+                       ^
+tensorflow/core/kernels/conv_ops_fused.cc:537:16: warning: 'st.tensorflow::ImageResizerState::channels' may be used uninitialized in this function [-Wmaybe-uninitialized]
+               });
+                ^
+tensorflow/core/kernels/conv_ops_fused.cc:651:23: note: 'st.tensorflow::ImageResizerState::channels' was declared here
+     ImageResizerState st(false);
+                       ^
+tensorflow/core/kernels/conv_ops_fused.cc:537:16: warning: 'st.tensorflow::ImageResizerState::in_width' may be used uninitialized in this function [-Wmaybe-uninitialized]
+               });
+                ^
+tensorflow/core/kernels/conv_ops_fused.cc:651:23: note: 'st.tensorflow::ImageResizerState::in_width' was declared here
+     ImageResizerState st(false);
+                       ^
+tensorflow/core/kernels/conv_ops_fused.cc:537:16: warning: 'st.tensorflow::ImageResizerState::in_height' may be used uninitialized in this function [-Wmaybe-uninitialized]
+               });
+                ^
+tensorflow/core/kernels/conv_ops_fused.cc:651:23: note: 'st.tensorflow::ImageResizerState::in_height' was declared here
+     ImageResizerState st(false);
+                       ^
+tensorflow/core/kernels/conv_ops_fused.cc:537:16: warning: 'st.tensorflow::ImageResizerState::out_width' may be used uninitialized in this function [-Wmaybe-uninitialized]
+               });
+                ^
+tensorflow/core/kernels/conv_ops_fused.cc:651:23: note: 'st.tensorflow::ImageResizerState::out_width' was declared here
+     ImageResizerState st(false);
+                       ^
+tensorflow/core/kernels/conv_ops_fused.cc:537:16: warning: 'st.tensorflow::ImageResizerState::out_height' may be used uninitialized in this function [-Wmaybe-uninitialized]
+               });
+                ^
+tensorflow/core/kernels/conv_ops_fused.cc:651:23: note: 'st.tensorflow::ImageResizerState::out_height' was declared here
+     ImageResizerState st(false);
+                       ^
+tensorflow/core/kernels/conv_ops_fused.cc:537:16: warning: 'st.tensorflow::ImageResizerState::batch_size' may be used uninitialized in this function [-Wmaybe-uninitialized]
+               });
+                ^
+tensorflow/core/kernels/conv_ops_fused.cc:651:23: note: 'st.tensorflow::ImageResizerState::batch_size' was declared here
+     ImageResizerState st(false);
+                       ^
+[3,903 / 4,356] Compiling tensorflow/core/kernels/xent_op.cc
+[3,971 / 4,356] Compiling tensorflow/core/kernels/cast_op_impl_float.cc
+INFO: From Compiling tensorflow/core/kernels/sparse_fill_empty_rows_op.cc:
+tensorflow/core/kernels/sparse_fill_empty_rows_op.cc: In instantiation of 'void tensorflow::SparseFillEmptyRowsOp<T>::Compute(tensorflow::OpKernelContext*) [with T = tensorflow::ResourceHandle]':
+tensorflow/core/kernels/sparse_fill_empty_rows_op.cc:245:1:   required from here
+tensorflow/core/kernels/sparse_fill_empty_rows_op.cc:93:11: warning: variable 'prev_row' set but not used [-Wunused-but-set-variable]
+     int64 prev_row = -1;
+           ^
+tensorflow/core/kernels/sparse_fill_empty_rows_op.cc: In instantiation of 'void tensorflow::SparseFillEmptyRowsOp<T>::Compute(tensorflow::OpKernelContext*) [with T = std::basic_string<char>]':
+tensorflow/core/kernels/sparse_fill_empty_rows_op.cc:245:1:   required from here
+tensorflow/core/kernels/sparse_fill_empty_rows_op.cc:93:11: warning: variable 'prev_row' set but not used [-Wunused-but-set-variable]
+tensorflow/core/kernels/sparse_fill_empty_rows_op.cc: In instantiation of 'void tensorflow::SparseFillEmptyRowsOp<T>::Compute(tensorflow::OpKernelContext*) [with T = bool]':
+tensorflow/core/kernels/sparse_fill_empty_rows_op.cc:245:1:   required from here
+tensorflow/core/kernels/sparse_fill_empty_rows_op.cc:93:11: warning: variable 'prev_row' set but not used [-Wunused-but-set-variable]
+tensorflow/core/kernels/sparse_fill_empty_rows_op.cc: In instantiation of 'void tensorflow::SparseFillEmptyRowsOp<T>::Compute(tensorflow::OpKernelContext*) [with T = std::complex<double>]':
+tensorflow/core/kernels/sparse_fill_empty_rows_op.cc:245:1:   required from here
+tensorflow/core/kernels/sparse_fill_empty_rows_op.cc:93:11: warning: variable 'prev_row' set but not used [-Wunused-but-set-variable]
+tensorflow/core/kernels/sparse_fill_empty_rows_op.cc: In instantiation of 'void tensorflow::SparseFillEmptyRowsOp<T>::Compute(tensorflow::OpKernelContext*) [with T = std::complex<float>]':
+tensorflow/core/kernels/sparse_fill_empty_rows_op.cc:245:1:   required from here
+tensorflow/core/kernels/sparse_fill_empty_rows_op.cc:93:11: warning: variable 'prev_row' set but not used [-Wunused-but-set-variable]
+tensorflow/core/kernels/sparse_fill_empty_rows_op.cc: In instantiation of 'void tensorflow::SparseFillEmptyRowsOp<T>::Compute(tensorflow::OpKernelContext*) [with T = double]':
+tensorflow/core/kernels/sparse_fill_empty_rows_op.cc:245:1:   required from here
+tensorflow/core/kernels/sparse_fill_empty_rows_op.cc:93:11: warning: variable 'prev_row' set but not used [-Wunused-but-set-variable]
+tensorflow/core/kernels/sparse_fill_empty_rows_op.cc: In instantiation of 'void tensorflow::SparseFillEmptyRowsOp<T>::Compute(tensorflow::OpKernelContext*) [with T = float]':
+tensorflow/core/kernels/sparse_fill_empty_rows_op.cc:245:1:   required from here
+tensorflow/core/kernels/sparse_fill_empty_rows_op.cc:93:11: warning: variable 'prev_row' set but not used [-Wunused-but-set-variable]
+tensorflow/core/kernels/sparse_fill_empty_rows_op.cc: In instantiation of 'void tensorflow::SparseFillEmptyRowsOp<T>::Compute(tensorflow::OpKernelContext*) [with T = Eigen::half]':
+tensorflow/core/kernels/sparse_fill_empty_rows_op.cc:245:1:   required from here
+tensorflow/core/kernels/sparse_fill_empty_rows_op.cc:93:11: warning: variable 'prev_row' set but not used [-Wunused-but-set-variable]
+tensorflow/core/kernels/sparse_fill_empty_rows_op.cc: In instantiation of 'void tensorflow::SparseFillEmptyRowsOp<T>::Compute(tensorflow::OpKernelContext*) [with T = signed char]':
+tensorflow/core/kernels/sparse_fill_empty_rows_op.cc:245:1:   required from here
+tensorflow/core/kernels/sparse_fill_empty_rows_op.cc:93:11: warning: variable 'prev_row' set but not used [-Wunused-but-set-variable]
+tensorflow/core/kernels/sparse_fill_empty_rows_op.cc: In instantiation of 'void tensorflow::SparseFillEmptyRowsOp<T>::Compute(tensorflow::OpKernelContext*) [with T = unsigned char]':
+tensorflow/core/kernels/sparse_fill_empty_rows_op.cc:245:1:   required from here
+tensorflow/core/kernels/sparse_fill_empty_rows_op.cc:93:11: warning: variable 'prev_row' set but not used [-Wunused-but-set-variable]
+tensorflow/core/kernels/sparse_fill_empty_rows_op.cc: In instantiation of 'void tensorflow::SparseFillEmptyRowsOp<T>::Compute(tensorflow::OpKernelContext*) [with T = short int]':
+tensorflow/core/kernels/sparse_fill_empty_rows_op.cc:245:1:   required from here
+tensorflow/core/kernels/sparse_fill_empty_rows_op.cc:93:11: warning: variable 'prev_row' set but not used [-Wunused-but-set-variable]
+tensorflow/core/kernels/sparse_fill_empty_rows_op.cc: In instantiation of 'void tensorflow::SparseFillEmptyRowsOp<T>::Compute(tensorflow::OpKernelContext*) [with T = short unsigned int]':
+tensorflow/core/kernels/sparse_fill_empty_rows_op.cc:245:1:   required from here
+tensorflow/core/kernels/sparse_fill_empty_rows_op.cc:93:11: warning: variable 'prev_row' set but not used [-Wunused-but-set-variable]
+tensorflow/core/kernels/sparse_fill_empty_rows_op.cc: In instantiation of 'void tensorflow::SparseFillEmptyRowsOp<T>::Compute(tensorflow::OpKernelContext*) [with T = int]':
+tensorflow/core/kernels/sparse_fill_empty_rows_op.cc:245:1:   required from here
+tensorflow/core/kernels/sparse_fill_empty_rows_op.cc:93:11: warning: variable 'prev_row' set but not used [-Wunused-but-set-variable]
+tensorflow/core/kernels/sparse_fill_empty_rows_op.cc: In instantiation of 'void tensorflow::SparseFillEmptyRowsOp<T>::Compute(tensorflow::OpKernelContext*) [with T = long long int]':
+tensorflow/core/kernels/sparse_fill_empty_rows_op.cc:245:1:   required from here
+tensorflow/core/kernels/sparse_fill_empty_rows_op.cc:93:11: warning: variable 'prev_row' set but not used [-Wunused-but-set-variable]
+INFO: From Compiling tensorflow/core/kernels/sparse_matmul_op.cc:
+In file included from tensorflow/core/kernels/sparse_matmul_op.cc:20:0:
+./tensorflow/core/kernels/sparse_matmul_op.h: In instantiation of 'Packet Eigen::internal::pexpand_bf16_l(const Packet&) [with Packet = float]':
+tensorflow/core/kernels/sparse_matmul_op.cc:387:3:   required from here
+./tensorflow/core/kernels/sparse_matmul_op.h:40:44: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+   return reinterpret_cast<const float&>(tmp);
+                                            ^
+./tensorflow/core/kernels/sparse_matmul_op.h: In instantiation of 'Packet Eigen::internal::pexpand_bf16_u(const Packet&) [with Packet = float]':
+tensorflow/core/kernels/sparse_matmul_op.cc:388:3:   required from here
+./tensorflow/core/kernels/sparse_matmul_op.h:53:44: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+   return reinterpret_cast<const float&>(tmp);
+                                            ^
+INFO: From Compiling tensorflow/core/grappler/clusters/single_machine.cc:
+tensorflow/core/grappler/clusters/single_machine.cc: In member function 'virtual tensorflow::Status tensorflow::grappler::SingleMachine::Run(const tensorflow::GraphDef&, const std::vector<std::pair<std::basic_string<char>, tensorflow::Tensor> >&, const std::vector<std::basic_string<char> >&, tensorflow::RunMetadata*)':
+tensorflow/core/grappler/clusters/single_machine.cc:143:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int i = 0; i < queue_runner_defs_.size(); ++i) {
+                         ^
+INFO: From Compiling tensorflow/tools/graph_transforms/quantize_nodes.cc:
+tensorflow/tools/graph_transforms/quantize_nodes.cc:179:6: warning: 'bool tensorflow::graph_transforms::{anonymous}::AreAttrsEqual(const tensorflow::NodeDef*, const tensorflow::NodeDef*)' defined but not used [-Wunused-function]
+ bool AreAttrsEqual(const NodeDef* current_node, const NodeDef* other_node) {
+      ^
+INFO: From Compiling tensorflow/core/kernels/remote_fused_graph_rewriter_transform.cc:
+tensorflow/core/kernels/remote_fused_graph_rewriter_transform.cc: In function 'tensorflow::Status tensorflow::graph_transforms::PlaceShapeType(const std::vector<std::basic_string<char> >&, const std::vector<std::basic_string<char> >&, const string&, const string&, tensorflow::GraphDef*)':
+tensorflow/core/kernels/remote_fused_graph_rewriter_transform.cc:110:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < inputs.size(); ++i) {
+                     ^
+tensorflow/core/kernels/remote_fused_graph_rewriter_transform.cc: In function 'tensorflow::Status tensorflow::graph_transforms::FuseRemoteGraph(const tensorflow::GraphDef&, const tensorflow::graph_transforms::TransformFuncContext&, tensorflow::GraphDef*)':
+tensorflow/core/kernels/remote_fused_graph_rewriter_transform.cc:166:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < border_inputs.size(); ++i) {
+                       ^
+tensorflow/core/kernels/remote_fused_graph_rewriter_transform.cc:169:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < border_outputs.size(); ++i) {
+                       ^
+INFO: From Compiling tensorflow/python/lib/core/py_func.cc:
+In file included from ./tensorflow/core/platform/default/logging.h:24:0,
+                 from ./tensorflow/core/platform/logging.h:25,
+                 from ./tensorflow/core/framework/allocator.h:26,
+                 from ./tensorflow/core/framework/tensor.h:21,
+                 from ./tensorflow/python/lib/core/py_func.h:22,
+                 from tensorflow/python/lib/core/py_func.cc:16:
+./tensorflow/core/platform/default/logging.h: In instantiation of 'std::string* tensorflow::internal::Check_EQImpl(const T1&, const T2&, const char*) [with T1 = long unsigned int; T2 = long long int; std::string = std::basic_string<char>]':
+tensorflow/python/lib/core/py_func.cc:265:5:   required from here
+./tensorflow/core/platform/default/logging.h:228:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                         == )  // Compilation error with CHECK_EQ(NULL, x)?
+                         ^
+./tensorflow/core/platform/macros.h:76:29: note: in definition of macro 'TF_PREDICT_TRUE'
+ #define TF_PREDICT_TRUE(x) (x)
+                             ^
+./tensorflow/core/platform/default/logging.h:227:1: note: in expansion of macro 'TF_DEFINE_CHECK_OP_IMPL'
+ TF_DEFINE_CHECK_OP_IMPL(Check_EQ,
+ ^
+INFO: From Compiling tensorflow/python/client/tf_session_helper.cc:
+tensorflow/python/client/tf_session_helper.cc: In function 'void tensorflow::TF_SessionRun_wrapper_helper(TF_Session*, const TF_Buffer*, const std::vector<TF_Output>&, const std::vector<_object*>&, const std::vector<TF_Output>&, const std::vector<TF_Operation*>&, TF_Buffer*, TF_Status*, std::vector<_object*>*)':
+tensorflow/python/client/tf_session_helper.cc:695:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < outputs.size(); ++i) {
+                     ^
+tensorflow/python/client/tf_session_helper.cc:707:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < outputs.size(); ++i) {
+                     ^
+INFO: From Compiling tensorflow/tools/tfprof/internal/tfprof_op.cc:
+In file included from tensorflow/tools/tfprof/internal/tfprof_op.cc:16:0:
+./tensorflow/tools/tfprof/internal/tfprof_op.h: In member function 'virtual bool tensorflow::tfprof::TFOp::ShouldShowIfExtra(tensorflow::tfprof::ShowMultiNode*, const tensorflow::tfprof::Options&, int)':
+./tensorflow/tools/tfprof/internal/tfprof_op.h:61:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if (opts.min_occurrence > node->node->graph_nodes().size()) {
+                             ^
+tensorflow/tools/tfprof/internal/tfprof_op.cc: In member function 'virtual const tensorflow::tfprof::ShowMultiNode* tensorflow::tfprof::TFOp::ShowInternal(const tensorflow::tfprof::Options&, tensorflow::tfprof::Timeline*)':
+tensorflow/tools/tfprof/internal/tfprof_op.cc:93:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int64 i = start; i < account_nodes.size(); ++i, ++depth) {
+                           ^
+tensorflow/tools/tfprof/internal/tfprof_op.cc: In member function 'tensorflow::int64 tensorflow::tfprof::TFOp::SearchRoot(std::vector<tensorflow::tfprof::OpNode*>, const std::vector<std::basic_string<char> >&)':
+tensorflow/tools/tfprof/internal/tfprof_op.cc:140:12: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (; i < nodes.size(); ++i) {
+            ^
+INFO: From Compiling tensorflow/tools/tfprof/internal/print_model_analysis.cc:
+In file included from ./tensorflow/tools/tfprof/internal/tfprof_stats.h:41:0,
+                 from tensorflow/tools/tfprof/internal/print_model_analysis.cc:27:
+./tensorflow/tools/tfprof/internal/tfprof_op.h: In member function 'virtual bool tensorflow::tfprof::TFOp::ShouldShowIfExtra(tensorflow::tfprof::ShowMultiNode*, const tensorflow::tfprof::Options&, int)':
+./tensorflow/tools/tfprof/internal/tfprof_op.h:61:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if (opts.min_occurrence > node->node->graph_nodes().size()) {
+                             ^
+INFO: From Compiling tensorflow/tools/tfprof/internal/tfprof_stats.cc:
+In file included from ./tensorflow/tools/tfprof/internal/tfprof_stats.h:41:0,
+                 from tensorflow/tools/tfprof/internal/tfprof_stats.cc:16:
+./tensorflow/tools/tfprof/internal/tfprof_op.h: In member function 'virtual bool tensorflow::tfprof::TFOp::ShouldShowIfExtra(tensorflow::tfprof::ShowMultiNode*, const tensorflow::tfprof::Options&, int)':
+./tensorflow/tools/tfprof/internal/tfprof_op.h:61:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if (opts.min_occurrence > node->node->graph_nodes().size()) {
+                             ^
+INFO: From Compiling tensorflow/python/pywrap_tensorflow_internal.cc:
+bazel-out/local-opt/bin/tensorflow/python/pywrap_tensorflow_internal.cc: In function 'PyObject* _wrap_PyRecordReader_New(PyObject*, PyObject*)':
+bazel-out/local-opt/bin/tensorflow/python/pywrap_tensorflow_internal.cc:4973:138: warning: 'arg2' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     result = (tensorflow::io::PyRecordReader *)tensorflow::io::PyRecordReader::New((string const &)*arg1,arg2,(string const &)*arg3,arg4);
+                                                                                                                                          ^
+At global scope:
+cc1plus: warning: unrecognized command line option "-Wno-self-assign"
+Target //tensorflow/tools/pip_package:build_pip_package up-to-date:
+  bazel-bin/tensorflow/tools/pip_package/build_pip_package
+INFO: Elapsed time: 4934.384s, Critical Path: 240.49s
+
+--------------------------------build stop-------------------------------------------------------------------------------------
+[root@localhost tensorflow]# bazel-bin/tensorflow/tools/pip_package/build_pip_package /tmp/tensorflow_pkg
+2017年 06月 07日 星期三 10:59:09 CST : === Using tmpdir: /tmp/tmp.Fk3wTutAlo
+/home/xzy/tensorflow/bazel-bin/tensorflow/tools/pip_package/build_pip_package.runfiles /home/xzy/tensorflow
+/home/xzy/tensorflow
+/tmp/tmp.Fk3wTutAlo /home/xzy/tensorflow
+2017年 06月 07日 星期三 10:59:12 CST : === Building wheel
+warning: no files found matching '*.dll' under directory '*'
+warning: no files found matching '*.lib' under directory '*'
+/home/xzy/tensorflow
+2017年 06月 07日 星期三 10:59:40 CST : === Output wheel file is in: /tmp/tensorflow_pkg
+
+[root@localhost tensorflow_pkg]# pwd
+/tmp/tensorflow_pkg
+[root@localhost tensorflow_pkg]# ls
+tensorflow-1.2.0rc1-cp27-none-linux_mips64.whl
+
+
+

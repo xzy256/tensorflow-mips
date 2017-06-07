@@ -1,0 +1,65 @@
+ERROR: /home/xzy/.cache/bazel/_bazel_xzy/c01fa588a238f7be12b727d5cfbf1a03/external/io_bazel_rules_closure/java/io/bazel/rules/closure/webfiles/BUILD:40:1: error executing shell command: 'JAR='external/local_jdk/bin/jar' OUTPUT='bazel-out/host/bin/external/io_bazel_rules_closure/java/io/bazel/rules/closure/webfiles/libbuild_info_java_proto_srcjar.srcjar' PROTO_COMPILER='bazel-out/ho...' failed: bash failed: error executing command /bin/bash -c ... (remaining 1 argument(s) skipped): com.google.devtools.build.lib.shell.BadExitStatusException: Process exited with status 1.
+bazel-out/host/bin/external/io_bazel_rules_closure/closure/private/gensrcjar: line 75: bazel-out/host/genfiles/external/io_bazel_rules_closure/third_party/protobuf/protoc: cannot execute binary file: Exec format error
+gensrcjar: proto_compiler failed
+Target //tensorflow/tools/pip_package:build_pip_package failed to build
+Use --verbose_failures to see the command lines of failed build steps.
+INFO: Elapsed time: 87.269s, Critical Path: 14.08s
+
+---->超级用户执行bazel build --copt=-march=native -c opt //tensorflow/tools/pip_package:build_pip_package. 
+修改bazel-out/host/bin/external/io_bazel_rules_closure/closure/private/gensrcjar +75
++ 69   export PROTO_COMPILER=/usr/local/bin/protoc
++ 70   export GRPC_JAVA_PLUGIN=/home/xzy/grpc-java/compiler/build/exe/java_plugin/protoc-gen-grpc-java
+71   if [ -n "${GRPC_JAVA_PLUGIN}" ]; then
+
+
+ERROR: /home/xzy/tensorflow/tensorflow/tensorboard/components/tf_color_scale/BUILD:36:1: Executing genrule //tensorflow/tensorboard/components/tf_color_scale:ts failed: bash failed: error executing command /bin/bash -c ... (remaining 1 argument(s) skipped): com.google.devtools.build.lib.shell.BadExitStatusException: Process exited with status 126.
+bazel-out/host/genfiles/external/com_microsoft_typescript/tsc.sh: line 6: /root/.cache/bazel/_bazel_root/c01fa588a238f7be12b727d5cfbf1a03/execroot/tensorflow/external/org_nodejs/bin/node: cannot execute binary file: Exec format error
+bazel-out/host/genfiles/external/com_microsoft_typescript/tsc.sh: line 6: /root/.cache/bazel/_bazel_root/c01fa588a238f7be12b727d5cfbf1a03/execroot/tensorflow/external/org_nodejs/bin/node: Success
+Target //tensorflow/tools/pip_package:build_pip_package failed to build
+Use --verbose_failures to see the command lines of failed build steps.
+INFO: Elapsed time: 457.221s, Critical Path: 44.01s
+
+---->修改tensorflow/workspace.bzl
+ "          \"NODE=external/org_nodejs/bin/node\\n\" +",   改成      "         \"NODE=/usr/bin/node\\n\"+",
+
+
+>>> import tensorflow as tf
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/usr/lib/python2.7/site-packages/tensorflow/__init__.py", line 24, in <module>
+    from tensorflow.python import *
+  File "/usr/lib/python2.7/site-packages/tensorflow/python/__init__.py", line 52, in <module>
+    from tensorflow.core.framework.graph_pb2 import *
+  File "/usr/lib/python2.7/site-packages/tensorflow/core/framework/graph_pb2.py", line 6, in <module>
+    from google.protobuf import descriptor as _descriptor
+ImportError: No module named google.protobuf
+
+---->进入编译protocbuf目录
+cd $PROTOC_HOME/python
+python setup.py test && python setup.py install
+
+
+>>> import tensorflow as tf
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/usr/lib/python2.7/site-packages/tensorflow/__init__.py", line 24, in <module>
+    from tensorflow.python import *
+  File "/usr/lib/python2.7/site-packages/tensorflow/python/__init__.py", line 49, in <module>
+    from tensorflow.python import pywrap_tensorflow
+ImportError: cannot import name pywrap_tensorflow
+
+---->退出tensorflow的编译目录，重新导入，参考https://github.com/tensorflow/tensorflow/issues/3217
+
+
+
+
+
+
+
+
+
+
+
+
+
+

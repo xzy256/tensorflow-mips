@@ -1,0 +1,28 @@
+diff --git a/tensorflow/go/genop/generate.sh b/tensorflow/go/genop/generate.sh
+index d791e39..0e8e0b8 100644
+--- a/tensorflow/go/genop/generate.sh
++++ b/tensorflow/go/genop/generate.sh
+@@ -22,7 +22,8 @@ go get github.com/golang/protobuf/protoc-gen-go
+ cd $(dirname $0)
+ for g in $(echo $GOPATH | sed "s/:/ /g"); do
+     TF_DIR="${g}/src/github.com/tensorflow/tensorflow"
+-    PROTOC="${TF_DIR}/bazel-out/host/bin/external/protobuf/protoc"
++    #PROTOC="${TF_DIR}/bazel-out/host/bin/external/protobuf/protoc"
++    PROTOC="/usr/local/bin/protoc"
+     if [ -x "${PROTOC}" ]; then
+         break
+     fi
+diff --git a/tensorflow/workspace.bzl b/tensorflow/workspace.bzl
+index a4b4fa0..37d920a 100644
+--- a/tensorflow/workspace.bzl
++++ b/tensorflow/workspace.bzl
+@@ -730,7 +730,8 @@ def tf_workspace(path_prefix="", tf_repo_name=""):
+           "    outs = [\"tsc.sh\"],",
+           "    cmd = \"cat >$@ <<'EOF'\\n\" +",
+           "          \"#!/bin/bash\\n\" +",
+-          "          \"NODE=external/org_nodejs/bin/node\\n\" +",
++         # "          \"NODE=external/org_nodejs/bin/node\\n\" +",
++          "	     \"NODE=/usr/bin/node\\n\"+",
+           "          \"if [[ -e external/org_nodejs/node.exe ]]; then\\n\" +",
+           "          \"  NODE=external/org_nodejs/node.exe\\n\" +",
+           "          \"fi\\n\" +",
