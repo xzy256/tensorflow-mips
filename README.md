@@ -5,15 +5,16 @@
 -----------------
 Instruction<br>
 build and test instructions:<br>
+<pre>
   $build --copt=-march=native -c opt //tensorflow/tools/pip_package:build_pip_package --verbose_failures <br>
   $bazel-bin/tensorflow/tools/pip_package/build_pip_package /tmp/tensorflow_pkg <br>
   $pip install /tmp/tensorflow_pkg/tensorflow-1.2.0rc1-cp27-none-linux_mips64.whl <br>
   $python <br>
   >>>import tensorflow as tf <br>
-
-build tf for mips arch. [patch](build-tf-mips.diff)<br>
-[error and solved way] (build-tensorflow-for-mips64.error.log)<br>
-[terminal output](build-tensorflow-mips64.output)<br>
+</pre>
+build tf for mips arch. build patch sees [build-tf-mips-patch](build-tf-mips.diff)<br>
+error and solution see [error and solved way](build-tensorflow-for-mips64.error.log)<br>
+build terminal output see [terminal output](build-tensorflow-mips64.output)<br>
 
 
 
