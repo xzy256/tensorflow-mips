@@ -1,24 +1,4 @@
-# Copyright 2015 The TensorFlow Authors. All Rights Reserved.
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-# ==============================================================================
-
-"""Simple, end-to-end, LeNet-5-like convolutional MNIST model example.
-
-This should achieve a test error of 0.7%. Please keep this model as simple and
-linear as possible, it is meant as a tutorial for simple convolutional models.
-Run with --self_test on the command line to execute a short self-test.
-"""
+# -*- coding: utf-8 -*-
 from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
@@ -34,18 +14,18 @@ from six.moves import xrange  # pylint: disable=redefined-builtin
 import tensorflow as tf
 
 SOURCE_URL = 'http://yann.lecun.com/exdb/mnist/'
-WORK_DIRECTORY = 'data'
+WORK_DIRECTORY = '/home/xzy/tf-input-data'
 IMAGE_SIZE = 28
 NUM_CHANNELS = 1
 PIXEL_DEPTH = 255
 NUM_LABELS = 10
-VALIDATION_SIZE = 5000  # Size of the validation set.
+VALIDATION_SIZE = 500  # Size of the validation set.
 SEED = 66478  # Set to None for random seed.
 BATCH_SIZE = 64
 NUM_EPOCHS = 10
 EVAL_BATCH_SIZE = 64
 EVAL_FREQUENCY = 100  # Number of steps between evaluations.
-
+TRAIN_MAX = 5000
 
 tf.app.flags.DEFINE_boolean("self_test", False, "True if running a self test.")
 tf.app.flags.DEFINE_boolean('use_fp16', False,
@@ -57,23 +37,25 @@ tf.app.flags.DEFINE_integer('num_cpu_core', 4, 'Number of CPU cores to use')
 tf.app.flags.DEFINE_integer('intra_op_parallelism_threads', 4, 'How many ops can be launched in parallel')
 tf.app.flags.DEFINE_integer('num_gpu_core', 0, 'Number of GPU cores to use')
 
-device_id = -1 # Global Variable Counter for device_id used
+device_id = -1  # Global Variable Counter for device_id used
 
-def next_device(use_cpu = True):
-    ''' See if there is available next device;
+
+def next_device(use_cpu=True):
+  """ See if there is available next device;
         Args: use_cpu, global device_id
         Return: new device id
-    '''
+  """
   global device_id
-  if (use_cpu):
-    if ((device_id + 1) < FLAGS.num_cpu_core):
+  if use_cpu:
+    if device_id + 1 < FLAGS.num_cpu_core:
       device_id += 1
     device = '/cpu:%d' % device_id
   else:
-    if ((device_id + 1) < FLAGS.num_gpu_core):
+    if device_id + 1 < FLAGS.num_gpu_core:
       device_id += 1
     device = '/gpu:%d' % device_id
   return device
+
 
 def data_type():
   """Return the type of the activations, weights, and placeholder variables."""
@@ -109,6 +91,7 @@ def extract_data(filename, num_images):
     data = (data - (PIXEL_DEPTH / 2.0)) / PIXEL_DEPTH
     data = data.reshape(num_images, IMAGE_SIZE, IMAGE_SIZE, 1)
     return data
+
 
 def extract_labels(filename, num_images):
   """Extract the labels into a vector of int64 label IDs."""
@@ -162,10 +145,10 @@ def main(argv=None):  # pylint: disable=unused-argument
     test_labels = extract_labels(test_labels_filename, 10000)
 
     # Generate a validation set.
-    validation_data = train_data[:VALIDATION_SIZE, ...]
+    validation_data = train_data[:VALIDATION_SIZE, ...]  # 0-5000分片
     validation_labels = train_labels[:VALIDATION_SIZE]
-    train_data = train_data[VALIDATION_SIZE:, ...]
-    train_labels = train_labels[VALIDATION_SIZE:]
+    train_data = train_data[VALIDATION_SIZE:TRAIN_MAX+VALIDATION_SIZE, ...]
+    train_labels = train_labels[VALIDATION_SIZE:TRAIN_MAX+VALIDATION_SIZE]
     num_epochs = NUM_EPOCHS
   train_size = train_labels.shape[0]
   
@@ -183,10 +166,6 @@ def main(argv=None):  # pylint: disable=unused-argument
   # The variables below hold all the trainable weights. They are passed an
   # initial value which will be assigned when we call:
   # {tf.initialize_all_variables().run()}
-  
-  
-  
-  
   conv1_weights = tf.Variable(
       tf.truncated_normal([5, 5, NUM_CHANNELS, 32],  # 5x5 filter, depth 32.
                           stddev=0.1,
@@ -218,7 +197,7 @@ def main(argv=None):  # pylint: disable=unused-argument
     # 2D convolution, with 'SAME' padding (i.e. the output feature map has
     # the same size as the input). Note that {strides} is a 4D array whose
     # shape matches the data layout: [image index, y, x, depth].
-    
+    """-----------------hidden1----------------------"""
     with tf.device(next_device()):
       conv = tf.nn.conv2d(data,
                         conv1_weights,
@@ -232,8 +211,7 @@ def main(argv=None):  # pylint: disable=unused-argument
                           ksize=[1, 2, 2, 1],
                           strides=[1, 2, 2, 1],
                           padding='SAME')
-    
-    
+    """-----------------hidden2----------------------"""
     with tf.device(next_device()):
       conv = tf.nn.conv2d(pool,
                         conv2_weights,
@@ -254,7 +232,7 @@ def main(argv=None):  # pylint: disable=unused-argument
     
     # Fully connected layer. Note that the '+' operation automatically
     # broadcasts the biases.
-    
+    """-----------------fully1----------------------"""
     with tf.device(next_device()):
       hidden = tf.nn.relu(tf.matmul(reshape, fc1_weights) + fc1_biases)
       # Add a 50% dropout during training only. Dropout also scales
@@ -267,7 +245,7 @@ def main(argv=None):  # pylint: disable=unused-argument
   # Training computation: logits + cross-entropy loss.
   logits = model(train_data_node, True)
   loss = tf.reduce_mean(tf.nn.sparse_softmax_cross_entropy_with_logits(
-      logits, train_labels_node))
+      logits=logits, labels=train_labels_node))
 
   # L2 regularization for the fully connected parameters.
   regularizers = (tf.nn.l2_loss(fc1_weights) + tf.nn.l2_loss(fc1_biases) +
@@ -322,13 +300,13 @@ def main(argv=None):  # pylint: disable=unused-argument
   start_time = time.time()
   
   config = tf.ConfigProto(
-                    device_count={"CPU": FLAGS.num_cpu_core}, # limit to num_cpu_core CPU usage
-                    inter_op_parallelism_threads = 1, 
-                    intra_op_parallelism_threads = FLAGS.intra_op_parallelism_threads,
+                    device_count={"CPU": FLAGS.num_cpu_core},  # limit to num_cpu_core CPU usage
+                    inter_op_parallelism_threads=1,
+                    intra_op_parallelism_threads=FLAGS.intra_op_parallelism_threads,
                     log_device_placement=True
                 )
   
-  with tf.Session(config = config) as sess:
+  with tf.Session(config=config) as sess:
     # Run all the initializers to prepare the trainable parameters.
     tf.initialize_all_variables().run()
     print('Initialized!')

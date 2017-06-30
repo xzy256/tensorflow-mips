@@ -1,24 +1,4 @@
-# Copyright 2015 The TensorFlow Authors. All Rights Reserved.
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-# ==============================================================================
-
-"""Simple, end-to-end, LeNet-5-like convolutional MNIST model example.
-
-This should achieve a test error of 0.7%. Please keep this model as simple and
-linear as possible, it is meant as a tutorial for simple convolutional models.
-Run with --self_test on the command line to execute a short self-test.
-"""
+# -*- coding: utf-8 -*-
 from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
@@ -34,17 +14,18 @@ from six.moves import xrange  # pylint: disable=redefined-builtin
 import tensorflow as tf
 
 SOURCE_URL = 'http://yann.lecun.com/exdb/mnist/'
-WORK_DIRECTORY = 'data'
+WORK_DIRECTORY = '/home/xzy/tf-input-data'
 IMAGE_SIZE = 28
 NUM_CHANNELS = 1
 PIXEL_DEPTH = 255
 NUM_LABELS = 10
-VALIDATION_SIZE = 5000  # Size of the validation set.
-SEED = 66478  # Set to None for random seed.
+VALIDATION_SIZE = 500  # validation集的大小.
+SEED = 66478  # 随机种子数
 BATCH_SIZE = 64
 NUM_EPOCHS = 10
 EVAL_BATCH_SIZE = 64
-EVAL_FREQUENCY = 100  # Number of steps between evaluations.
+EVAL_FREQUENCY = 100  # 步长
+EXTRACT_NUM = 5000  # 提取5000个数据
 
 
 tf.app.flags.DEFINE_boolean("self_test", False, "True if running a self test.")
@@ -52,10 +33,12 @@ tf.app.flags.DEFINE_boolean('use_fp16', False,
                             "Use half floats instead of full floats if True.")
 FLAGS = tf.app.flags.FLAGS
 
-# number of device count
-tf.app.flags.DEFINE_integer('num_cpu_core', 4, 'Number of CPU cores to use')
-tf.app.flags.DEFINE_integer('intra_op_parallelism_threads', 1, 'How many ops can be launched in parallel')
-tf.app.flags.DEFINE_integer('num_gpu_core', 0, 'Number of GPU cores to use')
+# 默认使用的是单核资源
+#tf.app.flags.DEFINE_integer('num_cpu_core', 4, '使用的cpu核数')
+#tf.app.flags.DEFINE_integer('intra_op_parallelism_threads', 1, '控制运算符op内部的并行')
+#tf.app.flags.DEFINE_integer('inter_op_parallelism_threads', 1, '控制运算符op之间的并行')
+#tf.app.flags.DEFINE_integer('num_gpu_core', 0, '使用gpu个数')
+#
 
 def data_type():
   """Return the type of the activations, weights, and placeholder variables."""
@@ -144,23 +127,21 @@ def main(argv=None):  # pylint: disable=unused-argument
     test_data = extract_data(test_data_filename, 10000)
     test_labels = extract_labels(test_labels_filename, 10000)
 
-    # Generate a validation set.
+    # validation set 0-500. train set 500-5500
     validation_data = train_data[:VALIDATION_SIZE, ...]
     validation_labels = train_labels[:VALIDATION_SIZE]
-    train_data = train_data[VALIDATION_SIZE:, ...]
-    train_labels = train_labels[VALIDATION_SIZE:]
+    train_data = train_data[VALIDATION_SIZE:VALIDATION_SIZE + EXTRACT_NUM, ...]
+    train_labels = train_labels[VALIDATION_SIZE:VALIDATION_SIZE + EXTRACT_NUM]
     num_epochs = NUM_EPOCHS
   train_size = train_labels.shape[0]
 
   # This is where training samples and labels are fed to the graph.
   # These placeholder nodes will be fed a batch of training data at each
   # training step using the {feed_dict} argument to the Run() call below.
-  train_data_node = tf.placeholder(
-      data_type(),
+  train_data_node = tf.placeholder(data_type(),
       shape=(BATCH_SIZE, IMAGE_SIZE, IMAGE_SIZE, NUM_CHANNELS))
   train_labels_node = tf.placeholder(tf.int64, shape=(BATCH_SIZE,))
-  eval_data = tf.placeholder(
-      data_type(),
+  eval_data = tf.placeholder(data_type(),
       shape=(EVAL_BATCH_SIZE, IMAGE_SIZE, IMAGE_SIZE, NUM_CHANNELS))
 
   # The variables below hold all the trainable weights. They are passed an
@@ -195,33 +176,19 @@ def main(argv=None):  # pylint: disable=unused-argument
     # 2D convolution, with 'SAME' padding (i.e. the output feature map has
     # the same size as the input). Note that {strides} is a 4D array whose
     # shape matches the data layout: [image index, y, x, depth].
-    conv = tf.nn.conv2d(data,
-                        conv1_weights,
-                        strides=[1, 1, 1, 1],
-                        padding='SAME')
+    conv = tf.nn.conv2d(data, conv1_weights, strides=[1, 1, 1, 1], padding='SAME')
     # Bias and rectified linear non-linearity.
     relu = tf.nn.relu(tf.nn.bias_add(conv, conv1_biases))
     # Max pooling. The kernel size spec {ksize} also follows the layout of
     # the data. Here we have a pooling window of 2, and a stride of 2.
-    pool = tf.nn.max_pool(relu,
-                          ksize=[1, 2, 2, 1],
-                          strides=[1, 2, 2, 1],
-                          padding='SAME')
-    conv = tf.nn.conv2d(pool,
-                        conv2_weights,
-                        strides=[1, 1, 1, 1],
-                        padding='SAME')
+    pool = tf.nn.max_pool(relu, ksize=[1, 2, 2, 1], strides=[1, 2, 2, 1], padding='SAME')
+    conv = tf.nn.conv2d(pool, conv2_weights, strides=[1, 1, 1, 1], padding='SAME')
     relu = tf.nn.relu(tf.nn.bias_add(conv, conv2_biases))
-    pool = tf.nn.max_pool(relu,
-                          ksize=[1, 2, 2, 1],
-                          strides=[1, 2, 2, 1],
-                          padding='SAME')
+    pool = tf.nn.max_pool(relu, ksize=[1, 2, 2, 1], strides=[1, 2, 2, 1], padding='SAME')
     # Reshape the feature map cuboid into a 2D matrix to feed it to the
     # fully connected layers.
     pool_shape = pool.get_shape().as_list()
-    reshape = tf.reshape(
-        pool,
-        [pool_shape[0], pool_shape[1] * pool_shape[2] * pool_shape[3]])
+    reshape = tf.reshape(pool, [pool_shape[0], pool_shape[1] * pool_shape[2] * pool_shape[3]])
     # Fully connected layer. Note that the '+' operation automatically
     # broadcasts the biases.
     hidden = tf.nn.relu(tf.matmul(reshape, fc1_weights) + fc1_biases)
@@ -234,7 +201,7 @@ def main(argv=None):  # pylint: disable=unused-argument
   # Training computation: logits + cross-entropy loss.
   logits = model(train_data_node, True)
   loss = tf.reduce_mean(tf.nn.sparse_softmax_cross_entropy_with_logits(
-      logits, train_labels_node))
+      logits=logits, labels=train_labels_node))
 
   # L2 regularization for the fully connected parameters.
   regularizers = (tf.nn.l2_loss(fc1_weights) + tf.nn.l2_loss(fc1_biases) +
@@ -286,16 +253,19 @@ def main(argv=None):  # pylint: disable=unused-argument
     return predictions
 
   # Create a local session to run the training.
+  st_time=time.clock()
   start_time = time.time()
-  
+  """ 
   config = tf.ConfigProto(
-                    device_count={"CPU": FLAGS.num_cpu_core}, # limit to num_cpu_core CPU usage
-                    inter_op_parallelism_threads = 1, 
-                    intra_op_parallelism_threads = FLAGS.intra_op_parallelism_threads,
+                    device_count={"CPU": 1},  # limit to num_cpu_core CPU usage
+                    inter_op_parallelism_threads=1,
+                    intra_op_parallelism_threads=4,
                     log_device_placement=True
                 )
-  
-  with tf.Session(config = config) as sess:
+
+  with tf.Session(config=config) as sess:
+  """
+  with tf.Session() as sess:
     # Run all the initializers to prepare the trainable parameters.
     tf.initialize_all_variables().run()
     print('Initialized!')
@@ -332,6 +302,8 @@ def main(argv=None):  # pylint: disable=unused-argument
       print('test_error', test_error)
       assert test_error == 0.0, 'expected 0.0 test_error, got %.2f' % (
           test_error,)
+    e_time=time.clock()
+    print('--------------------', e_time-st_time)
 
 
 if __name__ == '__main__':
