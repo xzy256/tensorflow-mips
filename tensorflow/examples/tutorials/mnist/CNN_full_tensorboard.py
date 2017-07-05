@@ -241,20 +241,19 @@ def run_training():
       output_path = os.path.join(FLAGS.log_dir, 'embed', name)
       print('Computing %s Embedding' % name)
       (all_images, all_labels, hidden1_vectors, hidden2_vectors) = do_eval(
-              sess,
-              eval_correct,
-              images_placeholder,
-              labels_placeholder,
-              data_set,
-              True)
+              sess, eval_correct, images_placeholder, labels_placeholder, data_set, True)
       embed_tensors = []
       summary_writer = tf.summary.FileWriter(output_path, sess.graph)
       config = projector.ProjectorConfig()
+      """enumerate(list)遍历列表内容和下标，产生(0,list[0])、(1,list[1])"""
       for layer, embed_vectors in enumerate([hidden1_vectors, hidden2_vectors]):
-        embed_tensor = tf.Variable(
-                np.array(embed_vectors).reshape(
-                    len(embed_vectors) * embed_vectors[0].shape[0], -1),
-                name=('%s_layer_%s' % (name, layer)))
+        print("*****************layer=", layer)
+        print("-----------------len(embed_vectors) * "
+              "embed_vectors[0].shape[0]=", len(embed_vectors) * embed_vectors[0].shape[0])
+        embed_tensor = tf.Variable(np.array(embed_vectors).reshape(
+            int(len(embed_vectors) * embed_vectors[0].shape[0]/100), -1),
+            name=('%s_layer_%s' % (name, layer)))
+
         embed_tensors.append(embed_tensor)
         sess.run(embed_tensor.initializer)
         embedding = config.embeddings.add()
